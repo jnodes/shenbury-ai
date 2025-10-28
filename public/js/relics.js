@@ -46,7 +46,7 @@ window.relics = [
         condition: 'Perfect condition. The glaze is of exceptional quality with the desirable "ice crackle" pattern throughout. Features the distinctive "fishtail" bubbles (鱼鳞纹) that cannot be replicated by modern methods.',
         dimensions: 'Height: 22.8 cm\nDiameter: 12.5 cm\nWeight: 680g',
         literature: 'Referenced in scholarly works on Northern Song Ru ware ceramics\nComparable examples documented in major museum collections',
-        technicalNotes: 'Verified through Shenbury\'s AI Agent Swarm technology using high-resolution imaging and spectral analysis. The multi-agent system cross-references glaze composition, crackle patterns, and form characteristics against the AgentDB knowledge base containing over 10,000 authenticated ceramic artifacts. Each agent specializes in different authentication aspects, with consensus validation ensuring accuracy.',
+        technicalNotes: 'Planned verification through Shenbury\'s future AI Agent Swarm technology using high-resolution imaging and spectral analysis. The multi-agent system will cross-reference glaze composition, crackle patterns, and form characteristics against the AgentDB knowledge base. Each agent will specialize in different authentication aspects, with consensus validation ensuring accuracy. Funding from token sales will support development of this advanced verification infrastructure.',
         culturalSignificance: 'This bottle represents the golden age of Chinese ceramics during Emperor Huizong\'s reign (1082-1135). An outstanding painter and calligrapher, Huizong significantly advanced court arts and elevated Ru kiln\'s status. Jay Chou\'s famous phrase "sky blue rain" (天青色烟雨) refers to this very porcelain.',
     },
     {
@@ -70,7 +70,7 @@ window.relics = [
         condition: 'Excellent condition. Minor restoration to one cloud-scroll on the rim professionally executed. The vibrant enamel colors remain rich and full.',
         dimensions: 'Height: 28.5 cm\nWidth: 35.2 cm\nWeight: 4.2 kg',
         literature: 'Discussed in literature on Ming Dynasty cloisonné techniques\nRelated examples featured in museum collections and scholarly publications',
-        technicalNotes: 'Authentication verified by Shenbury\'s specialized AI agents for metalwork and enamel analysis. The swarm employs computer vision to analyze wire precision, color gradation, and gilding techniques. Machine learning models trained on verified Xuande period pieces confirm authenticity markers, with ReasoningBank cross-validating findings against historical production techniques.',
+        technicalNotes: 'Future authentication planned through Shenbury\'s specialized AI agents for metalwork and enamel analysis. The swarm will employ computer vision to analyze wire precision, color gradation, and gilding techniques. Machine learning models will be trained on verified Xuande period pieces to confirm authenticity markers, with ReasoningBank cross-validating findings against historical production techniques. Token sale proceeds will fund this technology development.',
         culturalSignificance: 'Xuande marked cloisonné pieces are among the rarest and most sought-after works of Chinese decorative arts. This example bears the imperial six-character mark. The lotus scrolls symbolize continuous good fortune and prosperity.',
     },
     {
@@ -95,7 +95,7 @@ window.relics = [
         condition: 'Remarkable condition. Small chip to the spout professionally restored. The cobalt blue glaze of exceptional depth and brilliance provides a striking backdrop for the elegant white dragon.',
         dimensions: 'Total Height (with lid): 31.3 cm\nWidth (handle to spout): 18.5 cm\nWeight: 1.45 kg',
         literature: 'Featured in scholarly discussions of Yuan dynasty ceramic innovations\nComparable pieces documented in museum collections',
-        technicalNotes: 'Verified using Shenbury\'s ceramic authentication swarm with specialized agents for Yuan dynasty glazes. The AI system analyzes cobalt distribution patterns, glaze thickness, and dragon motif execution. Local vector embeddings compare the piece against known authentic Yuan ceramics in AgentDB, with closed-loop learning continuously improving verification accuracy.',
+        technicalNotes: 'Intended verification using Shenbury\'s ceramic authentication swarm with specialized agents for Yuan dynasty glazes. The AI system will analyze cobalt distribution patterns, glaze thickness, and dragon motif execution. Local vector embeddings will compare the piece against known authentic Yuan ceramics in the future AgentDB, with closed-loop learning continuously improving verification accuracy. Development of this technology is funded through token sales.',
         culturalSignificance: 'Yuan dynasty blue glazed porcelain represents a revolutionary moment in ceramic history, combining Chinese potting techniques with Islamic aesthetic preferences. The dragon motif adds movement and vitality, embodying imperial power.',
     },
     {
@@ -119,7 +119,7 @@ window.relics = [
         condition: 'Excellent condition with bright, full glaze. The patina that has developed over time adds to its allure, giving it an ancient yet elegant appearance. All original gilding intact.',
         dimensions: 'Diameter: 22.5 cm\nHeight: 12.8 cm\nWeight: 2.1 kg',
         literature: 'Referenced in works on Jingtai period cloisonné craftsmanship\nRelated examples in major decorative arts collections',
-        technicalNotes: 'Authenticated through Shenbury\'s multi-agent verification system with specialized cloisonné experts. The swarm analyzes wirework precision, enamel color consistency, and gilding quality using computer vision. Pattern recognition algorithms compare decorative motifs against verified Jingtai period examples, with confidence scoring provided by ReasoningBank\'s closed-loop learning system.',
+        technicalNotes: 'Planned authentication through Shenbury\'s multi-agent verification system with specialized cloisonné experts. The swarm will analyze wirework precision, enamel color consistency, and gilding quality using computer vision. Pattern recognition algorithms will compare decorative motifs against verified Jingtai period examples, with confidence scoring provided by ReasoningBank\'s closed-loop learning system. This advanced technology is under development and will be funded by token sale proceeds.',
         culturalSignificance: 'The Jingtai period is renowned for its advancements in cloisonné enamel techniques. This casket exemplifies the luxurious and noble characteristics unique to cloisonné enamel, demonstrating the dedication to creating objects of both beauty and function.',
     },
     {
@@ -145,7 +145,7 @@ window.relics = [
         condition: 'Excellent condition with the characteristic ice-crackle glaze throughout. The piece has been professionally examined and authenticated by experts in Song dynasty ceramics. The foot ring shows minor expected wear consistent with age and handling.',
         dimensions: 'Height: 22 cm\nMouth diameter: 5.5 cm\nBase diameter: 7.2 cm',
         literature: 'Documented in scholarly works on Song dynasty ceramics\nComparable examples referenced in museum collections and academic publications',
-        technicalNotes: 'Verified by Shenbury\'s advanced AI authentication swarm with Ru ware specialists. The system employs high-resolution imaging to analyze glaze crackle patterns, foot ring construction, and form proportions. Machine learning models compare the piece against verified Song dynasty ceramics in AgentDB, with confidence scores generated through ReasoningBank\'s continuous learning framework.',
+        technicalNotes: 'Future verification by Shenbury\'s advanced AI authentication swarm with Ru ware specialists. The system will employ high-resolution imaging to analyze glaze crackle patterns, foot ring construction, and form proportions. Machine learning models will compare the piece against verified Song dynasty ceramics in the future AgentDB, with confidence scores generated through ReasoningBank\'s continuous learning framework. This cutting-edge technology is currently under development using funds from token sales.',
         culturalSignificance: 'The Yuhuchun vase form is one of the most celebrated shapes in Chinese ceramic history. With only two known examples in existence, this piece represents an extraordinary rarity. The taller stature compared to the British Museum example makes it particularly significant. Ru ware pieces were exclusively produced for the Northern Song imperial court for approximately 20 years (1086-1106), contributing to their extreme scarcity.',
     }
 ];
