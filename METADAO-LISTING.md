@@ -22,7 +22,7 @@ Findings from each agent are synthesized into a single authentication consensus,
 
 ## Token Name and Ticker
 
-**Token Name**: Shenbury Provenance Token
+**Token Name**: Shenbury
 **Token Ticker**: SHBY
 
 ## Project Image and Token Image
@@ -54,7 +54,7 @@ Project and token images are available in the `/public/assets/images/` directory
 The following intellectual properties will be transferred to the Shenbury DAO entity:
 
 1. AI agent swarm authentication algorithms and training datasets
-2. Blockchain provenance registry and smart contract suite
+2. Blockchain provenance registry
 3. Domain names, source code, and operational software
 4. Brand identity, marketing assets, and social accounts
 

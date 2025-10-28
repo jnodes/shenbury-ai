@@ -75,7 +75,7 @@ Funds will support legal structuring, AI infrastructure scaling, insurance and c
 The following IP will be transferred to the Shenbury DAO entity:
 
 - AI agent swarm authentication algorithms and training datasets
-- Blockchain provenance registry and smart contract suite
+- Blockchain provenance registry
 - Domain names, source code, and operational software
 - Brand identity, marketing assets, and social accounts
 
