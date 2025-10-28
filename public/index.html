@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIN: AI Agent Swarm for Art Authentication | Shenbury 神堡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <style>
+        :root { --primary: #000; --secondary: #fff; --accent: #c9302c; --gray-light: #f8f8f8; --gray-medium: #e5e5e5; --text-primary: #000; --text-secondary: #666; --font-primary: 'Cormorant Garamond', serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-primary); background: var(--secondary); color: var(--text-primary); line-height: 1.6; font-weight: 300; }
+        h1, h2, h3, h4 { font-weight: 300; letter-spacing: -0.02em; }
+        header { background: rgba(255, 255, 255, 0.95); border-bottom: 1px solid var(--gray-medium); position: sticky; top: 0; z-index: 1000; padding: 0 2rem; backdrop-filter: blur(10px); }
+        nav { display: flex; justify-content: space-between; align-items: center; height: 80px; max-width: 1400px; margin: 0 auto; }
+        .logo a { text-decoration: none; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem; }
+        .logo .logo-chinese { font-size: 1.5rem; font-weight: 500; }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a { text-decoration: none; color: var(--text-secondary); }
+        .logo-image { height: 40px; width: auto; vertical-align: middle; margin-right: 10px; }
+        .hero { height: 550px; position: relative; display: flex; align-items: center; justify-content: center; background-image: url('/assets/images/hero-bg.jpg'); background-size: cover; background-position: center; color: white; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.6)); z-index: 1; }
+        .hero-content { position: relative; z-index: 2; text-align: center; max-width: 800px; padding: 0 2rem; }
+        .jin-badge { display: inline-flex; align-items: center; gap: 0.75rem; border: 1px solid rgba(255, 255, 255, 0.3); padding: 0.5rem 1rem; border-radius: 100px; backdrop-filter: blur(10px); background: rgba(0,0,0,0.2); margin-bottom: 1.5rem; }
+        .jin-badge img { width: 32px; height: 32px; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.25rem; opacity: 0.9; margin-bottom: 2rem; }
+        .hero-buttons { display: flex; gap: 1rem; justify-content: center; }
+        .hero-cta { padding: 1rem 2.5rem; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; cursor: pointer; transition: all 0.3s ease; text-decoration: none; color: white; border: 2px solid transparent; }
+        .hero-cta.primary { background: var(--accent); border-color: var(--accent); }
+        .hero-cta.secondary { border-color: white; }
+        .auction-header { max-width: 1400px; margin: 4rem auto 2rem; padding: 0 2rem; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .auction-stats { display: flex; gap: 2rem; }
+        .stat-item { text-align: right; }
+        .stat-value { font-size: 1.5rem; display: block; font-weight: 400; }
+        .artifacts-grid { max-width: 1400px; margin: 0 auto 4rem; padding: 0 2rem; column-count: 4; column-gap: 2rem; }
+        .artifact-card { cursor: pointer; break-inside: avoid; display: block; width: 100%; margin-bottom: 2rem; }
+        .artifact-image-container { overflow: hidden; margin-bottom: 1rem; }
+        .artifact-image { width: 100%; height: auto; display: block; transition: transform 0.5s ease; }
+        .artifact-card:hover .artifact-image { transform: scale(1.05); }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 2000; overflow-y: auto; }
+        .modal-content { background: white; max-width: 1100px; margin: 2rem auto; position: relative; }
+        .modal-body { display: grid; grid-template-columns: 1.2fr 1fr; }
+        .modal-image-section { background: var(--gray-light); padding: 2rem; display: flex; flex-direction: column; gap: 1rem; }
+        .modal-main-image { width: 100%; height: auto; object-fit: contain; flex-grow: 1; }
+        .modal-thumbnails { display: flex; gap: 0.5rem; justify-content: center; }
+        .modal-thumb { width: 60px; height: 60px; object-fit: cover; cursor: pointer; border: 2px solid transparent; transition: border-color 0.3s; }
+        .modal-thumb.active { border-color: var(--accent); }
+        .modal-info-section { padding: 3rem; max-height: 80vh; overflow-y: auto; }
+        .detail-section { margin-top: 1.5rem; }
+        .detail-section h4 { border-bottom: 1px solid #eee; padding-bottom: 0.5rem; margin-bottom: 0.5rem; }
+        #whitepaper { padding: 4rem 2rem; background: var(--gray-light); }
+        .whitepaper-content { max-width: 800px; margin: 0 auto; }
+        .whitepaper-content h2 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; }
+        .whitepaper-content h3 { font-size: 1.75rem; margin-top: 2rem; margin-bottom: 1rem; border-bottom: 1px solid var(--gray-medium); padding-bottom: 0.5rem; }
+        .whitepaper-content h4 { font-size: 1.25rem; font-weight: 500; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+        .whitepaper-content p { margin-bottom: 1rem; line-height: 1.8; }
+        .whitepaper-content ul { list-style-position: inside; padding-left: 1rem; margin-bottom: 1rem; }
+        .whitepaper-content li { margin-bottom: 0.5rem; }
+        footer { background: var(--primary); color: white; padding: 3rem 2rem; margin-top: 4rem; text-align: center; }
+        .footer-logo { margin-bottom: 1.5rem; }
+        .footer-logo-image { height: 60px; width: auto; }
+        @media (max-width: 1024px) { .artifacts-grid { column-count: 3; } }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .auction-header { flex-direction: column; align-items: center; gap: 2rem; }
+            .artifacts-grid { column-count: 2; }
+            .modal-body { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 480px) { .artifacts-grid { column-count: 1; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">
+                    <img src="/logo.svg" alt="Shenbury Logo" class="logo-image">
+                    <span class="logo-chinese">神堡</span> Shenbury
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="#auctions">Collection</a>
+                <a href="whitepaper.html">Whitepaper</a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="jin-badge"><img src="/favicon.svg" alt="AI Agents Logo"><span>Verified by AI Agents</span></div>
+            <h1>The Shenbury Collection</h1>
+            <p>Shenbury is an AI-driven provenance network that authenticates and tokenizes museum-grade Chinese imperial ceramics — unlocking a historically illiquid $60B+ art market for on-chain investors.</p>
+            <div class="hero-buttons">
+                <a href="whitepaper.html" class="hero-cta primary">Read the Whitepaper</a>
+            </div>
+        </div>
+    </section>
+    <div class="auction-header" id="auctions">
+        <h2>The Collection</h2>
+        <div class="auction-stats">
+            <div class="stat-item"><span class="stat-value" id="total-lots">0</span><span>Total Lots</span></div>
+            <div class="stat-item"><span class="stat-value" id="total-value">$0</span><span>Total Value (USD)</span></div>
+        </div>
+    </div>
+    <div class="artifacts-grid" id="artifacts-grid"></div>
+    <div class="modal" id="artifact-modal"></div>
+    <footer>
+        <div class="footer-logo">
+            <img src="/logo.svg" alt="Shenbury Logo" class="footer-logo-image">
+        </div>
+        <div class="footer-bottom">&copy; 2025 Shenbury 神堡. All rights reserved.</div>
+    </footer>
+    <script src="js/relics.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const artifacts = window.relics;
+            const grid = document.getElementById('artifacts-grid');
+            const modal = document.getElementById('artifact-modal');
+            const currencyFormatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0 });
+            
+            const openModal = (id) => {
+                const artifact = artifacts.find(a => a.id === id);
+                if (!artifact) return;
+
+                const thumbnailsHTML = artifact.images.map((img, index) => 
+                    `<img src="${img}" class="modal-thumb ${index === 0 ? 'active' : ''}" data-src="${img}">`
+                ).join('');
+
+                modal.innerHTML = `
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="modal-image-section">
+                                <img src="${artifact.images[0]}" class="modal-main-image">
+                                <div class="modal-thumbnails">${thumbnailsHTML}</div>
+                            </div>
+                            <div class="modal-info-section">
+                                <h2>${artifact.title}</h2><p>${artifact.chinese}</p>
+                                <div class="detail-section"><h4>Description</h4><p style="white-space: pre-wrap;">${artifact.description}</p></div>
+                                <div class="detail-section"><h4>Provenance</h4><p style="white-space: pre-wrap;">${artifact.provenance}</p></div>
+                                <div class="detail-section"><h4>Condition</h4><p style="white-space: pre-wrap;">${artifact.condition}</p></div>
+                                <div class="detail-section"><h4>Dimensions</h4><p style="white-space: pre-wrap;">${artifact.dimensions}</p></div>
+                                <div class="detail-section"><h4>Literature</h4><p style="white-space: pre-wrap;">${artifact.literature}</p></div>
+                                <div class="detail-section"><h4>Technical Notes</h4><p style="white-space: pre-wrap;">${artifact.technicalNotes}</p></div>
+                                <div class="detail-section"><h4>Cultural Significance</h4><p style="white-space: pre-wrap;">${artifact.culturalSignificance}</p></div>
+                            </div>
+                        </div>
+                    </div>`;
+                modal.style.display = 'block';
+
+                const thumbnails = modal.querySelectorAll('.modal-thumb');
+                thumbnails.forEach(thumb => {
+                    thumb.addEventListener('click', () => {
+                        modal.querySelector('.modal-main-image').src = thumb.dataset.src;
+                        thumbnails.forEach(t => t.classList.remove('active'));
+                        thumb.classList.add('active');
+                    });
+                });
+            };
+            const renderGrid = () => {
+                grid.innerHTML = artifacts.map(artifact => `
+                    <div class="artifact-card" data-id="${artifact.id}">
+                        <div class="artifact-image-container"><img src="${artifact.thumbnail}" class="artifact-image"></div>
+                        <div class="artifact-info">
+                            <div>Lot ${artifact.lotNumber}</div>
+                            <h3>${artifact.title}</h3>
+                            <div>${currencyFormatter.format(artifact.currentBid)}</div>
+                            <div>Estimate: ${currencyFormatter.format(artifact.estimate.low)} - ${currencyFormatter.format(artifact.estimate.high)}</div>
+                        </div>
+                    </div>`).join('');
+            };
+            grid.addEventListener('click', e => {
+                const card = e.target.closest('.artifact-card');
+                if (card) openModal(Number(card.dataset.id));
+            });
+            modal.addEventListener('click', e => {
+                if (e.target.classList.contains('modal')) modal.style.display = 'none';
+            });
+            renderGrid();
+            document.getElementById('total-lots').textContent = artifacts.length;
+            document.getElementById('total-value').textContent = currencyFormatter.format(artifacts.reduce((s, a) => s + a.currentBid, 0));
+        });
+    </script>
+</body>
+</html>

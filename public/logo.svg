@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-2, .cls-5 {
+        fill: #111827;
+      }
+
+      .cls-2, .cls-4 {
+        font-family: CormorantGaramond-Bold, 'Cormorant Garamond';
+        font-size: 255.9px;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        stroke: gold;
+      }
+
+      .cls-5, .cls-4 {
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #020202;
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="-193.1" cy="204.9" fx="-193.1" fy="204.9" r="2.7" gradientTransform="translate(13677 -14183) scale(70)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="gold" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#daa520" stop-opacity=".7"/>
+    </radialGradient>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.10, SVG Export Plug-In . SVG Version: 1.2.0 Build 236)  -->
+  <g>
+    <g id="Layer_1">
+      <g id="Layer_1-2" data-name="Layer_1">
+        <circle class="cls-5" cx="250" cy="250" r="245"/>
+        <circle class="cls-1" cx="250" cy="250" r="190.6"/>
+        <g class="cls-3">
+          <text class="cls-2" transform="translate(184.7 334.9)"><tspan x="0" y="0">S</tspan></text>
+          <text class="cls-4" transform="translate(184.7 334.9)"><tspan x="0" y="0">S</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

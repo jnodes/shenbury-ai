@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shenbury Whitepaper v1.1 — Research Edition</title>
+    <style>
+        :root {
+            --primary: #000;
+            --secondary: #fff;
+            --accent: #c9302c;
+            --gray-light: #f8f8f8;
+            --gray-medium: #e5e5e5;
+            --text-primary: #000;
+            --text-secondary: #666;
+            --font-primary: 'Cormorant Garamond', serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            background: var(--secondary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-weight: 300;
+        }
+        
+        h1, h2, h3, h4 {
+            font-weight: 300;
+            letter-spacing: -0.02em;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid var(--gray-medium);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0 2rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .logo a {
+            text-decoration: none;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .logo .logo-chinese {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        
+        .logo-image {
+            height: 40px;
+            width: auto;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+        }
+        
+        .whitepaper-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .whitepaper-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--gray-medium);
+        }
+        
+        .whitepaper-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .whitepaper-meta {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .whitepaper-content {
+            font-size: 1.1rem;
+        }
+        
+        .whitepaper-content h2 {
+            font-size: 1.75rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--gray-medium);
+            padding-bottom: 0.5rem;
+        }
+        
+        .whitepaper-content h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .whitepaper-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .whitepaper-content ul, .whitepaper-content ol {
+            list-style-position: inside;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .whitepaper-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .whitepaper-content code {
+            background: var(--gray-light);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        
+        .whitepaper-content pre {
+            background: var(--gray-light);
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        
+        .whitepaper-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+        
+        .whitepaper-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        .whitepaper-content table, .whitepaper-content th, .whitepaper-content td {
+            border: 1px solid var(--gray-medium);
+        }
+        
+        .whitepaper-content th, .whitepaper-content td {
+            padding: 0.5rem;
+            text-align: left;
+        }
+        
+        .whitepaper-content th {
+            background: var(--gray-light);
+        }
+        
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        
+        .footer-logo {
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-logo-image {
+            height: 60px;
+            width: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .whitepaper-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">
+                    <img src="/logo.svg" alt="Shenbury Logo" class="logo-image">
+                    <span class="logo-chinese">神堡</span> Shenbury
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/">Collection</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="whitepaper-container">
+        <div class="whitepaper-header">
+            <h1>Shenbury Whitepaper v1.1 — Research Edition</h1>
+            <div class="whitepaper-meta">
+                <p><strong>Author:</strong> Shenbury Labs</p>
+                <p><strong>Contact:</strong> shenbury.com</p>
+                <p><strong>Version:</strong> v1.1 (Research Edition)</p>
+                <p><strong>Date:</strong> 2025</p>
+            </div>
+        </div>
+        
+        <div class="whitepaper-content">
+            <h2>Abstract</h2>
+            <p><strong>Shenbury</strong> introduces a decentralized, self-contained intelligence infrastructure for verifying and tokenizing fine art and historical artifacts. At its core, Shenbury's <strong>AI Agent Swarm</strong> combines local vector reasoning, closed-loop learning, and on-chain provenance. Each agent operates independently using a fully local stack — database, embedding, and learning layers — with no reliance on external APIs or cloud systems.</p>
+            <p>This document formalizes Shenbury's mathematical foundations, learning dynamics, and provenance chain integration.</p>
+
+            <h2>1. Problem Statement</h2>
+            <p>The global art market exceeds $60 billion annually but remains structurally illiquid and opaque. Provenance — the verified history of ownership and authenticity — dictates value but is hindered by centralized trust models and subjective expertise.</p>
+            <p>Let:</p>
+            <pre>V<sub>a</sub> = f(P<sub>a</sub>, A<sub>a</sub>, R<sub>a</sub>)</pre>
+            <p>where:</p>
+            <ul>
+                <li>V<sub>a</sub> is asset value,</li>
+                <li>P<sub>a</sub> provenance certainty,</li>
+                <li>A<sub>a</sub> authentication confidence,</li>
+                <li>R<sub>a</sub> reputation of verification authority.</li>
+            </ul>
+            <p>For art assets, P<sub>a</sub> and A<sub>a</sub> are highly uncertain, resulting in suppressed liquidity and inflated risk premiums. Shenbury increases P<sub>a</sub> and A<sub>a</sub> via decentralized, self-learning AI agents operating under verifiable cryptographic consensus.</p>
+
+            <h2>2. System Architecture Overview</h2>
+            <p>The Shenbury stack integrates five primary layers:</p>
+            <ol>
+                <li><strong>AgentDB</strong> — Local high-performance vector database</li>
+                <li><strong>ReasoningBank</strong> — Closed-loop reinforcement and knowledge synthesis</li>
+                <li><strong>Agentic-Flow</strong> — Multi-agent orchestration and adaptive task allocation</li>
+                <li><strong>Claude-Flow</strong> — Distributed memory and swarm synchronization</li>
+                <li><strong>Shenbury Provenance Chain</strong> — Blockchain registry of authenticated artifacts</li>
+            </ol>
+            <p>Data flows from raw inputs (imaging, spectroscopy, documentation) through the agent stack into authenticated on-chain records.</p>
+
+            <h3>Architecture Diagram</h3>
+            <img src="/resources/shenbury stack architecture.png" alt="Shenbury Stack Architecture">
+
+            <h2>3. AgentDB — Local Vector Intelligence Core</h2>
+            <p>AgentDB provides semantic memory and retrieval operations at sub-millisecond latency. Each item x<sub>i</sub> is embedded as a vector v<sub>i</sub> ∈ ℝ<sup>384</sup> using a local transformer model E(⋅):</p>
+            <pre>v<sub>i</sub> = E(x<sub>i</sub>)</pre>
+            <p>Similarity retrieval uses cosine similarity with HNSW indexing:</p>
+            <pre>S(q, x<sub>i</sub>) = (q ⋅ v<sub>i</sub>) / (||q|| ||v<sub>i</sub>||)</pre>
+            <p>Vector quantization achieves compression defined by:</p>
+            <pre>E<sub>c</sub> = M<sub>raw</sub> / M<sub>quantized</sub>, E<sub>c</sub> ∈ [4, 32]</pre>
+            <p>where E<sub>c</sub> denotes compression efficiency enabling 4–32× memory reduction while preserving semantic fidelity.</p>
+            <p>AgentDB is optimized for local operation with no external dependencies, providing production-ready performance on standard hardware.</p>
+
+            <h2>4. ReasoningBank — Closed-Loop Learning System</h2>
+            <p>ReasoningBank converts inference into a continuous self-improvement process. For each task instance indexed by t, with input x<sub>t</sub>, prediction y<sub>t</sub>, and observed outcome ŷ<sub>t</sub>, agent belief parameters θ<sub>t</sub> update as:</p>
+            <pre>θ<sub>t+1</sub> = θ<sub>t</sub> + η ∇<sub>θ</sub> L(f<sub>θ</sub>(x<sub>t</sub>), ŷ<sub>t</sub>)</pre>
+            <p>where η is an adaptive learning rate and L the loss.</p>
+            <p>Confidence scores C<sub>t</sub> evolve via an exponential moving average:</p>
+            <pre>C<sub>t+1</sub> = α C<sub>t</sub> + (1 - α) Δ<sub>t</sub></pre>
+            <p>with Δ<sub>t</sub> the observed performance delta and α the retention coefficient.</p>
+            <p>This closed feedback loop enables agents to autonomously refine heuristics, update reliability weights, and extract reusable knowledge components for future tasks.</p>
+
+            <h2>5. Memory Retrieval and Weighted Selection</h2>
+            <p>Memory retrieval selects memory items x<sub>i</sub> from agent memory M via a weighted objective:</p>
+            <pre>R(q) = arg max<sub>x<sub>i</sub> ∈ M</sub> [λ<sub>s</sub> S(q, x<sub>i</sub>) + λ<sub>r</sub> R<sub>i</sub> + λ<sub>t</sub> e<sup>-Δt<sub>i</sub> / τ</sup> + λ<sub>d</sub> D<sub>i</sub>]</pre>
+            <p>Where:</p>
+            <ul>
+                <li>S(q, x<sub>i</sub>) — semantic similarity between query q and memory vector v<sub>i</sub></li>
+                <li>R<sub>i</sub> — reliability score from ReasoningBank for memory x<sub>i</sub></li>
+                <li>e<sup>-Δt<sub>i</sub> / τ</sup> — recency decay (Δt<sub>i</sub> = time since observation)</li>
+                <li>D<sub>i</sub> — diversity factor to reduce redundant retrievals</li>
+                <li>λ<sub>⋅</sub> — tunable weights</li>
+            </ul>
+            <p>This formulation balances relevance, freshness, and trustworthiness to produce robust retrievals for downstream reasoning.</p>
+
+            <h2>6. Agentic-Flow — Multi-Agent Orchestration</h2>
+            <p>Let A = {a<sub>1</sub>, a<sub>2</sub>, …, a<sub>n</sub>} denote the agent population. Each agent follows a policy π mapped to actions for verification subtasks. The collective objective J(π) is:</p>
+            <pre>J(π) = 𝔼<sub>a<sub>i</sub> ∼ A</sub>[R(a<sub>i</sub>, π)]</pre>
+            <p>Local policy updates follow a gradient-ascent procedure:</p>
+            <pre>π<sub>t+1</sub> = π<sub>t</sub> + η<sub>π</sub> ∇<sub>π</sub> J(π)</pre>
+            <p>Agentic-Flow enables dynamic specialization where agents compete and collaborate, adjusting roles based on confidence and observed outcomes. Task allocation is emergent and data-driven, minimizing human intervention.</p>
+
+            <h2>7. Claude-Flow — Distributed Memory Synchronization</h2>
+            <p>Claude-Flow encodes long-term memory synchronization as diffusion over a trust-weighted memory graph G = (A, E), with agent memories m<sub>i</sub>. Memory propagation is:</p>
+            <pre>m<sub>i</sub><sup>t+1</sup> = m<sub>i</sub><sup>t</sup> + Σ<sub>j ∈ 𝒩(i)</sub> w<sub>ij</sub>(m<sub>j</sub><sup>t</sup> - m<sub>i</sub><sup>t</sup>)</pre>
+            <p>where w<sub>ij</sub> reflects trust/reliability between agents i and j. This process leads to consensus formation while preserving local specialization.</p>
+
+            <h2>8. Provenance Chain</h2>
+            <p>Every authenticated verification produces a cryptographic commitment recorded on the Shenbury provenance ledger. For event t:</p>
+            <pre>h<sub>t</sub> = H(A<sub>t</sub>, D<sub>t</sub>, C<sub>t</sub>)</pre>
+            <ul>
+                <li>A<sub>t</sub>: artifact identifier and metadata</li>
+                <li>D<sub>t</sub>: diagnostic dataset (images, spectra, analytics)</li>
+                <li>C<sub>t</sub>: consensus confidence from the agent swarm</li>
+            </ul>
+            <p>The hash h<sub>t</sub> is anchored on-chain alongside human-readable metadata and tokenized ownership records, enabling immutable provenance for RWAs.</p>
+
+            <h2>9. Local Embedding and Efficiency</h2>
+            <p>Embeddings are derived locally using the <strong>Xenova/all-MiniLM-L6-v2</strong> transformer:</p>
+            <pre>E(x) = Transformer(x; θ<sub>E</sub>) ∈ ℝ<sup>384</sup></pre>
+            <p>After a one-time model download (~23MB), all embedding computations execute offline, eliminating per-query costs and external dependencies.</p>
+            <p>AgentDB's HNSW index coupled with vector quantization provides sub-millisecond retrievals and high throughput on commodity hardware.</p>
+
+            <h2>10. Token Utility and Governance</h2>
+            <p><strong>$SHBY functions:</strong></p>
+            <ul>
+                <li><strong>Governance:</strong> protocol changes, parameter tuning (λ weights, decay constants), and roadmap decisions</li>
+                <li><strong>Access:</strong> paid access to authenticated provenance records and enriched datasets</li>
+                <li><strong>Staking & Rewards:</strong> staking for computational verification nodes and reward distribution to agents (or operators) contributing high-confidence verifications</li>
+                <li><strong>Incentives:</strong> submission bounties for authenticated artifacts and economic alignment with auction house partners</li>
+            </ul>
+            <p>Token economics follow the previously defined ICO and performance package schedule; governance can adjust parameters via DAO voting.</p>
+
+            <h2>11. Security, Privacy & Trust Considerations</h2>
+            <ul>
+                <li><strong>Local-First Sovereignty:</strong> by design, no external APIs are required for embeddings or primary reasoning, reducing attack surface and data leakage risk.</li>
+                <li><strong>Auditability:</strong> agent logs, diagnostic data, and consensus weights are auditable by governance and third-party experts.</li>
+                <li><strong>Human-in-the-Loop for Edge Cases:</strong> agents flag low-confidence or conflicting results for expert review before on-chain anchoring.</li>
+                <li><strong>Insurance & Custody:</strong> Shenbury will adopt custodial best practices and partner with auction houses and insurers for high-value asset transfers.</li>
+            </ul>
+
+            <h2>12. Roadmap</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th align="right">Phase</th>
+                        <th>Milestone</th>
+                        <th align="center">Timeline</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="right">Q4 2025</td>
+                        <td>DAO formation, token deployment, initial art onboarding</td>
+                        <td align="center">In progress</td>
+                    </tr>
+                    <tr>
+                        <td align="right">Q1 2026</td>
+                        <td>AgentDB + ReasoningBank open beta release</td>
+                        <td align="center">Planned</td>
+                    </tr>
+                    <tr>
+                        <td align="right">Q2 2026</td>
+                        <td>Full AI Swarm ↔ Provenance Chain integration</td>
+                        <td align="center">Planned</td>
+                    </tr>
+                    <tr>
+                        <td align="right">Q3 2026</td>
+                        <td>Auction house partnerships and marketplace launch</td>
+                        <td align="center">Planned</td>
+                    </tr>
+                    <tr>
+                        <td align="right">Q4 2026</td>
+                        <td>RWA category expansion (paintings, sculpture, manuscripts)</td>
+                        <td align="center">Future scope</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>13. Legal Summary</h2>
+            <p>$SHBY tokens are non-securitized governance assets and do not convey ownership claims to physical artifacts. Token sales are final and governed by the Shenbury DAO LLC operating agreement. Authentication outputs are informational and recommended to be validated by institutional partners as part of standard due diligence.</p>
+
+            <h2>14. Conclusion</h2>
+            <p>Shenbury establishes a new computational paradigm: self-contained AI agents that learn, reason, and preserve institutional memory without external dependencies. By bringing cryptographically verifiable provenance to high-value cultural assets, Shenbury unlocks latent liquidity in the art market and enables secure, on-chain participation in Real World Assets.</p>
+
+            <div class="whitepaper-footer">
+                <p><strong>Author:</strong> Shenbury Labs</p>
+                <p>© 2025 Shenbury Labs — shenbury.com</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-logo">
+            <img src="/logo.svg" alt="Shenbury Logo" class="footer-logo-image">
+        </div>
+        <div class="footer-bottom">&copy; 2025 Shenbury 神堡. All rights reserved.</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "name": "shenbury",
+  "version": "1.0.0",
+  "description": "Shenbury - AI Agent Swarm Technologies for Art Authentication | Local Vector Database & Memory Systems",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "npx serve public",
+    "dev": "npx serve public -l 3000"
+  },
+  "keywords": [
+    "shenbury",
+    "chinese-ceramics",
+    "auction",
+    "web3",
+    "erc-404",
+    "nft",
+    "art",
+    "provenance"
+  ],
+  "author": "Shenbury Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnodes/shenbury.git"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
