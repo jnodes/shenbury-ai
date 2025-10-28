@@ -29,8 +29,8 @@ Shenbury introduces a decentralized, self-contained intelligent infrastructure f
   名稱：神堡來源代幣
 - **Symbol**: SHBY
   符號：SHBY
-- **Standard**: TRC-404 (Hybrid TRC-20/TRC-721)
-  標準：TRC-404（混合TRC-20/TRC-721）
+- **Standard**: To be determined by MetaDAO
+  標準：由MetaDAO確定
 - **Total Supply**: 25,800,000 SHBY
   總供應量：25,800,000 SHBY
 - **Conversion Rate**: 10,000 SHBY = 1 NFT
