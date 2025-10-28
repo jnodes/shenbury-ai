@@ -209,7 +209,7 @@ The DAO shall be governed by decentralized mechanisms implemented through smart 
 The following parameters shall govern the DAO's operations:
 
 1. **Voting Period**: Governance Proposals shall remain open for voting for a period of 7 days.
-2. **Quorum**: A minimum of 10% of total SHBY Tokens must participate in a vote for it to be valid.
+2. **Quorum**: A minimum of 15% of total SHBY Tokens must participate in a vote for it to be valid.
 3. **Approval Threshold**: A simple majority (50% + 1) of votes cast is required for approval of most Governance Proposals.
 4. **Special Proposals**: Certain proposals may require higher approval thresholds as determined by Governance Proposal.
 
