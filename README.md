@@ -1,178 +1,134 @@
-# Shenbury Collection
+# Shenbury: AI Agent Swarm for Art Authentication 神堡：藝術鑑定的AI代理群
 
-## Overview
+## Project Overview 項目概述
 
-Shenbury is an AI-driven provenance network that authenticates and tokenizes museum-grade Chinese imperial ceramics — unlocking a historically illiquid $60B+ art market for on-chain investors.
+Shenbury introduces a decentralized, self-contained intelligent infrastructure for authenticating and tokenizing fine art and historical artifacts. At its core is the **AI Agent Swarm**, combining local vector reasoning, closed-loop learning, and on-chain provenance. Each agent operates independently with a fully local stack—database, embeddings, and learning layer—without reliance on external APIs or cloud systems.
 
-By combining multi-agent AI verification with tokenized Real World Assets (RWAs), Shenbury enables global collectors to hold verifiable stakes in physical masterpieces backed by centuries of cultural heritage.
+神堡引入了一個去中心化的自包含智能基礎設施，用於驗證和代幣化美術品和歷史文物。其核心是**AI代理群**，結合了本地向量推理、閉環學習和鏈上來源。每個代理都使用完全本地的堆棧獨立運行——數據庫、嵌入和學習層——不依賴外部API或雲系統。
 
-## The Problem
+**[English Version](README.md) | [中文版](README-zh.md)**
 
-The global art market is a multi-billion dollar industry but remains one of the least liquid and most opaque asset classes. Provenance — the ability to verify authenticity and ownership history — has long been the industry's Achilles' heel. Even elite collectors and auction houses rely on subjective human expertise, leading to fraud risk, value distortion, and limited accessibility.
+## Key Features 核心功能
 
-Meanwhile, the Real World Asset (RWA) sector is scaling toward a projected multi-trillion-dollar market, yet fine art remains excluded due to authentication bottlenecks and the absence of a trustless provenance infrastructure.
+### AI Agent Swarm AI代理群
+- **Local Execution**: All AI processing runs locally without cloud dependencies 本地執行：所有AI處理都在本地運行，無需雲依賴
+- **Self-Contained Agents**: Independent operation with embedded knowledge bases 自包含代理：具有嵌入式知識庫的獨立操作
+- **Specialized Roles**: Dedicated agents for imaging, spectroscopy, and documentation analysis 專業角色：專門處理成像、光譜學和文檔分析的代理
+- **Closed-Loop Learning**: Continuous improvement through reinforcement feedback 閉環學習：通過強化反饋持續改進
 
-## The Solution
+### Technical Architecture 技術架構
+- **AgentDB**: Local vector database with HNSW indexing and 4-32x compression AgentDB：具有HNSW索引和4-32倍壓縮的本地向量數據庫
+- **ReasoningBank**: Closed-loop learning system inspired by DeepMind's framework ReasoningBank：受DeepMind框架啟發的閉環學習系統
+- **Local Embeddings**: transformers.js with Xenova/all-MiniLM-L6-v2 model (384-dimensional vectors) 本地嵌入：使用Xenova/all-MiniLM-L6-v2模型的transformers.js（384維向量）
+- **No External Dependencies**: Fully autonomous operation without cloud services 無外部依賴：無雲服務的完全自主操作
 
-Shenbury introduces a proprietary AI Agent Swarm, a decentralized authentication system that validates artworks with microscopic and historical precision.
+### Tokenomics 代幣經濟學
+- **Token**: SHBY (Shenbury Provenance Token) 代幣：SHBY（神堡來源代幣）
+- **Total Supply**: 1,000,000,000 SHBY 總供應量：1,000,000,000 SHBY
+- **No Presale**: Tokens minted and managed by MetaDAO 無預售：代幣由MetaDAO鑄造和管理
+- **Utility**: Governance, verification discounts, and ecosystem access 效用：治理、驗證折扣和生態系統訪問
 
-Each AI agent acts as a virtual expert specializing in a specific domain:
+## Business Model 商業模式
 
-- **Visual Pattern Recognition Agent** — analyzes crackle patterns, glaze color spectra, and tool marks unique to each dynasty.
-- **Historical Database Agent** — cross-references global museum collections, auction records, and excavation reports to identify known forgery techniques.
-- **Chemical Composition Agent** — verifies glaze and clay composition consistent with authentic kiln sites and dynastic material science.
-- **Provenance Chain Agent** — confirms ownership history through blockchain-based records and historical documentation.
+Shenbury's sustainable business model is designed to capture value from the $60B+ global art market while building a comprehensive verification ecosystem. The revenue model is diversified across multiple streams to ensure long-term viability and growth.
 
-Findings from each agent are synthesized into a single authentication consensus, permanently recorded on-chain. This process ensures immutable provenance and enables verified tokenization of physical assets.
+神堡的可持續商業模式旨在從600億美元以上的全球藝術市場中獲取價值，同時建立全面的驗證生態系統。收入模式多元化，以確保長期可行性和增長。
 
-## The Shenbury Collection
+### Revenue Streams 收入來源
+1. **Pay-Per-Verification**: AI verification of individual artifacts, priced from $5,000 to $100,000+ based on complexity and value range. 按次驗證：對單個文物進行AI驗證，費用根據複雜性和價值範圍從5,000美元到100,000美元以上不等。
+2. **Subscription Services**: Monthly/annual verification packages for galleries, auction houses, and collectors, priced from $500/month to $100,000/year. 訂閱服務：為畫廊、拍賣行和收藏家提供的月度/年度驗證套餐，價格從每月500美元到100,000美元不等。
+3. **Enterprise Licensing**: API access and white-label solutions for large institutions, annual licensing fees from $100,000 to $5M+. 企業授權：為大型機構提供的API訪問和白標解決方案，年度授權費從100,000美元到500萬美元以上不等。
+4. **Data Monetization**: Sale of anonymized aggregated data to research institutions and market analytics firms, $5,000 to $500,000 per report. 數據貨幣化：將匿名聚合數據出售給研究機構和市場分析公司，每份報告5,000美元到500,000美元不等。
+5. **Token-Gated Services**: Discounts and early access privileges for SHBY token holders. 代幣門控服務：為SHBY代幣持有者提供折扣和早期訪問權限。
 
-The Shenbury Collection represents one of the most significant private holdings of imperial Chinese ceramics, valued between $650–700 million. It includes museum-grade works spanning multiple dynasties:
+### Market Opportunity 市場機會
+The global art market exceeds $60B with less than 5% digitization and verification services penetration. Shenbury targets the high-end market, focusing on artifacts valued over $1M. 全球藝術市場規模超過600億美元，數字化和驗證服務滲透率低於5%。神堡定位於高端市場，專注於價值超過100萬美元的文物。
 
-- **Song Dynasty (960–1279 AD)**: Ru ware pieces — the rarest and most revered ceramics in Chinese history.
-- **Yuan Dynasty (1271–1368 AD)**: Blue-and-white porcelain examples marking the innovation that reshaped global ceramic trade.
-- **Ming Dynasty (1368–1644 AD)**: Cloisonné masterpieces from the Xuande and Jingtai periods, showcasing imperial artistry at its zenith.
+### Competitive Advantages 競爭優勢
+- **Technology Leadership**: Local AI agent swarms provide unparalleled performance and privacy 技術領先：本地AI代理群提供無與倫比的性能和隱私
+- **Cost Efficiency**: Autonomous operation reduces verification costs by over 90% 成本效益：自主運行將驗證成本降低90%以上
+- **Scalability**: No cloud dependencies enable infinite scaling 可擴展性：無雲依賴實現無限擴展
+- **Trust**: On-chain provenance provides immutable verification records 信任：鏈上來源提供不可篡改的驗證記錄
 
-Each artifact is a tangible record of human history — a masterpiece that embodies artistic, cultural, and technological progress over centuries.
+### Revenue Projections 收入預測
+- **Year 1**: $10M 第1年：1000萬美元
+- **Year 2**: $30M 第2年：3000萬美元
+- **Year 3**: $100M 第3年：1億美元
+- **Year 5**: $500M+ 第5年：5億美元以上
 
-## Project Structure
+## DAO Governance DAO治理
 
+Shenbury operates as a decentralized autonomous organization (DAO) governed by smart contracts and community consensus. The DAO does not own any physical assets, including works of art. All art collections and physical assets remain the property of their respective owners.
+
+神堡作為一個由智能合約和社區共識治理的去中心化自治組織(DAO)運營。DAO不擁有任何實物資產，包括藝術品。所有藝術收藏和實物資產仍為其各自所有者擁有。
+
+### DAO Governance Agreement DAO治理協議
+Purchasers agree to the Shenbury DAO LLC's operating agreement governing the project. The complete operating agreement is available in the [SHENBURY-DAO-OPERATING-AGREEMENT.md](SHENBURY-DAO-OPERATING-AGREEMENT.md) file. 購買者同意管轄項目的神堡DAO LLC營運協議。完整的營運協議可在[SHENBURY-DAO-OPERATING-AGREEMENT.md](SHENBURY-DAO-OPERATING-AGREEMENT.md)文件中找到。
+
+[中文版協議](SHENBURY-DAO-OPERATING-AGREEMENT-ZH.md)
+
+## Quick Start 快速開始
+
+### Prerequisites 前提條件
+- Node.js (v14 or higher) Node.js (v14或更高版本)
+- npm (v6 or higher) npm (v6或更高版本)
+
+### Installation 安裝
+```bash
+# Clone the repository 克隆倉庫
+git clone https://github.com/jnodes/shenbury-ai.git
+cd shenbury-ai
+
+# Install dependencies 安裝依賴
+npm install
+```
+
+### Running the Application 運行應用程序
+```bash
+# Start the local development server 啟動本地開發服務器
+npm run dev
+```
+
+Visit `http://localhost:3000` to view the application. 訪問`http://localhost:3000`查看應用程序。
+
+## Project Structure 項目結構
 ```
 shenbury-main/
-├── public/                     # Frontend assets
-│   ├── index.html              # Main auction page
-│   └── index.html              # Main auction and token launch page
-│   ├── favicon.svg             # Project favicon
-│   ├── assets/                 # CSS, images, and other assets
-│   │   ├── css/                # Stylesheets
-│   │   └── images/             # Artifact images and other media
-│   └── js/                     # JavaScript files
-│       └── relics.js           # Static artifact data
-├── resources/              # Documentation and additional resources
-│   ├── Shenbury WP.pdf     # Whitepaper
-│   └── claude-flow-memory bank.txt  # AI agent swarm documentation
-├── package.json            # Project dependencies and scripts
-└── vercel.json             # Deployment configuration
+├── public/                 # Static assets 靜態資源
+│   ├── assets/            # Images and media 圖像和媒體
+│   ├── js/                # JavaScript files JavaScript文件
+│   ├── index.html         # Main HTML file 主HTML文件
+│   ├── index-zh.html      # Chinese version of main HTML file 主HTML文件中文版
+│   ├── whitepaper.html    # Whitepaper HTML file 白皮書HTML文件
+│   ├── whitepaper-zh.html # Chinese version of whitepaper HTML file 白皮書HTML文件中文版
+│   └── favicon.svg        # Favicon 圖標
+├── README.md              # Project documentation 項目文檔
+├── README-zh.md           # Chinese version of project documentation 項目文檔中文版
+├── SHENBURY-DAO-OPERATING-AGREEMENT.md # DAO operating agreement DAO營運協議
+└── SHENBURY-DAO-OPERATING-AGREEMENT-ZH.md # Chinese version of DAO operating agreement DAO營運協議中文版
 ```
 
-## Token & Economics
+## Documentation 文檔
 
-### Shenbury Provenance Token ($SHBY)
+- **[Whitepaper](public/whitepaper.html)** - Technical documentation and system architecture 白皮書 - 技術文檔和系統架構
+- **[Whitepaper (Chinese)](public/whitepaper-zh.html)** - Technical documentation and system architecture (Chinese) 白皮書 - 技術文檔和系統架構（中文）
+- **[DAO Operating Agreement](SHENBURY-DAO-OPERATING-AGREEMENT.md)** - Governance and operational framework DAO營運協議 - 治理和運營框架
+- **[DAO Operating Agreement (Chinese)](SHENBURY-DAO-OPERATING-AGREEMENT-ZH.md)** - Governance and operational framework (Chinese) DAO營運協議 - 治理和運營框架（中文）
 
-The SHBY token powers DAO governance, liquidity provisioning, and access to authenticated asset streams.
+## Terms & Conditions 條款和條件
 
-- **Minimum Raise**: $5,000,000
-- **Monthly Team Budget**: $800,000 (≤ 1/6 of raise)
-- **Performance Package**: 12.9M SHBY
-- **Unlocks**: 5 tranches at 2x, 4x, 8x, 16x, and 32x ICO price
-- **Lock Period**: 18-month minimum lock period
-- **Price Verification**: Unlock price verified via 3-month TWAP
+By accessing or using Shenbury, you agree to be bound by the terms and conditions set forth in this repository. The project is provided "as is" without warranty of any kind. 通過訪問或使用神堡，您同意受本倉庫中規定的條款和條件約束。該項目"按原樣"提供，不提供任何形式的保證。
 
-Funds will support legal structuring, AI infrastructure scaling, insurance and custodial audits, and auction house partnerships for verified asset liquidity.
+### Disclaimer 免責聲明
+Shenbury is an experimental project and should not be considered investment advice. The value of digital assets is highly volatile and may result in significant financial losses. 神堡是一個實驗性項目，不應被視為投資建議。數字資產的價值高度波動，可能導致重大財務損失。
 
-## Business Model & Revenue Streams
+### DAO Governance Agreement DAO治理協議
+Purchasers agree to the Shenbury DAO LLC's operating agreement governing the project. The complete operating agreement is available in the [SHENBURY-DAO-OPERATING-AGREEMENT.md](SHENBURY-DAO-OPERATING-AGREEMENT.md) file. 購買者同意管轄項目的神堡DAO LLC營運協議。完整的營運協議可在[SHENBURY-DAO-OPERATING-AGREEMENT.md](SHENBURY-DAO-OPERATING-AGREEMENT.md)文件中找到。
 
-### Core Revenue Model: Verification Services
+## License 許可證
 
-Shenbury's primary revenue stream comes from providing AI-powered authentication services to the global art market. The business model is designed to capture value from the $60B+ art market while building a sustainable verification ecosystem.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 該項目根據MIT許可證授權 - 請參閱[LICENSE](LICENSE)文件了解詳細信息。
 
-#### 1. Pay-Per-Verification Model
-- **Institutional Clients**: Museums, auction houses, galleries, and collectors pay per authentication
-- **Pricing**: $5,000-$50,000+ per artifact depending on complexity and value
-- **Premium Tier**: Enhanced verification with additional testing and documentation ($10,000-$100,000+)
+---
 
-#### 2. Subscription-Based Services
-- **Museum/Gallery Subscriptions**: Monthly or annual plans for institutions requiring regular authentication services
-- **Collector Networks**: Tiered subscription plans for private collectors and dealer networks
-- **Research Access**: Academic and research institutions access to the AgentDB knowledge base
-
-#### 3. Enterprise Licensing
-- **Technology Licensing**: Licensing the AI Agent Swarm technology to other authentication providers
-- **Custom Solutions**: Tailored verification systems for specialized art categories or geographic markets
-- **Integration Services**: APIs and white-label solutions for auction houses and insurance companies
-
-#### 4. Data Monetization
-- **Anonymized Market Insights**: Aggregated data on authentication trends, forgery patterns, and market dynamics
-- **Research Datasets**: Curated datasets for academic research and machine learning development
-- **Industry Reports**: Subscription-based market intelligence reports for art market participants
-
-#### 5. Token-Gated Services
-- **Enhanced Verification Reports**: Detailed analysis and documentation available exclusively to SHBY token holders
-- **Priority Processing**: Faster turnaround times for token holders
-- **Exclusive Access**: Early access to new verification capabilities and database updates
-
-### Value Proposition for Customers
-
-#### For Museums & Institutions:
-- Reduce authentication costs by 70-80% compared to traditional expert panels
-- Standardize verification processes with consistent, reproducible results
-- Access to a growing knowledge base of authenticated artifacts
-- Immutable provenance records for collection management
-
-#### For Auction Houses:
-- Accelerate pre-sale authentication processes
-- Reduce liability and increase buyer confidence
-- Access to specialized expertise without maintaining full-time staff
-- Integration with existing cataloging and verification workflows
-
-#### For Private Collectors:
-- Affordable access to museum-grade authentication
-- Digital provenance records that travel with the artwork
-- Increased resale value through verified authenticity
-- Access to global network of verified artifacts
-
-### Revenue Projections (Post-Development)
-
-Year 1: $2M - Initial market penetration with pilot partnerships
-Year 2: $15M - Expanded institutional adoption and subscription base
-Year 3: $100M - Global market presence with diversified revenue streams
-Year 5: $500M+ - Market leader with comprehensive verification ecosystem
-
-### Competitive Advantages
-
-1. **Cost Efficiency**: 150x faster performance through HNSW indexing and vector quantization
-2. **Zero Recurring Costs**: Local execution eliminates external API dependencies
-3. **Scalability**: Self-contained agents operate at a fraction of typical infrastructure costs
-4. **Accuracy**: Multi-agent consensus validation with closed-loop learning
-5. **Trust**: Immutable on-chain provenance records
-
-Funds from the token sale will be used to develop and deploy this verification infrastructure, creating a sustainable revenue-generating business that serves the global art market.
-
-## Intellectual Property
-
-The following IP will be transferred to the Shenbury DAO entity:
-
-- AI agent swarm authentication algorithms and training datasets
-- Blockchain provenance registry
-- Domain names, source code, and operational software
-- Brand identity, marketing assets, and social accounts
-
-## Terms & Conditions
-
-By purchasing $SHBY tokens ("Tokens"), participants acknowledge and agree to the following:
-
-### No Guarantees
-Tokens are provided on an "as-is" and "as-available" basis without guarantees of financial return or platform access.
-
-### Not a Security
-Tokens do not represent equity, debt, or ownership interest in any legal entity. The sale does not constitute an offering of securities.
-
-### Final Sale
-All purchases are final and non-refundable.
-
-### No Liability for Losses
-Neither Shenbury nor its affiliates are liable for direct or indirect losses related to the token sale or project operations.
-
-### DAO Governance Agreement
-Purchasers agree to the Shenbury DAO LLC's operating agreement governing the project. The complete operating agreement is available in the [SHENBURY-DAO-OPERATING-AGREEMENT.md](SHENBURY-DAO-OPERATING-AGREEMENT.md) file.
-
-## License
-
-MIT License - See LICENSE file for details
-
-## Resources
-
-- **Website**: https://shenbury.com
-- **Whitepaper**: https://docs.shenbury.com
-- **LinkedIn**: https://linkedin.com/in/digitalassets
-- **Token Address**: (to be added post-listing)
+**© 2025 Shenbury 神堡. All rights reserved.** 版權所有.

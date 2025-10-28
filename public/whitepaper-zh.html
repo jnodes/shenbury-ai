@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神堡白皮書 v1.1 — 研究版</title>
+    <style>
+        :root {
+            --primary: #000;
+            --secondary: #fff;
+            --accent: #c9302c;
+            --gray-light: #f8f8f8;
+            --gray-medium: #e5e5e5;
+            --text-primary: #000;
+            --text-secondary: #666;
+            --font-primary: 'Cormorant Garamond', serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            background: var(--secondary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-weight: 300;
+        }
+        
+        h1, h2, h3, h4 {
+            font-weight: 300;
+            letter-spacing: -0.02em;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid var(--gray-medium);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0 2rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .logo a {
+            text-decoration: none;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .logo .logo-chinese {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        
+        .logo-image {
+            height: 40px;
+            width: auto;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+        }
+        
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1001;
+        }
+        
+        .language-selector select {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid var(--gray-medium);
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+        
+        .whitepaper-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .whitepaper-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--gray-medium);
+        }
+        
+        .whitepaper-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .whitepaper-meta {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .whitepaper-content {
+            font-size: 1.1rem;
+        }
+        
+        .whitepaper-content h2 {
+            font-size: 1.75rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--gray-medium);
+            padding-bottom: 0.5rem;
+        }
+        
+        .whitepaper-content h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .whitepaper-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .whitepaper-content ul, .whitepaper-content ol {
+            list-style-position: inside;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .whitepaper-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .whitepaper-content code {
+            background: var(--gray-light);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        
+        .whitepaper-content pre {
+            background: var(--gray-light);
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        
+        .whitepaper-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+        
+        .whitepaper-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        .whitepaper-content table, .whitepaper-content th, .whitepaper-content td {
+            border: 1px solid var(--gray-medium);
+        }
+        
+        .whitepaper-content th, .whitepaper-content td {
+            padding: 0.5rem;
+            text-align: left;
+        }
+        
+        .whitepaper-content th {
+            background: var(--gray-light);
+        }
+        
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        
+        .footer-logo {
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-logo-image {
+            height: 60px;
+            width: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .whitepaper-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <select id="language-select" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="zh" selected>中文 (繁體)</option>
+        </select>
+    </div>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/index-zh.html">
+                    <img src="/logo.svg" alt="神堡 Logo" class="logo-image">
+                    <span class="logo-chinese">神堡</span> Shenbury
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="/index-zh.html">首頁</a>
+                <a href="/index-zh.html#auctions">收藏</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="whitepaper-container">
+        <div class="whitepaper-header">
+            <h1>神堡白皮書 v1.1 — 研究版</h1>
+            <div class="whitepaper-meta">
+                <p><strong>作者：</strong> 神堡實驗室</p>
+                <p><strong>聯繫：</strong> shenbury.com</p>
+                <p><strong>版本：</strong> v1.1 (研究版)</p>
+                <p><strong>日期：</strong> 2025</p>
+            </div>
+        </div>
+        
+        <div class="whitepaper-content">
+            <h2>摘要</h2>
+            <p><strong>神堡</strong>引入了一個去中心化的自包含智能基礎設施，用於驗證和代幣化美術品和歷史文物。神堡的核心是<strong>AI代理群</strong>，它結合了本地向量推理、閉環學習和鏈上來源。每個代理都使用完全本地的堆棧獨立運行——數據庫、嵌入和學習層——不依賴外部API或雲系統。</p>
+            <p>本文正式確立了神堡的數學基礎、學習動力學和來源鏈整合。</p>
+
+            <h2>1. 問題陳述</h2>
+            <p>全球藝術市場每年超過600億美元，但結構上流動性差且不透明。來源——經過驗證的所有權和真實性歷史——決定價值，但受到中心化信任模式和主觀專業知識的阻礙。</p>
+            <p>設：</p>
+            <pre>V<sub>a</sub> = f(P<sub>a</sub>, A<sub>a</sub>, R<sub>a</sub>)</pre>
+            <p>其中：</p>
+            <ul>
+                <li>V<sub>a</sub> 是資產價值，</li>
+                <li>P<sub>a</sub> 是來源確定性，</li>
+                <li>A<sub>a</sub> 是驗證信心，</li>
+                <li>R<sub>a</sub> 是驗證機構的聲譽。</li>
+            </ul>
+            <p>對於藝術資產，P<sub>a</sub> 和 A<sub>a</sub> 高度不確定，導致流動性受到抑制和風險溢價上升。神堡通過去中心化的自學習AI代理在可驗證的密碼學共識下提高 P<sub>a</sub> 和 A<sub>a</sub>。</p>
+
+            <h2>2. 系統架構概述</h2>
+            <p>神堡堆棧整合了五個主要層次：</p>
+            <ol>
+                <li><strong>AgentDB</strong> — 本地高性能向量數據庫</li>
+                <li><strong>ReasoningBank</strong> — 閉環強化和知識合成</li>
+                <li><strong>Agentic-Flow</strong> — 多代理協調和自適應任務分配</li>
+                <li><strong>Claude-Flow</strong> — 分佈式記憶和群體同步</li>
+                <li><strong>神堡來源鏈</strong> — 已驗證文物的區塊鏈註冊</li>
+            </ol>
+            <p>數據從原始輸入（成像、光譜學、文檔）流經代理堆棧進入鏈上記錄的已驗證記錄。</p>
+
+            <h3>架構圖</h3>
+            <img src="/resources/shenbury stack architecture.png" alt="神堡堆棧架構">
+
+            <h2>3. AgentDB — 本地向量智能核心</h2>
+            <p>AgentDB提供亞毫秒級延遲的語義記憶和檢索操作。每個項目 x<sub>i</sub> 被嵌入為向量 v<sub>i</sub> ∈ ℝ<sup>384</sup>，使用本地變換器模型 E(⋅)：</p>
+            <pre>v<sub>i</sub> = E(x<sub>i</sub>)</pre>
+            <p>相似性檢索使用餘弦相似性與HNSW索引：</p>
+            <pre>S(q, x<sub>i</sub>) = (q ⋅ v<sub>i</sub>) / (||q|| ||v<sub>i</sub>||)</pre>
+            <p>向量量化實現由以下定義的壓縮：</p>
+            <pre>E<sub>c</sub> = M<sub>raw</sub> / M<sub>quantized</sub>, E<sub>c</sub> ∈ [4, 32]</pre>
+            <p>其中 E<sub>c</sub> 表示壓縮效率，實現4–32×的內存減少，同時保持語義保真度。</p>
+            <p>AgentDB針對本地操作進行了優化，在標準硬件上提供生產就緒的性能。</p>
+
+            <h2>4. ReasoningBank — 閉環學習系統</h2>
+            <p>ReasoningBank將推理轉化為持續的自我改進過程。對於由t索引的每個任務實例，輸入x<sub>t</sub>，預測y<sub>t</sub>和觀察結果ŷ<sub>t</sub>，代理信念參數θ<sub>t</sub>更新為：</p>
+            <pre>θ<sub>t+1</sub> = θ<sub>t</sub> + η ∇<sub>θ</sub> L(f<sub>θ</sub>(x<sub>t</sub>), ŷ<sub>t</sub>)</pre>
+            <p>其中η是自適應學習率，L是損失。</p>
+            <p>信心分數C<sub>t</sub>通過指數移動平均演變：</p>
+            <pre>C<sub>t+1</sub> = α C<sub>t</sub> + (1 - α) Δ<sub>t</sub></pre>
+            <p>其中Δ<sub>t</sub>是觀察到的性能增量，α是保留係數。</p>
+            <p>這種閉環反饋使代理能夠自主完善啟發式，更新可靠性權重，並為未來任務提取可重用的知識組件。</p>
+
+            <h2>5. 記憶檢索和加權選擇</h2>
+            <p>記憶檢索通過加權目標從代理記憶M中選擇記憶項目x<sub>i</sub>：</p>
+            <pre>R(q) = arg max<sub>x<sub>i</sub> ∈ M</sub> [λ<sub>s</sub> S(q, x<sub>i</sub>) + λ<sub>r</sub> R<sub>i</sub> + λ<sub>t</sub> e<sup>-Δt<sub>i</sub> / τ</sup> + λ<sub>d</sub> D<sub>i</sub>]</pre>
+            <p>其中：</p>
+            <ul>
+                <li>S(q, x<sub>i</sub>) — 查詢q和記憶向量v<sub>i</sub>之間的語義相似性</li>
+                <li>R<sub>i</sub> — ReasoningBank對記憶x<sub>i</sub>的可靠性分數</li>
+                <li>e<sup>-Δt<sub>i</sub> / τ</sup> — 新近度衰減（Δt<sub>i</sub> = 自觀察以來的時間）</li>
+                <li>D<sub>i</sub> — 多樣性因子以減少冗餘檢索</li>
+                <li>λ<sub>⋅</sub> — 可調權重</li>
+            </ul>
+            <p>這種公式平衡了相關性、新鮮度和可信度，為下游推理產生穩健的檢索。</p>
+
+            <h2>6. Agentic-Flow — 多代理協調</h2>
+            <p>設A = {a<sub>1</sub>, a<sub>2</sub>, …, a<sub>n</sub>}表示代理群體。每個代理遵循映射到驗證子任務操作的策略π。集體目標J(π)是：</p>
+            <pre>J(π) = 𝔼<sub>a<sub>i</sub> ∼ A</sub>[R(a<sub>i</sub>, π)]</pre>
+            <p>本地策略更新遵循梯度上升程序：</p>
+            <pre>π<sub>t+1</sub> = π<sub>t</sub> + η<sub>π</sub> ∇<sub>π</sub> J(π)</pre>
+            <p>Agentic-Flow實現動態專業化，代理根據信心和觀察結果競爭和合作，調整角色。任務分配是突現和數據驅動的，最小化人為干預。</p>
+
+            <h2>7. Claude-Flow — 分佈式記憶同步</h2>
+            <p>Claude-Flow將長期記憶同步編碼為在信任加權記憶圖G = (A, E)上的擴散，代理記憶為m<sub>i</sub>。記憶傳播為：</p>
+            <pre>m<sub>i</sub><sup>t+1</sup> = m<sub>i</sub><sup>t</sup> + Σ<sub>j ∈ 𝒩(i)</sub> w<sub>ij</sub>(m<sub>j</sub><sup>t</sup> - m<sub>i</sub><sup>t</sup>)</pre>
+            <p>其中w<sub>ij</sub>反映代理i和j之間的信任/可靠性。這個過程導致共識形成，同時保持本地專業化。</p>
+
+            <h2>8. 來源鏈</h2>
+            <p>每次已驗證的驗證都會產生記錄在神堡來源賬本上的密碼學承諾。對於事件t：</p>
+            <pre>h<sub>t</sub> = H(A<sub>t</sub>, D<sub>t</sub>, C<sub>t</sub>)</pre>
+            <ul>
+                <li>A<sub>t</sub>: 文物標識符和元數據</li>
+                <li>D<sub>t</sub>: 診斷數據集（圖像、光譜、分析）</li>
+                <li>C<sub>t</sub>: 代理群的共識信心</li>
+            </ul>
+            <p>哈希h<sub>t</sub>被記錄在來源鏈上，創建不可變的審計跟踪。這使收藏家、策展人和投資者能夠獨立驗證真實性和歷史。</p>
+
+            <h2>9. 代幣經濟學</h2>
+            <p>神堡代幣（SHBY）是生態系統的治理和價值捕獲機制：</p>
+            <ul>
+                <li><strong>總供應量：</strong> 1,000,000,000 SHBY</li>
+                <li><strong>驗證獎勵：</strong> 通過網絡參與獲得代幣</li>
+                <li><strong>治理權：</strong> 對協議升級和資源分配進行投票</li>
+                <li><strong>訪問權：</strong> 對高級驗證報告和API的代幣門控訪問</li>
+            </ul>
+            <p>代幣分配：</p>
+            <ul>
+                <li>60% 公開銷售</li>
+                <li>15% 團隊和顧問（4年鎖倉）</li>
+                <li>12% 生態系統發展基金</li>
+                <li>8% 合作夥伴和戰略投資者</li>
+                <li>5% 種子輪投資者</li>
+            </ul>
+
+            <h2>10. 驗證流程</h2>
+            <p>神堡驗證遵循嚴格的五步流程：</p>
+            <ol>
+                <li><strong>提交：</strong> 收藏家提交文物數據和圖像</li>
+                <li><strong>初步分析：</strong> 代理群執行自動評估</li>
+                <li><strong>詳細檢查：</strong> 專業代理進行深入分析</li>
+                <li><strong>共識形成：</strong> 所有代理協調驗證結果</li>
+                <li><strong>鏈上記錄：</strong> 驗證結果記錄在來源鏈上</li>
+            </ol>
+
+            <h2>11. 技術規範</h2>
+            <p>神堡技術堆棧的關鍵規範：</p>
+            <ul>
+                <li><strong>本地推理：</strong> 在標準硬件上運行，無雲依賴</li>
+                <li><strong>響應時間：</strong> 亞秒級文物分析</li>
+                <li><strong>準確性：</strong> >95% 的已知文物驗證準確率</li>
+                <li><strong>可擴展性：</strong> 支持數百萬文物數據庫</li>
+                <li><strong>兼容性：</strong> 支持多種成像和光譜技術</li>
+            </ul>
+
+            <h2>12. 商業模式和收入來源</h2>
+            <p>神堡的可持續商業模式旨在從600億美元以上的全球藝術市場中獲取價值，同時建立全面的驗證生態系統。收入模式多元化，以確保長期可行性和增長。</p>
+            
+            <h3>收入來源</h3>
+            <ol>
+                <li><strong>按次驗證：</strong> 對單個文物進行AI驗證，費用根據複雜性和價值範圍從5,000美元到100,000美元以上不等。</li>
+                <li><strong>訂閱服務：</strong> 為畫廊、拍賣行和收藏家提供的月度/年度驗證套餐，價格從每月500美元到100,000美元不等。</li>
+                <li><strong>企業授權：</strong> 為大型機構提供的API訪問和白標解決方案，年度授權費從100,000美元到500萬美元以上不等。</li>
+                <li><strong>數據貨幣化：</strong> 將匿名聚合數據出售給研究機構和市場分析公司，每份報告5,000美元到500,000美元不等。</li>
+                <li><strong>代幣門控服務：</strong> 為SHBY代幣持有者提供折扣和早期訪問權限。</li>
+            </ol>
+            
+            <h3>市場機會</h3>
+            <p>全球藝術市場規模超過600億美元，數字化和驗證服務滲透率低於5%。神堡定位於高端市場，專注於價值超過100萬美元的文物。</p>
+            
+            <h3>競爭優勢</h3>
+            <ul>
+                <li><strong>技術領先：</strong> 本地AI代理群提供無與倫比的性能和隱私</li>
+                <li><strong>成本效益：</strong> 自主運行將驗證成本降低90%以上</li>
+                <li><strong>可擴展性：</strong> 無雲依賴實現無限擴展</li>
+                <li><strong>信任：</strong> 鏈上來源提供不可篡改的驗證記錄</li>
+            </ul>
+            
+            <h3>收入預測</h3>
+            <ul>
+                <li><strong>第1年：</strong> 1000萬美元</li>
+                <li><strong>第2年：</strong> 3000萬美元</li>
+                <li><strong>第3年：</strong> 1億美元</li>
+                <li><strong>第5年：</strong> 5億美元以上</li>
+            </ul>
+
+            <h2>13. 路線圖</h2>
+            <p><strong>2025 Q1：</strong> 主網啟動和初始驗證</p>
+            <p><strong>2025 Q2：</strong> 合作夥伴集成和API發布</p>
+            <p><strong>2025 Q3：</strong> 移動應用和增強現實功能</p>
+            <p><strong>2025 Q4：</strong> 跨鏈互操作性和多類別擴展</p>
+
+            <h2>14. 結論</h2>
+            <p>神堡代表了藝術驗證領域的根本性進步。通過將本地AI代理群與區塊鏈不變性相結合，我們為全球藝術市場創造了一個透明、高效和可信任的基礎設施。神堡不僅驗證文物，還為數字時代的藝術所有權建立新的標準。</p>
+            <p>隨著我們進入藝術和技術融合的新時代，神堡將引領去中心化藝術驗證的未來。</p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-logo">
+            <img src="/logo.svg" alt="神堡 Logo" class="footer-logo-image">
+        </div>
+        <div class="footer-bottom">&copy; 2025 神堡 Shenbury. 版權所有.</div>
+    </footer>
+    
+    <script>
+        function changeLanguage() {
+            const language = document.getElementById('language-select').value;
+            if (language === 'en') {
+                window.location.href = 'whitepaper.html';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -59,7 +59,7 @@ The DAO does not own any physical assets, including works of art. All art collec
 The purpose of the DAO is to:
 
 1. Develop, maintain, and operate the Shenbury AI Agent Swarm technology for art authentication.
-2. Facilitate the tokenization and fractional ownership of authenticated art assets by third parties.
+2. Facilitate the tokenization and verification of authenticated art assets for third parties.
 3. Provide AI-powered verification services to the global art market.
 4. Engage in any and all activities necessary or incidental to the accomplishment of the foregoing purposes.
 

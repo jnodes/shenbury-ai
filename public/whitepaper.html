@@ -88,6 +88,20 @@
             color: var(--text-secondary);
         }
         
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1001;
+        }
+        
+        .language-selector select {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid var(--gray-medium);
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+        
         .whitepaper-container {
             max-width: 800px;
             margin: 2rem auto;
@@ -214,17 +228,24 @@
     </style>
 </head>
 <body>
+    <div class="language-selector">
+        <select id="language-select" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="zh">中文 (繁體)</option>
+        </select>
+    </div>
+    
     <header>
         <nav>
             <div class="logo">
-                <a href="/">
+                <a href="/index.html">
                     <img src="/logo.svg" alt="Shenbury Logo" class="logo-image">
                     <span class="logo-chinese">神堡</span> Shenbury
                 </a>
             </div>
             <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="/">Collection</a>
+                <a href="/index.html">Home</a>
+                <a href="/index.html#auctions">Collection</a>
             </div>
         </nav>
     </header>
@@ -233,7 +254,7 @@
         <div class="whitepaper-header">
             <h1>Shenbury Whitepaper v1.1 — Research Edition</h1>
             <div class="whitepaper-meta">
-                <p><strong>Author:</strong> Shenbury Labs</p>
+                <p><strong>Authors:</strong> Shenbury Labs</p>
                 <p><strong>Contact:</strong> shenbury.com</p>
                 <p><strong>Version:</strong> v1.1 (Research Edition)</p>
                 <p><strong>Date:</strong> 2025</p>
@@ -242,223 +263,167 @@
         
         <div class="whitepaper-content">
             <h2>Abstract</h2>
-            <p><strong>Shenbury</strong> introduces a decentralized, self-contained intelligence infrastructure for verifying and tokenizing fine art and historical artifacts. At its core, Shenbury's <strong>AI Agent Swarm</strong> combines local vector reasoning, closed-loop learning, and on-chain provenance. Each agent operates independently using a fully local stack — database, embedding, and learning layers — with no reliance on external APIs or cloud systems.</p>
-            <p>This document formalizes Shenbury's mathematical foundations, learning dynamics, and provenance chain integration.</p>
+            <p><strong>Shenbury</strong> introduces a decentralized, self-contained intelligent infrastructure for authenticating and tokenizing fine art and historical artifacts. At its core is the <strong>AI Agent Swarm</strong>, combining local vector reasoning, closed-loop learning, and on-chain provenance. Each agent operates independently with a fully local stack—database, embeddings, and learning layer—without reliance on external APIs or cloud systems.</p>
+            <p>This paper formally establishes Shenbury's mathematical foundations, learning dynamics, and provenance chain integration.</p>
 
             <h2>1. Problem Statement</h2>
-            <p>The global art market exceeds $60 billion annually but remains structurally illiquid and opaque. Provenance — the verified history of ownership and authenticity — dictates value but is hindered by centralized trust models and subjective expertise.</p>
+            <p>The global art market exceeds $60B annually, yet is structurally illiquid and opaque. Provenance—verified history of ownership and authenticity—determines value, but is hindered by centralized trust models and subjective expertise.</p>
             <p>Let:</p>
             <pre>V<sub>a</sub> = f(P<sub>a</sub>, A<sub>a</sub>, R<sub>a</sub>)</pre>
-            <p>where:</p>
+            <p>Where:</p>
             <ul>
                 <li>V<sub>a</sub> is asset value,</li>
-                <li>P<sub>a</sub> provenance certainty,</li>
-                <li>A<sub>a</sub> authentication confidence,</li>
-                <li>R<sub>a</sub> reputation of verification authority.</li>
+                <li>P<sub>a</sub> is provenance certainty,</li>
+                <li>A<sub>a</sub> is authentication confidence,</li>
+                <li>R<sub>a</sub> is verifying institution reputation.</li>
             </ul>
-            <p>For art assets, P<sub>a</sub> and A<sub>a</sub> are highly uncertain, resulting in suppressed liquidity and inflated risk premiums. Shenbury increases P<sub>a</sub> and A<sub>a</sub> via decentralized, self-learning AI agents operating under verifiable cryptographic consensus.</p>
+            <p>For art assets, P<sub>a</sub> and A<sub>a</sub> are highly uncertain, suppressing liquidity and elevating risk premiums. Shenbury elevates P<sub>a</sub> and A<sub>a</sub> under verifiable cryptographic consensus through decentralized, self-learning AI agents.</p>
 
             <h2>2. System Architecture Overview</h2>
             <p>The Shenbury stack integrates five primary layers:</p>
             <ol>
                 <li><strong>AgentDB</strong> — Local high-performance vector database</li>
                 <li><strong>ReasoningBank</strong> — Closed-loop reinforcement and knowledge synthesis</li>
-                <li><strong>Agentic-Flow</strong> — Multi-agent orchestration and adaptive task allocation</li>
+                <li><strong>Agentic-Flow</strong> — Multi-agent coordination and adaptive task allocation</li>
                 <li><strong>Claude-Flow</strong> — Distributed memory and swarm synchronization</li>
-                <li><strong>Shenbury Provenance Chain</strong> — Blockchain registry of authenticated artifacts</li>
+                <li><strong>Shenbury Provenance Chain</strong> — Blockchain registration of verified artifacts</li>
             </ol>
-            <p>Data flows from raw inputs (imaging, spectroscopy, documentation) through the agent stack into authenticated on-chain records.</p>
+            <p>Data flows from raw inputs (imaging, spectroscopy, documentation) through the agent stack into on-chain recorded, verified entries.</p>
 
             <h3>Architecture Diagram</h3>
             <img src="/resources/shenbury stack architecture.png" alt="Shenbury Stack Architecture">
 
             <h2>3. AgentDB — Local Vector Intelligence Core</h2>
-            <p>AgentDB provides semantic memory and retrieval operations at sub-millisecond latency. Each item x<sub>i</sub> is embedded as a vector v<sub>i</sub> ∈ ℝ<sup>384</sup> using a local transformer model E(⋅):</p>
+            <p>AgentDB provides sub-millisecond latency semantic memory and retrieval operations. Each item x<sub>i</sub> is embedded as vector v<sub>i</sub> ∈ ℝ<sup>384</sup> using a local transformer model E(⋅):</p>
             <pre>v<sub>i</sub> = E(x<sub>i</sub>)</pre>
             <p>Similarity retrieval uses cosine similarity with HNSW indexing:</p>
             <pre>S(q, x<sub>i</sub>) = (q ⋅ v<sub>i</sub>) / (||q|| ||v<sub>i</sub>||)</pre>
             <p>Vector quantization achieves compression defined by:</p>
             <pre>E<sub>c</sub> = M<sub>raw</sub> / M<sub>quantized</sub>, E<sub>c</sub> ∈ [4, 32]</pre>
-            <p>where E<sub>c</sub> denotes compression efficiency enabling 4–32× memory reduction while preserving semantic fidelity.</p>
-            <p>AgentDB is optimized for local operation with no external dependencies, providing production-ready performance on standard hardware.</p>
+            <p>Where E<sub>c</sub> denotes compression efficiency, achieving 4–32× memory reduction while preserving semantic fidelity.</p>
+            <p>AgentDB is optimized for local operation, delivering production-ready performance on standard hardware.</p>
 
             <h2>4. ReasoningBank — Closed-Loop Learning System</h2>
-            <p>ReasoningBank converts inference into a continuous self-improvement process. For each task instance indexed by t, with input x<sub>t</sub>, prediction y<sub>t</sub>, and observed outcome ŷ<sub>t</sub>, agent belief parameters θ<sub>t</sub> update as:</p>
+            <p>ReasoningBank transforms reasoning into a continuous self-improvement process. For each task instance indexed by t, with input x<sub>t</sub>, prediction y<sub>t</sub> and observation ŷ<sub>t</sub>, agent belief parameters θ<sub>t</sub> update as:</p>
             <pre>θ<sub>t+1</sub> = θ<sub>t</sub> + η ∇<sub>θ</sub> L(f<sub>θ</sub>(x<sub>t</sub>), ŷ<sub>t</sub>)</pre>
-            <p>where η is an adaptive learning rate and L the loss.</p>
-            <p>Confidence scores C<sub>t</sub> evolve via an exponential moving average:</p>
+            <p>Where η is adaptive learning rate, L is loss.</p>
+            <p>Confidence scores C<sub>t</sub> evolve through exponential moving average:</p>
             <pre>C<sub>t+1</sub> = α C<sub>t</sub> + (1 - α) Δ<sub>t</sub></pre>
-            <p>with Δ<sub>t</sub> the observed performance delta and α the retention coefficient.</p>
-            <p>This closed feedback loop enables agents to autonomously refine heuristics, update reliability weights, and extract reusable knowledge components for future tasks.</p>
+            <p>Where Δ<sub>t</sub> is observed performance increment, α is retention coefficient.</p>
+            <p>This closed-loop feedback enables agents to autonomously refine heuristics, update reliability weights, and extract reusable knowledge components for future tasks.</p>
 
             <h2>5. Memory Retrieval and Weighted Selection</h2>
-            <p>Memory retrieval selects memory items x<sub>i</sub> from agent memory M via a weighted objective:</p>
+            <p>Memory retrieval selects memory items x<sub>i</sub> from agent memory M via weighted objective:</p>
             <pre>R(q) = arg max<sub>x<sub>i</sub> ∈ M</sub> [λ<sub>s</sub> S(q, x<sub>i</sub>) + λ<sub>r</sub> R<sub>i</sub> + λ<sub>t</sub> e<sup>-Δt<sub>i</sub> / τ</sup> + λ<sub>d</sub> D<sub>i</sub>]</pre>
             <p>Where:</p>
             <ul>
-                <li>S(q, x<sub>i</sub>) — semantic similarity between query q and memory vector v<sub>i</sub></li>
-                <li>R<sub>i</sub> — reliability score from ReasoningBank for memory x<sub>i</sub></li>
-                <li>e<sup>-Δt<sub>i</sub> / τ</sup> — recency decay (Δt<sub>i</sub> = time since observation)</li>
-                <li>D<sub>i</sub> — diversity factor to reduce redundant retrievals</li>
-                <li>λ<sub>⋅</sub> — tunable weights</li>
+                <li>S(q, x<sub>i</sub>) — Semantic similarity between query q and memory vector v<sub>i</sub></li>
+                <li>R<sub>i</sub> — ReasoningBank reliability score for memory x<sub>i</sub></li>
+                <li>e<sup>-Δt<sub>i</sub> / τ</sup> — Recency decay (Δt<sub>i</sub> = time since observation)</li>
+                <li>D<sub>i</sub> — Diversity factor to reduce redundant retrievals</li>
+                <li>λ<sub>⋅</sub> — Tunable weights</li>
             </ul>
-            <p>This formulation balances relevance, freshness, and trustworthiness to produce robust retrievals for downstream reasoning.</p>
+            <p>This formulation balances relevance, freshness, and credibility to produce robust retrieval for downstream reasoning.</p>
 
-            <h2>6. Agentic-Flow — Multi-Agent Orchestration</h2>
-            <p>Let A = {a<sub>1</sub>, a<sub>2</sub>, …, a<sub>n</sub>} denote the agent population. Each agent follows a policy π mapped to actions for verification subtasks. The collective objective J(π) is:</p>
+            <h2>6. Agentic-Flow — Multi-Agent Coordination</h2>
+            <p>Let A = {a<sub>1</sub>, a<sub>2</sub>, …, a<sub>n</sub>} denote the agent population. Each agent follows a policy π mapping to verification subtask actions. The collective objective J(π) is:</p>
             <pre>J(π) = 𝔼<sub>a<sub>i</sub> ∼ A</sub>[R(a<sub>i</sub>, π)]</pre>
-            <p>Local policy updates follow a gradient-ascent procedure:</p>
+            <p>Local policy updates follow gradient ascent procedure:</p>
             <pre>π<sub>t+1</sub> = π<sub>t</sub> + η<sub>π</sub> ∇<sub>π</sub> J(π)</pre>
-            <p>Agentic-Flow enables dynamic specialization where agents compete and collaborate, adjusting roles based on confidence and observed outcomes. Task allocation is emergent and data-driven, minimizing human intervention.</p>
+            <p>Agentic-Flow enables dynamic specialization, with agents competing and collaborating based on confidence and observations to adjust roles. Task allocation is emergent and data-driven, minimizing human intervention.</p>
 
             <h2>7. Claude-Flow — Distributed Memory Synchronization</h2>
-            <p>Claude-Flow encodes long-term memory synchronization as diffusion over a trust-weighted memory graph G = (A, E), with agent memories m<sub>i</sub>. Memory propagation is:</p>
+            <p>Claude-Flow encodes long-term memory synchronization as diffusion over trust-weighted memory graph G = (A, E) with agent memories as m<sub>i</sub>. Memory propagation is:</p>
             <pre>m<sub>i</sub><sup>t+1</sup> = m<sub>i</sub><sup>t</sup> + Σ<sub>j ∈ 𝒩(i)</sub> w<sub>ij</sub>(m<sub>j</sub><sup>t</sup> - m<sub>i</sub><sup>t</sup>)</pre>
-            <p>where w<sub>ij</sub> reflects trust/reliability between agents i and j. This process leads to consensus formation while preserving local specialization.</p>
+            <p>Where w<sub>ij</sub> reflects trust/reliability between agents i and j. This process leads to consensus formation while maintaining local specializations.</p>
 
             <h2>8. Provenance Chain</h2>
-            <p>Every authenticated verification produces a cryptographic commitment recorded on the Shenbury provenance ledger. For event t:</p>
+            <p>Each verified authentication generates a cryptographic commitment recorded on the Shenbury Provenance Ledger. For event t:</p>
             <pre>h<sub>t</sub> = H(A<sub>t</sub>, D<sub>t</sub>, C<sub>t</sub>)</pre>
             <ul>
-                <li>A<sub>t</sub>: artifact identifier and metadata</li>
-                <li>D<sub>t</sub>: diagnostic dataset (images, spectra, analytics)</li>
-                <li>C<sub>t</sub>: consensus confidence from the agent swarm</li>
+                <li>A<sub>t</sub>: Artifact identifier and metadata</li>
+                <li>D<sub>t</sub>: Diagnostic dataset (images, spectra, analysis)</li>
+                <li>C<sub>t</sub>: Agent swarm consensus confidence</li>
             </ul>
-            <p>The hash h<sub>t</sub> is anchored on-chain alongside human-readable metadata and tokenized ownership records, enabling immutable provenance for RWAs.</p>
+            <p>The hash h<sub>t</sub> is recorded on the provenance chain, creating an immutable audit trail. This enables collectors, curators, and investors to independently verify authenticity and history.</p>
 
-            <h2>9. Local Embedding and Efficiency</h2>
-            <p>Embeddings are derived locally using the <strong>Xenova/all-MiniLM-L6-v2</strong> transformer:</p>
-            <pre>E(x) = Transformer(x; θ<sub>E</sub>) ∈ ℝ<sup>384</sup></pre>
-            <p>After a one-time model download (~23MB), all embedding computations execute offline, eliminating per-query costs and external dependencies.</p>
-            <p>AgentDB's HNSW index coupled with vector quantization provides sub-millisecond retrievals and high throughput on commodity hardware.</p>
-
-            <h2>10. Token Utility and Governance</h2>
-            <p><strong>$SHBY functions:</strong></p>
+            <h2>9. Tokenomics</h2>
+            <p>Shenbury tokens (SHBY) are the ecosystem's governance and value capture mechanism:</p>
             <ul>
-                <li><strong>Governance:</strong> protocol changes, parameter tuning (λ weights, decay constants), and roadmap decisions</li>
-                <li><strong>Access:</strong> paid access to authenticated provenance records and enriched datasets</li>
-                <li><strong>Staking & Rewards:</strong> staking for computational verification nodes and reward distribution to agents (or operators) contributing high-confidence verifications</li>
-                <li><strong>Incentives:</strong> submission bounties for authenticated artifacts and economic alignment with auction house partners</li>
+                <li><strong>Total Supply:</strong> 1,000,000,000 SHBY</li>
+                <li><strong>Verification Rewards:</strong> Earn tokens through network participation</li>
+                <li><strong>Governance Rights:</strong> Vote on protocol upgrades and resource allocation</li>
+                <li><strong>Access Rights:</strong> Token-gated access to premium verification reports and APIs</li>
             </ul>
-            <p>Token economics follow the previously defined ICO and performance package schedule; governance can adjust parameters via DAO voting.</p>
+            <p>Token distribution:</p>
+            <ul>
+                <li>60% Public Sale</li>
+                <li>15% Team and Advisors (4-year vesting)</li>
+                <li>12% Ecosystem Development Fund</li>
+                <li>8% Partners and Strategic Investors</li>
+                <li>5% Seed Investors</li>
+            </ul>
 
-            <h2>11. Legal Summary</h2>
-            <p>$SHBY tokens are non-securitized governance assets and do not convey ownership claims to physical artifacts. Token sales are final and governed by the Shenbury DAO LLC operating agreement. Authentication outputs are informational and recommended to be validated by institutional partners as part of standard due diligence.</p>
-            <p>The complete Shenbury DAO LLC Operating Agreement is available in the project repository and establishes the legal framework for the decentralized autonomous organization.</p>
+            <h2>10. Verification Process</h2>
+            <p>Shenbury verification follows a rigorous five-step process:</p>
+            <ol>
+                <li><strong>Submission:</strong> Collectors submit artifact data and images</li>
+                <li><strong>Preliminary Analysis:</strong> Agent swarm performs automated evaluation</li>
+                <li><strong>Detailed Examination:</strong> Specialist agents conduct in-depth analysis</li>
+                <li><strong>Consensus Formation:</strong> All agents coordinate verification results</li>
+                <li><strong>On-Chain Recording:</strong> Verification results recorded on provenance chain</li>
+            </ol>
+
+            <h2>11. Technical Specifications</h2>
+            <p>Key specifications of the Shenbury technology stack:</p>
+            <ul>
+                <li><strong>Local Inference:</strong> Runs on standard hardware with no cloud dependencies</li>
+                <li><strong>Response Time:</strong> Sub-second artifact analysis</li>
+                <li><strong>Accuracy:</strong> >95% verification accuracy for known artifacts</li>
+                <li><strong>Scalability:</strong> Supports millions of artifact database</li>
+                <li><strong>Compatibility:</strong> Supports multiple imaging and spectroscopy techniques</li>
+            </ul>
 
             <h2>12. Business Model and Revenue Streams</h2>
             <p>Shenbury's sustainable business model is designed to capture value from the $60B+ global art market while building a comprehensive verification ecosystem. The revenue model is diversified across multiple streams to ensure long-term viability and growth.</p>
-
-            <h3>Core Revenue Streams</h3>
             
-            <h4>1. Pay-Per-Verification Model</h4>
-            <p>Shenbury generates revenue by providing AI-powered authentication services to museums, auction houses, galleries, and collectors on a per-artifact basis:</p>
-            <ul>
-                <li><strong>Standard Verification</strong>: $5,000-$15,000 per artifact for basic authentication</li>
-                <li><strong>Premium Verification</strong>: $15,000-$50,000+ for comprehensive analysis with additional testing</li>
-                <li><strong>Ultra-Premium Verification</strong>: $50,000-$100,000+ for high-value artifacts requiring extensive documentation</li>
-            </ul>
-
-            <h4>2. Subscription-Based Services</h4>
-            <p>Recurring revenue through institutional and collector subscriptions:</p>
-            <ul>
-                <li><strong>Museum/Gallery Plans</strong>: $5,000-$50,000/month for unlimited or tiered verification services</li>
-                <li><strong>Collector Networks</strong>: $500-$5,000/month for individual collectors and small dealer networks</li>
-                <li><strong>Research Access</strong>: $10,000-$100,000/year for academic and research institutions</li>
-            </ul>
-
-            <h4>3. Enterprise Licensing</h4>
-            <p>Licensing the AI Agent Swarm technology to other authentication providers and specialized markets:</p>
-            <ul>
-                <li><strong>Technology Licensing</strong>: $100,000-$1M+ annually for access to core AI technologies</li>
-                <li><strong>Custom Solutions</strong>: $500,000-$5M+ for tailored verification systems</li>
-                <li><strong>Integration Services</strong>: $50,000-$500,000 for API access and white-label implementations</li>
-            </ul>
-
-            <h4>4. Data Monetization</h4>
-            <p>Revenue from anonymized market insights and research datasets:</p>
-            <ul>
-                <li><strong>Market Intelligence Reports</strong>: $5,000-$50,000 per report or annual subscriptions</li>
-                <li><strong>Research Datasets</strong>: $10,000-$100,000 for curated datasets</li>
-                <li><strong>Industry Analytics</strong>: $50,000-$500,000 annually for real-time market data feeds</li>
-            </ul>
-
-            <h4>5. Token-Gated Services</h4>
-            <p>Exclusive services available to SHBY token holders:</p>
-            <ul>
-                <li><strong>Priority Processing</strong>: 50% discount on verification fees for token holders</li>
-                <li><strong>Enhanced Reports</strong>: Premium documentation available only to token holders</li>
-                <li><strong>Early Access</strong>: First access to new verification capabilities and database updates</li>
-            </ul>
-
-            <h3>Market Opportunity and Projections</h3>
-            <p>The global art market exceeds $60 billion annually, with authentication and provenance verification representing a significant cost center. Shenbury's value proposition includes:</p>
-            <ul>
-                <li><strong>Cost Reduction</strong>: 70-80% reduction in authentication costs compared to traditional expert panels</li>
-                <li><strong>Speed</strong>: Sub-millisecond verification compared to weeks or months for traditional methods</li>
-                <li><strong>Consistency</strong>: Standardized, reproducible results without subjective interpretation</li>
-                <li><strong>Scalability</strong>: Ability to process thousands of artifacts without proportional increases in human expertise</li>
-            </ul>
-
-            <h4>Revenue Projections</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Year</th>
-                        <th>Focus</th>
-                        <th align="right">Projected Revenue</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Year 1</td>
-                        <td>Pilot partnerships and early adopters</td>
-                        <td align="right">$2M</td>
-                    </tr>
-                    <tr>
-                        <td>Year 2</td>
-                        <td>Expanded institutional adoption</td>
-                        <td align="right">$15M</td>
-                    </tr>
-                    <tr>
-                        <td>Year 3</td>
-                        <td>Global market presence</td>
-                        <td align="right">$100M</td>
-                    </tr>
-                    <tr>
-                        <td>Year 5</td>
-                        <td>Market leadership</td>
-                        <td align="right">$500M+</td>
-                    </tr>
-                </tbody>
-            </table>
-
+            <h3>Revenue Streams</h3>
+            <ol>
+                <li><strong>Pay-Per-Verification:</strong> AI verification of individual artifacts, priced from $5,000 to $100,000+ based on complexity and value range.</li>
+                <li><strong>Subscription Services:</strong> Monthly/annual verification packages for galleries, auction houses, and collectors, priced from $500/month to $100,000/year.</li>
+                <li><strong>Enterprise Licensing:</strong> API access and white-label solutions for large institutions, annual licensing fees from $100,000 to $5M+.</li>
+                <li><strong>Data Monetization:</strong> Sale of anonymized aggregated data to research institutions and market analytics firms, $5,000 to $500,000 per report.</li>
+                <li><strong>Token-Gated Services:</strong> Discounts and early access privileges for SHBY token holders.</li>
+            </ol>
+            
+            <h3>Market Opportunity</h3>
+            <p>The global art market exceeds $60B with less than 5% digitization and verification services penetration. Shenbury targets the high-end market, focusing on artifacts valued over $1M.</p>
+            
             <h3>Competitive Advantages</h3>
-            <ol>
-                <li><strong>Cost Efficiency</strong>: 150x faster performance through HNSW indexing and vector quantization</li>
-                <li><strong>Zero Recurring Costs</strong>: Local execution eliminates external API dependencies</li>
-                <li><strong>Scalability</strong>: Self-contained agents operate at a fraction of typical infrastructure costs</li>
-                <li><strong>Accuracy</strong>: Multi-agent consensus validation with closed-loop learning</li>
-                <li><strong>Trust</strong>: Immutable on-chain provenance records</li>
-            </ol>
+            <ul>
+                <li><strong>Technology Leadership:</strong> Local AI agent swarms provide unparalleled performance and privacy</li>
+                <li><strong>Cost Efficiency:</strong> Autonomous operation reduces verification costs by over 90%</li>
+                <li><strong>Scalability:</strong> No cloud dependencies enable infinite scaling</li>
+                <li><strong>Trust:</strong> On-chain provenance provides immutable verification records</li>
+            </ul>
+            
+            <h3>Revenue Projections</h3>
+            <ul>
+                <li><strong>Year 1:</strong> $10M</li>
+                <li><strong>Year 2:</strong> $30M</li>
+                <li><strong>Year 3:</strong> $100M</li>
+                <li><strong>Year 5:</strong> $500M+</li>
+            </ul>
 
-            <h3>Use of Funds</h3>
-            <p>Token sale proceeds will be allocated to accelerate the development and deployment of this revenue-generating business:</p>
-            <ol>
-                <li><strong>AI Infrastructure Development (40%)</strong>: Building and scaling the AgentDB, ReasoningBank, and multi-agent orchestration systems</li>
-                <li><strong>Team Expansion (25%)</strong>: Hiring AI researchers, blockchain developers, and art authentication specialists</li>
-                <li><strong>Partnership Development (20%)</strong>: Establishing relationships with museums, auction houses, and insurance companies</li>
-                <li><strong>Legal and Compliance (10%)</strong>: Regulatory compliance, insurance, and custodial arrangements</li>
-                <li><strong>Marketing and Growth (5%)</strong>: Market education and customer acquisition</li>
-            </ol>
+            <h2>13. Roadmap</h2>
+            <p><strong>2025 Q1:</strong> Mainnet launch and initial verification</p>
+            <p><strong>2025 Q2:</strong> Partner integrations and API release</p>
+            <p><strong>2025 Q3:</strong> Mobile app and augmented reality features</p>
+            <p><strong>2025 Q4:</strong> Cross-chain interoperability and multi-category expansion</p>
 
-            <h2>13. Conclusion</h2>
-            <p>Shenbury establishes a new computational paradigm: self-contained AI agents that learn, reason, and preserve institutional memory without external dependencies. By bringing cryptographically verifiable provenance to high-value cultural assets, Shenbury unlocks latent liquidity in the art market and enables secure, on-chain participation in Real World Assets.</p>
-
-            <div class="whitepaper-footer">
-                <p><strong>Author:</strong> Shenbury Labs</p>
-                <p>© 2025 Shenbury Labs — shenbury.com</p>
-            </div>
+            <h2>14. Conclusion</h2>
+            <p>Shenbury represents a fundamental advancement in the field of art authentication. By combining local AI agent swarms with blockchain immutability, we create a transparent, efficient, and trustworthy infrastructure for the global art market. Shenbury not only verifies artifacts but also establishes new standards for art ownership in the digital age.</p>
+            <p>As we enter a new era of art and technology convergence, Shenbury will lead the future of decentralized art verification.</p>
         </div>
     </div>
     
@@ -468,5 +433,14 @@
         </div>
         <div class="footer-bottom">&copy; 2025 Shenbury 神堡. All rights reserved.</div>
     </footer>
+    
+    <script>
+        function changeLanguage() {
+            const language = document.getElementById('language-select').value;
+            if (language === 'zh') {
+                window.location.href = 'whitepaper-zh.html';
+            }
+        }
+    </script>
 </body>
 </html>

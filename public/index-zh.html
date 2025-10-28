@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Agent Swarms for Art Authentication | Shenbury 神堡</title>
+    <title>AI代理群 for 藝術鑑定 | 神堡 Shenbury</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
@@ -79,54 +79,54 @@
     <div class="language-selector">
         <select id="language-select" onchange="changeLanguage()">
             <option value="en">English</option>
-            <option value="zh">中文 (繁體)</option>
+            <option value="zh" selected>中文 (繁體)</option>
         </select>
     </div>
     <header>
         <nav>
             <div class="logo">
                 <a href="/">
-                    <img src="/logo.svg" alt="Shenbury Logo" class="logo-image">
+                    <img src="/logo.svg" alt="神堡 Logo" class="logo-image">
                     <span class="logo-chinese">神堡</span> Shenbury
                 </a>
             </div>
             <div class="nav-links">
-                <a href="#auctions">Collection</a>
-                <a href="whitepaper.html">Whitepaper</a>
+                <a href="#auctions">收藏</a>
+                <a href="whitepaper-zh.html">白皮書</a>
             </div>
         </nav>
     </header>
     <section class="hero">
         <div class="hero-content">
-            <div class="jin-badge"><img src="/favicon.svg" alt="AI Agents Logo"><span>Verified by AI Agents</span></div>
-            <h1>The Shenbury Collection</h1>
-            <p>Shenbury is an AI-driven provenance network that authenticates and tokenizes museum-grade Chinese imperial ceramics — unlocking a historically illiquid $60B+ art market for on-chain investors.</p>
+            <div class="jin-badge"><img src="/favicon.svg" alt="AI代理 Logo"><span>由AI代理驗證</span></div>
+            <h1>神堡收藏</h1>
+            <p>神堡是一個由AI驅動的來源網絡，用於驗證和代幣化博物館級別的中國帝制瓷器——為鏈上投資者解鎖歷來流動性不足的600億美元藝術市場。</p>
             <div class="hero-buttons">
-                <a href="whitepaper.html" class="hero-cta primary">Read the Whitepaper</a>
+                <a href="whitepaper-zh.html" class="hero-cta primary">閱讀白皮書</a>
             </div>
         </div>
     </section>
     <div class="auction-header" id="auctions">
-        <h2>The Collection</h2>
+        <h2>收藏</h2>
         <div class="auction-stats">
-            <div class="stat-item"><span class="stat-value" id="total-lots">0</span><span>Total Lots</span></div>
-            <div class="stat-item"><span class="stat-value" id="total-value">$0</span><span>Total Value (USD)</span></div>
+            <div class="stat-item"><span class="stat-value" id="total-lots">0</span><span>總拍品數</span></div>
+            <div class="stat-item"><span class="stat-value" id="total-value">$0</span><span>總價值 (美元)</span></div>
         </div>
     </div>
     <div class="artifacts-grid" id="artifacts-grid"></div>
     <div class="modal" id="artifact-modal"></div>
     <footer>
         <div class="footer-logo">
-            <img src="/logo.svg" alt="Shenbury Logo" class="footer-logo-image">
+            <img src="/logo.svg" alt="神堡 Logo" class="footer-logo-image">
         </div>
-        <div class="footer-bottom">&copy; 2025 Shenbury 神堡. All rights reserved.</div>
+        <div class="footer-bottom">&copy; 2025 神堡 Shenbury. 版權所有.</div>
     </footer>
     <script src="js/relics.js"></script>
     <script>
         function changeLanguage() {
             const language = document.getElementById('language-select').value;
-            if (language === 'zh') {
-                window.location.href = 'index-zh.html';
+            if (language === 'en') {
+                window.location.href = 'index.html';
             }
         }
         
@@ -134,7 +134,7 @@
             const artifacts = window.relics;
             const grid = document.getElementById('artifacts-grid');
             const modal = document.getElementById('artifact-modal');
-            const currencyFormatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0 });
+            const currencyFormatter = new Intl.NumberFormat('zh-Hant', { style: 'currency', currency: 'USD', minimumFractionDigits: 0 });
             
             const openModal = (id) => {
                 const artifact = artifacts.find(a => a.id === id);
@@ -153,13 +153,13 @@
                             </div>
                             <div class="modal-info-section">
                                 <h2>${artifact.title}</h2><p>${artifact.chinese}</p>
-                                <div class="detail-section"><h4>Description</h4><p style="white-space: pre-wrap;">${artifact.description}</p></div>
-                                <div class="detail-section"><h4>Provenance</h4><p style="white-space: pre-wrap;">${artifact.provenance}</p></div>
-                                <div class="detail-section"><h4>Condition</h4><p style="white-space: pre-wrap;">${artifact.condition}</p></div>
-                                <div class="detail-section"><h4>Dimensions</h4><p style="white-space: pre-wrap;">${artifact.dimensions}</p></div>
-                                <div class="detail-section"><h4>Literature</h4><p style="white-space: pre-wrap;">${artifact.literature}</p></div>
-                                <div class="detail-section"><h4>Technical Notes</h4><p style="white-space: pre-wrap;">${artifact.technicalNotes}</p></div>
-                                <div class="detail-section"><h4>Cultural Significance</h4><p style="white-space: pre-wrap;">${artifact.culturalSignificance}</p></div>
+                                <div class="detail-section"><h4>描述</h4><p style="white-space: pre-wrap;">${artifact.description}</p></div>
+                                <div class="detail-section"><h4>來源</h4><p style="white-space: pre-wrap;">${artifact.provenance}</p></div>
+                                <div class="detail-section"><h4>狀況</h4><p style="white-space: pre-wrap;">${artifact.condition}</p></div>
+                                <div class="detail-section"><h4>尺寸</h4><p style="white-space: pre-wrap;">${artifact.dimensions}</p></div>
+                                <div class="detail-section"><h4>文獻</h4><p style="white-space: pre-wrap;">${artifact.literature}</p></div>
+                                <div class="detail-section"><h4>技術說明</h4><p style="white-space: pre-wrap;">${artifact.technicalNotes}</p></div>
+                                <div class="detail-section"><h4>文化意義</h4><p style="white-space: pre-wrap;">${artifact.culturalSignificance}</p></div>
                             </div>
                         </div>
                     </div>`;
@@ -179,10 +179,10 @@
                     <div class="artifact-card" data-id="${artifact.id}">
                         <div class="artifact-image-container"><img src="${artifact.thumbnail}" class="artifact-image"></div>
                         <div class="artifact-info">
-                            <div>Lot ${artifact.lotNumber}</div>
+                            <div>拍品 ${artifact.lotNumber}</div>
                             <h3>${artifact.title}</h3>
                             <div>${currencyFormatter.format(artifact.currentBid)}</div>
-                            <div>Estimate: ${currencyFormatter.format(artifact.estimate.low)} - ${currencyFormatter.format(artifact.estimate.high)}</div>
+                            <div>估價: ${currencyFormatter.format(artifact.estimate.low)} - ${currencyFormatter.format(artifact.estimate.high)}</div>
                         </div>
                     </div>`).join('');
             };
