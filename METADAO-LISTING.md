@@ -39,16 +39,14 @@ Shenbury introduces a decentralized, self-contained intelligent infrastructure f
 
 ## Business Model 商業模式
 
-Shenbury's sustainable business model is designed to capture value from the $60B+ global art market while building a comprehensive verification ecosystem. The revenue model is diversified across multiple streams to ensure long-term viability and growth.
+Shenbury's business model focuses on becoming a go-to-market service for verified high-value art assets. By providing trusted authentication and provenance verification, Shenbury enables collectors to confidently bring verified pieces to auction.
 
-神堡的可持續商業模式旨在從600億美元以上的全球藝術市場中獲取價值，同時建立全面的驗證生態系統。收入模式多元化，以確保長期可行性和增長。
+神堡的商業模式專注於成為經過驗證的高價值藝術資產的上市服務。通過提供可信的鑑定和來源驗證，神堡使收藏家能夠自信地將經過驗證的作品帶到拍賣會上。
 
-### Revenue Streams 收入來源
-1. **Pay-Per-Verification**: AI verification of individual artifacts, priced from $5,000 to $100,000+ based on complexity and value range. 按次驗證：對單個文物進行AI驗證，費用根據複雜性和價值範圍從5,000美元到100,000美元以上不等。
-2. **Subscription Services**: Monthly/annual verification packages for galleries, auction houses, and collectors, priced from $500/month to $100,000/year. 訂閱服務：為畫廊、拍賣行和收藏家提供的月度/年度驗證套餐，價格從每月500美元到100,000美元不等。
-3. **Enterprise Licensing**: API access and white-label solutions for large institutions, annual licensing fees from $100,000 to $5M+. 企業授權：為大型機構提供的API訪問和白標解決方案，年度授權費從100,000美元到500萬美元以上不等。
-4. **Data Monetization**: Sale of anonymized aggregated data to research institutions and market analytics firms, $5,000 to $500,000 per report. 數據貨幣化：將匿名聚合數據出售給研究機構和市場分析公司，每份報告5,000美元到500,000美元不等。
-5. **Token-Gated Services**: Discounts and early access privileges for SHBY token holders. 代幣門控服務：為SHBY代幣持有者提供折扣和早期訪問權限。
+### Revenue Model 收入模式
+Shenbury charges a 10% commission on the winning bid for any verified artifact sold at auction. This simple, performance-based model aligns our incentives with successful sales outcomes.
+
+神堡對拍賣會上售出的任何經過驗證的文物的成交價收取10%的佣金。這種簡單的、基於績效的模式使我們的利益與成功的銷售結果保持一致。
 
 ### Market Opportunity 市場機會
 The global art market exceeds $60B with less than 5% digitization and verification services penetration. Shenbury targets the high-end market, focusing on artifacts valued over $1M. 全球藝術市場規模超過600億美元，數字化和驗證服務滲透率低於5%。神堡定位於高端市場，專注於價值超過100萬美元的文物。
