@@ -93,8 +93,8 @@ The global art market exceeds $60 billion annually, with authentication and prov
 
 Year 1: $2M - Initial market penetration with pilot partnerships
 Year 2: $15M - Expanded institutional adoption and subscription base
-Year 3: $50M - Global market presence with diversified revenue streams
-Year 5: $150M+ - Market leader with comprehensive verification ecosystem
+Year 3: $100M - Global market presence with diversified revenue streams
+Year 5: $500M+ - Market leader with comprehensive verification ecosystem
 
 ### Use of Funds
 
