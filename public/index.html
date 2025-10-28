@@ -181,7 +181,7 @@
                         <div class="artifact-image-container"><img src="${artifact.thumbnail}" class="artifact-image"></div>
                         <div class="artifact-info">
                             <div>Lot ${artifact.lotNumber}</div>
-                            <h3>${artifact.title}</h3>
+                            <h3>${artifact.title}<br><span style="font-size: 0.8em; font-weight: normal;">${artifact.chinese}</span></h3>
                             <div>${currencyFormatter.format(artifact.currentBid)}</div>
                             <div>Estimate: ${currencyFormatter.format(artifact.estimate.low)} - ${currencyFormatter.format(artifact.estimate.high)}</div>
                         </div>
