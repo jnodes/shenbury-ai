@@ -153,13 +153,14 @@
                             </div>
                             <div class="modal-info-section">
                                 <h2>${artifact.title}</h2><p>${artifact.chinese}</p>
-                                <div class="detail-section"><h4>描述</h4><p style="white-space: pre-wrap;">${artifact.description}</p></div>
-                                <div class="detail-section"><h4>來源</h4><p style="white-space: pre-wrap;">${artifact.provenance}</p></div>
-                                <div class="detail-section"><h4>狀況</h4><p style="white-space: pre-wrap;">${artifact.condition}</p></div>
-                                <div class="detail-section"><h4>尺寸</h4><p style="white-space: pre-wrap;">${artifact.dimensions}</p></div>
-                                <div class="detail-section"><h4>文獻</h4><p style="white-space: pre-wrap;">${artifact.literature}</p></div>
-                                <div class="detail-section"><h4>技術說明</h4><p style="white-space: pre-wrap;">${artifact.technicalNotes}</p></div>
-                                <div class="detail-section"><h4>文化意義</h4><p style="white-space: pre-wrap;">${artifact.culturalSignificance}</p></div>
+                                <div class="detail-section"><h4>描述</h4><p style="white-space: pre-wrap;">${artifact.descriptionChinese || artifact.description}</p></div>
+                                <div class="detail-section"><h4>來源</h4><p style="white-space: pre-wrap;">${artifact.provenanceChinese || artifact.provenance}</p></div>
+                                <div class="detail-section"><h4>狀況</h4><p style="white-space: pre-wrap;">${artifact.conditionChinese || artifact.condition}</p></div>
+                                <div class="detail-section"><h4>尺寸</h4><p style="white-space: pre-wrap;">${artifact.dimensionsChinese || artifact.dimensions}</p></div>
+                                <div class="detail-section"><h4>文獻</h4><p style="white-space: pre-wrap;">${artifact.literatureChinese || artifact.literature}</p></div>
+                                <div class="detail-section"><h4>技術說明</h4><p style="white-space: pre-wrap;">${artifact.technicalNotesChinese || artifact.technicalNotes}</p></div>
+                                <div class="detail-section"><h4>文化意義</h4><p style="white-space: pre-wrap;">${artifact.culturalSignificanceChinese || artifact.culturalSignificance}</p></div>
+                                <div class="detail-section"><h4>朝代</h4><p style="white-space: pre-wrap;">${artifact.dynastyInfoChinese || artifact.dynastyInfo}</p></div>
                             </div>
                         </div>
                     </div>`;
