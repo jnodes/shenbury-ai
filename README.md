@@ -41,7 +41,7 @@ Each artifact is a tangible record of human history — a masterpiece that embod
 shenbury-main/
 ├── public/                     # Frontend assets
 │   ├── index.html              # Main auction page
-│   └── index.html             # Main auction and token launch page
+│   └── index.html              # Main auction and token launch page
 │   ├── favicon.svg             # Project favicon
 │   ├── assets/                 # CSS, images, and other assets
 │   │   ├── css/                # Stylesheets
@@ -69,6 +69,74 @@ The SHBY token powers DAO governance, liquidity provisioning, and access to auth
 - **Price Verification**: Unlock price verified via 3-month TWAP
 
 Funds will support legal structuring, AI infrastructure scaling, insurance and custodial audits, and auction house partnerships for verified asset liquidity.
+
+## Business Model & Revenue Streams
+
+### Core Revenue Model: Verification Services
+
+Shenbury's primary revenue stream comes from providing AI-powered authentication services to the global art market. The business model is designed to capture value from the $60B+ art market while building a sustainable verification ecosystem.
+
+#### 1. Pay-Per-Verification Model
+- **Institutional Clients**: Museums, auction houses, galleries, and collectors pay per authentication
+- **Pricing**: $5,000-$50,000+ per artifact depending on complexity and value
+- **Premium Tier**: Enhanced verification with additional testing and documentation ($10,000-$100,000+)
+
+#### 2. Subscription-Based Services
+- **Museum/Gallery Subscriptions**: Monthly or annual plans for institutions requiring regular authentication services
+- **Collector Networks**: Tiered subscription plans for private collectors and dealer networks
+- **Research Access**: Academic and research institutions access to the AgentDB knowledge base
+
+#### 3. Enterprise Licensing
+- **Technology Licensing**: Licensing the AI Agent Swarm technology to other authentication providers
+- **Custom Solutions**: Tailored verification systems for specialized art categories or geographic markets
+- **Integration Services**: APIs and white-label solutions for auction houses and insurance companies
+
+#### 4. Data Monetization
+- **Anonymized Market Insights**: Aggregated data on authentication trends, forgery patterns, and market dynamics
+- **Research Datasets**: Curated datasets for academic research and machine learning development
+- **Industry Reports**: Subscription-based market intelligence reports for art market participants
+
+#### 5. Token-Gated Services
+- **Enhanced Verification Reports**: Detailed analysis and documentation available exclusively to SHBY token holders
+- **Priority Processing**: Faster turnaround times for token holders
+- **Exclusive Access**: Early access to new verification capabilities and database updates
+
+### Value Proposition for Customers
+
+#### For Museums & Institutions:
+- Reduce authentication costs by 70-80% compared to traditional expert panels
+- Standardize verification processes with consistent, reproducible results
+- Access to a growing knowledge base of authenticated artifacts
+- Immutable provenance records for collection management
+
+#### For Auction Houses:
+- Accelerate pre-sale authentication processes
+- Reduce liability and increase buyer confidence
+- Access to specialized expertise without maintaining full-time staff
+- Integration with existing cataloging and verification workflows
+
+#### For Private Collectors:
+- Affordable access to museum-grade authentication
+- Digital provenance records that travel with the artwork
+- Increased resale value through verified authenticity
+- Access to global network of verified artifacts
+
+### Revenue Projections (Post-Development)
+
+Year 1: $2M - Initial market penetration with pilot partnerships
+Year 2: $15M - Expanded institutional adoption and subscription base
+Year 3: $50M - Global market presence with diversified revenue streams
+Year 5: $150M+ - Market leader with comprehensive verification ecosystem
+
+### Competitive Advantages
+
+1. **Cost Efficiency**: 150x faster performance through HNSW indexing and vector quantization
+2. **Zero Recurring Costs**: Local execution eliminates external API dependencies
+3. **Scalability**: Self-contained agents operate at a fraction of typical infrastructure costs
+4. **Accuracy**: Multi-agent consensus validation with closed-loop learning
+5. **Trust**: Immutable on-chain provenance records
+
+Funds from the token sale will be used to develop and deploy this verification infrastructure, creating a sustainable revenue-generating business that serves the global art market.
 
 ## Intellectual Property
 

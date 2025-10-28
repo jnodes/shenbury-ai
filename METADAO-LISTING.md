@@ -49,6 +49,63 @@ Project and token images are available in the `/public/assets/images/` directory
 - 18-month minimum lock period
 - Unlock price verified via 3-month TWAP
 
+## Business Model & Revenue Streams
+
+### Core Revenue Model: AI Authentication Services
+
+Shenbury's primary business model centers on providing AI-powered authentication services to the global art market, with multiple revenue streams:
+
+#### 1. Pay-Per-Verification Model
+- **Institutional Clients**: Museums, auction houses, galleries, and collectors pay per authentication
+- **Pricing**: $5,000-$50,000+ per artifact depending on complexity and value
+- **Premium Tier**: Enhanced verification with additional testing and documentation ($10,000-$100,000+)
+
+#### 2. Subscription-Based Services
+- **Museum/Gallery Subscriptions**: Monthly or annual plans for institutions requiring regular authentication services
+- **Collector Networks**: Tiered subscription plans for private collectors and dealer networks
+- **Research Access**: Academic and research institutions access to the AgentDB knowledge base
+
+#### 3. Enterprise Licensing
+- **Technology Licensing**: Licensing the AI Agent Swarm technology to other authentication providers
+- **Custom Solutions**: Tailored verification systems for specialized art categories or geographic markets
+- **Integration Services**: APIs and white-label solutions for auction houses and insurance companies
+
+#### 4. Data Monetization
+- **Anonymized Market Insights**: Aggregated data on authentication trends, forgery patterns, and market dynamics
+- **Research Datasets**: Curated datasets for academic research and machine learning development
+- **Industry Reports**: Subscription-based market intelligence reports for art market participants
+
+#### 5. Token-Gated Services
+- **Enhanced Verification Reports**: Detailed analysis and documentation available exclusively to SHBY token holders
+- **Priority Processing**: Faster turnaround times for token holders
+- **Exclusive Access**: Early access to new verification capabilities and database updates
+
+### Market Opportunity
+
+The global art market exceeds $60 billion annually, with authentication and provenance verification representing a significant cost center for market participants. Shenbury's AI Agent Swarm technology offers:
+
+- **Cost Reduction**: 70-80% reduction in authentication costs compared to traditional expert panels
+- **Speed**: Sub-millisecond verification compared to weeks or months for traditional methods
+- **Consistency**: Standardized, reproducible results without subjective interpretation
+- **Scalability**: Ability to process thousands of artifacts without proportional increases in human expertise
+
+### Revenue Projections (Post-Development)
+
+Year 1: $2M - Initial market penetration with pilot partnerships
+Year 2: $15M - Expanded institutional adoption and subscription base
+Year 3: $50M - Global market presence with diversified revenue streams
+Year 5: $150M+ - Market leader with comprehensive verification ecosystem
+
+### Use of Funds
+
+Token sale proceeds will be allocated to:
+
+1. **AI Infrastructure Development** (40%): Building and scaling the AgentDB, ReasoningBank, and multi-agent orchestration systems
+2. **Team Expansion** (25%): Hiring AI researchers, blockchain developers, and art authentication specialists
+3. **Partnership Development** (20%): Establishing relationships with museums, auction houses, and insurance companies
+4. **Legal and Compliance** (10%): Regulatory compliance, insurance, and custodial arrangements
+5. **Marketing and Growth** (5%): Market education and customer acquisition
+
 ## Intellectual Property
 
 The following intellectual properties will be transferred to the Shenbury DAO entity:
