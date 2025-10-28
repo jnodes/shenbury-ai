@@ -28,7 +28,7 @@ Shenbury introduces a decentralized, self-contained intelligent infrastructure f
 - **Name**: Shenbury Provenance Token 名稱：神堡來源代幣
 - **Symbol**: SHBY 符號：SHBY
 - **Standard**: TRC-404 (Hybrid TRC-20/TRC-721) 標準：TRC-404（混合TRC-20/TRC-721）
-- **Total Supply**: 1,000,000,000 SHBY 總供應量：1,000,000,000 SHBY
+- **Total Supply**: 25,800,000 SHBY 總供應量：25,800,000 SHBY
 - **Conversion Rate**: 10,000 SHBY = 1 NFT 轉換率：10,000 SHBY = 1 NFT
 - **Minting**: Tokens minted and managed by MetaDAO 鑄造：代幣由MetaDAO鑄造和管理
 

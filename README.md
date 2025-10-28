@@ -24,7 +24,7 @@ Shenbury introduces a decentralized, self-contained intelligent infrastructure f
 
 ### Tokenomics 代幣經濟學
 - **Token**: SHBY (Shenbury Provenance Token) 代幣：SHBY（神堡來源代幣）
-- **Total Supply**: 1,000,000,000 SHBY 總供應量：1,000,000,000 SHBY
+- **Total Supply**: 25,800,000 SHBY 總供應量：25,800,000 SHBY
 - **No Presale**: Tokens minted and managed by MetaDAO 無預售：代幣由MetaDAO鑄造和管理
 - **Utility**: Governance, verification discounts, and ecosystem access 效用：治理、驗證折扣和生態系統訪問
 
