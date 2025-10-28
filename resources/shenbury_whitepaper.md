@@ -47,7 +47,7 @@ Data flows from raw inputs (imaging, spectroscopy, documentation) through the ag
 
 ### Architecture Diagram
 
-![Shenbury Stack Architecture](/mnt/data/A_flowchart_diagram_in_a_digital_2D_vector_graphic.png)
+![Shenbury Stack Architecture](../public/resources/shenbury stack architecture.png)
 
 ---
 
@@ -77,7 +77,7 @@ AgentDB is optimized for local operation with no external dependencies, providin
 
 ReasoningBank converts inference into a continuous self-improvement process. For each task instance indexed by \(t\), with input \(x_t\), prediction \(y_t\), and observed outcome \(\hat{y}_t\), agent belief parameters \(\theta_t\) update as:
 \[
-\theta_{t+1} = \theta_t + \eta \nabla_{\theta} L(f_{\theta}(x_t), \hat{y}_t)
+\theta_{t+1} = \theta_t - \eta \nabla_{\theta} L(f_{\theta}(x_t), \hat{y}_t)
 \]
 where \(\eta\) is an adaptive learning rate and \(L\) the loss.
 
@@ -168,7 +168,7 @@ AgentDB’s HNSW index coupled with vector quantization provides sub-millisecond
 - **Staking & Rewards:** staking for computational verification nodes and reward distribution to agents (or operators) contributing high-confidence verifications  
 - **Incentives:** submission bounties for authenticated artifacts and economic alignment with auction house partners
 
-Token economics follow the previously defined ICO and performance package schedule; governance can adjust parameters via DAO voting.
+Token economics follow the previously defined performance package schedule; governance can adjust parameters via DAO voting. Tokens are minted and managed by MetaDAO with no presale.
 
 ---
 
@@ -195,7 +195,7 @@ Token economics follow the previously defined ICO and performance package schedu
 
 ## 13. Legal Summary
 
-$SHBY tokens are non-securitized governance assets and do not convey ownership claims to physical artifacts. Token sales are final and governed by the Shenbury DAO LLC operating agreement. Authentication outputs are informational and recommended to be validated by institutional partners as part of standard due diligence.
+$SHBY tokens are non-securitized governance assets and do not convey ownership claims to physical artifacts. Tokens are minted and managed by MetaDAO with no presale. Authentication outputs are informational and recommended to be validated by institutional partners as part of standard due diligence.
 
 ---
 

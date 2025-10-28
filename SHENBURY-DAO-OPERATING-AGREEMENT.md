@@ -1,6 +1,6 @@
 # Shenbury DAO Operating Agreement
 
-**Effective Date**: [To be determined upon DAO formation]
+**Effective Date**: November 1, 2025
 
 ## ARTICLE I: DEFINITIONS
 
@@ -232,9 +232,9 @@ SHBY Tokens serve the following functions:
 
 The total supply of SHBY Tokens shall be 1,000,000,000 tokens, distributed as follows:
 
-1. **Token Sale**: [Percentage to be determined] for public sale and strategic partnerships.
-2. **Team and Advisors**: [Percentage to be determined] for core team and advisors with vesting schedules.
-3. **DAO Treasury**: [Percentage to be determined] for future development and ecosystem growth.
+1. **MetaDAO Minted Tokens**: Tokens minted and managed by MetaDAO with no presale
+2. **Team and Advisors**: 15% for core team and advisors with 4-year vesting schedules
+3. **DAO Treasury**: 20% for future development and ecosystem growth
 4. **Performance Package**: 12,900,000 tokens for performance-based unlocks.
 
 ### 14.3 Token Vesting
@@ -263,11 +263,11 @@ This Agreement may be amended only by a Governance Proposal approved by Members 
 
 ### 16.2 Governing Law
 
-This Agreement shall be governed by and construed in accordance with the laws of [Jurisdiction to be determined], without regard to its conflict of law principles.
+This Agreement shall be governed by and construed in accordance with the laws of Singapore, without regard to its conflict of law principles.
 
 ### 16.3 Dispute Resolution
 
-Any disputes arising under this Agreement shall be resolved through binding arbitration in accordance with the rules of [Arbitration Organization to be determined].
+Any disputes arising under this Agreement shall be resolved through binding arbitration in accordance with the rules of the Singapore International Arbitration Centre (SIAC).
 
 ### 16.4 Severability
 
@@ -292,9 +292,9 @@ This Agreement may be executed in counterparts, including electronic counterpart
 **INITIAL CONTRIBUTORS**
 
 ________________________________________
-[Name of Initial Contributor]
+Shenbury Labs
 
 ________________________________________
-[Name of Initial Contributor]
+Shenbury Contributors
 
-**Date**: _______________, 20__
+**Date**: November 1, 2025
