@@ -25,17 +25,26 @@ Shenbury introduces a decentralized, self-contained intelligent infrastructure f
 ## Tokenomics 代幣經濟學
 
 ### Token Information 代幣信息
-- **Name**: Shenbury Provenance Token 名稱：神堡來源代幣
-- **Symbol**: SHBY 符號：SHBY
-- **Standard**: TRC-404 (Hybrid TRC-20/TRC-721) 標準：TRC-404（混合TRC-20/TRC-721）
-- **Total Supply**: 25,800,000 SHBY 總供應量：25,800,000 SHBY
-- **Conversion Rate**: 10,000 SHBY = 1 NFT 轉換率：10,000 SHBY = 1 NFT
-- **Minting**: Tokens minted and managed by MetaDAO 鑄造：代幣由MetaDAO鑄造和管理
+- **Name**: Shenbury Provenance Token
+  名稱：神堡來源代幣
+- **Symbol**: SHBY
+  符號：SHBY
+- **Standard**: TRC-404 (Hybrid TRC-20/TRC-721)
+  標準：TRC-404（混合TRC-20/TRC-721）
+- **Total Supply**: 25,800,000 SHBY
+  總供應量：25,800,000 SHBY
+- **Conversion Rate**: 10,000 SHBY = 1 NFT
+  轉換率：10,000 SHBY = 1 NFT
+- **Minting**: Tokens minted and managed by MetaDAO
+  鑄造：代幣由MetaDAO鑄造和管理
 
 ### Token Distribution 代幣分配
-- **No Presale**: Tokens will be minted by MetaDAO with no presale 無預售：代幣將由MetaDAO鑄造，無預售
-- **Liquidity**: Provided through MetaDAO's launch mechanism 流動性：通過MetaDAO的啟動機制提供
-- **Ecosystem**: Reserved for platform development and community growth 生態系統：為平台發展和社區增長保留
+- **No Presale**: Tokens will be minted by MetaDAO with no presale
+  無預售：代幣將由MetaDAO鑄造，無預售
+- **Liquidity**: Provided through MetaDAO's launch mechanism
+  流動性：通過MetaDAO的啟動機制提供
+- **Ecosystem**: Reserved for platform development and community growth
+  生態系統：為平台發展和社區增長保留
 
 ## Business Model 商業模式
 
