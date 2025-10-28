@@ -164,7 +164,7 @@ All purchases are final and non-refundable.
 Neither Shenbury nor its affiliates are liable for direct or indirect losses related to the token sale or project operations.
 
 ### DAO Governance Agreement
-Purchasers agree to the Shenbury DAO LLC's operating agreement governing the project.
+Purchasers agree to the Shenbury DAO LLC's operating agreement governing the project. The complete operating agreement is available in the [SHENBURY-DAO-OPERATING-AGREEMENT.md](SHENBURY-DAO-OPERATING-AGREEMENT.md) file.
 
 ## License
 

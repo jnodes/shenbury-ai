@@ -115,6 +115,10 @@ The following intellectual properties will be transferred to the Shenbury DAO en
 3. Domain names, source code, and operational software
 4. Brand identity, marketing assets, and social accounts
 
+## DAO Governance
+
+All token purchasers will be subject to the Shenbury DAO LLC Operating Agreement, which governs the decentralized autonomous organization. The complete operating agreement is available in the project repository at [SHENBURY-DAO-OPERATING-AGREEMENT.md](SHENBURY-DAO-OPERATING-AGREEMENT.md).
+
 ## Contact Information
 
 For listing inquiries, please contact the Shenbury team through our official channels or reach out to MetaDAO co-founder Kollan House directly.
