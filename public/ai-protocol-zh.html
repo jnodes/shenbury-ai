@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI協議技術論文 — Dynasty X</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <style>
+        :root {
+            --primary: #000;
+            --secondary: #fff;
+            --accent: #c9302c;
+            --gray-light: #f8f8f8;
+            --gray-medium: #e5e5e5;
+            --text-primary: #000;
+            --text-secondary: #666;
+            --font-primary: 'Cormorant Garamond', serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            background: var(--secondary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-weight: 300;
+        }
+        
+        h1, h2, h3, h4 {
+            font-weight: 300;
+            letter-spacing: -0.02em;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid var(--gray-medium);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0 2rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .logo a {
+            text-decoration: none;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .logo .logo-chinese {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        
+        .logo-image {
+            height: 40px;
+            width: auto;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+        }
+        
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1001;
+        }
+        
+        .language-selector select {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid var(--gray-medium);
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+        
+        .whitepaper-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .whitepaper-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--gray-medium);
+        }
+        
+        .whitepaper-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .whitepaper-meta {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .whitepaper-content {
+            font-size: 1.1rem;
+        }
+        
+        .whitepaper-content h2 {
+            font-size: 1.75rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--gray-medium);
+            padding-bottom: 0.5rem;
+        }
+        
+        .whitepaper-content h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .whitepaper-content h4 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .whitepaper-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .whitepaper-content ul, .whitepaper-content ol {
+            list-style-position: inside;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .whitepaper-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .whitepaper-content code {
+            background: var(--gray-light);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        
+        .whitepaper-content pre {
+            background: var(--gray-light);
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        
+        .whitepaper-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+        
+        .whitepaper-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        .whitepaper-content table, .whitepaper-content th, .whitepaper-content td {
+            border: 1px solid var(--gray-medium);
+        }
+        
+        .whitepaper-content th, .whitepaper-content td {
+            padding: 0.5rem;
+            text-align: left;
+        }
+        
+        .whitepaper-content th {
+            background: var(--gray-light);
+        }
+        
+        .whitepaper-content blockquote {
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--text-secondary);
+        }
+        
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        
+        .footer-logo {
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-logo-image {
+            height: 60px;
+            width: auto;
+        }
+        
+        .footer-bottom {
+            opacity: 0.7;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .whitepaper-container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <select id="language-select" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="zh" selected>中文 (繁體)</option>
+        </select>
+    </div>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">
+                    <img src="/logo.svg" alt="神堡 Logo" class="logo-image">
+                    <span class="logo-chinese">神堡</span> Shenbury
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index-zh.html">首頁</a>
+                <a href="whitepaper-zh.html">白皮書</a>
+                <a href="ai-protocol-zh.html">AI協議</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="whitepaper-container">
+        <div class="whitepaper-header">
+            <h1>AI協議技術論文</h1>
+            <div class="whitepaper-meta">
+                <p><strong>Dynasty X AI驅動的來源協議</strong></p>
+                <p>日期：2025年10月27日 | 作者：Dynasty X核心開發團隊 | 狀態：草案 v1.0</p>
+            </div>
+        </div>
+        
+        <div class="whitepaper-content">
+            <h2>摘要</h2>
+            <p>Dynasty X AI驅動的來源協議引入了一個去中心化的多代理AI系統，用於高價值文化文物的加密級物件驗證。數十億美元藝術市場的主要挑戰是信息不對稱和來源的不透明性，這限制了流動性和信任。我們的協議通過將彈性的自包含AI堆棧與不可變的鏈上賬本融合來解決這個問題。</p>
+            
+            <p>該系統建立在一個"零成本"框架上，本地運行且無外部依賴，消除了API費用並確保數據隱私。它利用了一套專有的NPX庫——包括用於高速向量存儲的AgentDB、用於自主閉環學習的ReasoningBank和用於群體協調的claude-flow——來創建自包含的學習代理。這些代理自主分析、驗證並就文物的真實性達成共識，最終的驗證哈希被不可變地記錄在以太坊區塊鏈上。</p>
+            
+            <h2>1. 介紹</h2>
+            <p>現實世界資產(RWA)的代幣化一直受到單一點故障的阻礙："預言機問題"。鏈上代幣的可靠性僅取決於它所代表的鏈下數據。在高價值藝術市場中，這個問題被放大了。驗證是一個手動的、中心化的且往往是主觀的過程，使得無法以無信任的方式保證真實性。</p>
+            
+            <p>Dynasty X AI協議旨在從根本上解決這個問題。我們沒有依賴人類預言機，而是構建了一個自主的AI群體，作為一個無偏見的、數據驅動的驗證引擎。本文詳細介紹了其架構，從核心理念到具體的技術實現。</p>
+            
+            <h2>2. 代理宣言（核心理念）</h2>
+            <p>我們的架構由"代理宣言"指導，該宣言優先考慮彈性、自主性和安全性：</p>
+            
+            <ul>
+                <li><strong>假設失敗，自動恢復：</strong>系統設計為容錯。代理在彈性網狀拓撲中運行，確保單個代理的失敗不會停止驗證過程。</li>
+                <li><strong>代理作為無狀態的、目的綁定的服務：</strong>每個AI代理都是一個小型的、專業化的微服務，具有單一的專門功能（例如，"化學分析代理"、"拍賣歷史代理"、"視覺風格計量代理"）。</li>
+                <li><strong>零信任安全和不可變賬本：</strong>安全是零信任的。所有代理間通信都經過身份驗證。最終的驗證"證明"會被加密哈希並記錄到以太坊區塊鏈上，創建一個永久的、不可變的來源記錄。</li>
+                <li><strong>人類作為管理者，而非操作者：</strong>人類專家（學者、歷史學家）用於<em>訓練</em>AI群體並提供初始的真實數據。然而，他們被從主動操作的關鍵路徑中移除，確保無偏見的、數據驅動的驗證。</li>
+            </ul>
+            
+            <h2>3. 系統架構：Dynasty X堆棧</h2>
+            <p>Dynasty X堆棧的關鍵創新在於其速度、自主性和零經常成本的結合。整個系統——數據庫、學習模型和嵌入——都在本地運行，使代理能夠成為自包含的學習實體，在沒有外部依賴的情況下保留機構記憶。</p>
+            
+            <h3>3.1 編排層：agentic-flow</h3>
+            <p>agentic-flow是核心編排平台。它管理驗證任務的生命週期，分配專業代理並協調它們之間的數據流。例如，當提交新文物時，agentic-flow啟動一個"驗證"任務，進而激活必要的"工作"代理（例如，編碼器、研究者）。</p>
+            
+            <h3>3.2 群體協調和記憶：claude-flow</h3>
+            <p>claude-flow為代理群體提供了記憶和協調的支柱。它允許代理使用本地優先的記憶架構來存儲和檢索知識。其群體初始化（swarm init topology mesh）在代理之間創建了一個彈性的、去中心化的通信網絡，實現複雜的協作推理。</p>
+            
+            <h3>3.3 基礎數據庫：AgentDB</h3>
+            <p>AgentDB是作為整個群體的"長期記憶"的基礎向量數據庫。它為實時代理系統所需的極端性能進行了優化。</p>
+            
+            <ul>
+                <li><strong>性能：</strong>通過HNSW（分層可導航小世界）索引實現比傳統向量數據庫快150倍的性能。</li>
+                <li><strong>效率：</strong>利用向量量化將記憶壓縮4到32倍，同時保持準確性，使在無需專門基礎設施的情況下對大數據集進行亞毫秒級查詢成為可能。</li>
+            </ul>
+            
+            <h3>3.4 自主學習：ReasoningBank</h3>
+            <p>ReasoningBank是我們的閉環學習系統，靈感來自DeepMind的自主改進框架。這就是群體能夠學習和改進的原因。</p>
+            
+            <ol>
+                <li><strong>評估結果：</strong>當驗證完成（並在稍後由現實世界的拍賣結果確認）時，ReasoningBank評估代理貢獻的準確性。</li>
+                <li><strong>提取知識：</strong>它從結果中提取可重用的知識、模式和啟發式方法。</li>
+                <li><strong>更新信心：</strong>它更新所用推理路徑的"信心分數"，強化成功的策略。</li>
+                <li><strong>加權檢索：</strong>其記憶檢索算法平衡語義相似性、新近性、可靠性和多樣性，確保代理從新舊信息中學習。</li>
+            </ol>
+            
+            <h3>3.5 本地嵌入：transformers.js</h3>
+            <p>所有數據（圖像、化學分析報告、來源文檔）都在本地向量化。這是成本和隱私的關鍵組成部分。</p>
+            
+            <ul>
+                <li><strong>引擎：</strong>使用Xenova/all-MiniLM-L6-v2模型的transformers.js。</li>
+                <li><strong>輸出：</strong>為所有攝取的數據生成384維向量。</li>
+                <li><strong>成本：</strong>在初始23MB模型下載後，所有嵌入操作都在離線狀態下運行，<strong>零邊際成本</strong>，消除了對外部收費嵌入API的依賴。</li>
+            </ul>
+            
+            <h2>4. 驗證工作流程：一個例子</h2>
+            <ol>
+                <li><strong>數據攝取：</strong>提交新文物（例如，明代花瓶）。攝取所有已知數據：高分辨率3D掃描、顏料化學分析和已知來源文檔。</li>
+                <li><strong>本地嵌入：</strong>transformers.js將所有這些非結構化數據轉換為384維向量。</li>
+                <li><strong>任務編排：</strong>agentic-flow啟動驗證任務。</li>
+                <li><strong>代理群體查詢：</strong>
+                    <ul>
+                        <li><strong>視覺代理</strong>查詢AgentDB以獲取視覺上相似的物品（形狀、釉面、標記）。</li>
+                        <li><strong>化學代理</strong>查詢AgentDB以獲取其已知良好文物數據庫中的化學成分匹配。</li>
+                        <li><strong>來源代理</strong>查詢AgentDB以交叉引用拍賣記錄和博物館目錄。</li>
+                    </ul>
+                </li>
+                <li><strong>推理和共識：</strong>claude-flow促進代理之間的通信，分享它們的發現。ReasoningBank綜合它們的輸出，根據歷史可靠性加權，並生成最終的綜合"來源信心分數"。</li>
+                <li><strong>證明：</strong>完整的驗證報告連同其信心分數和使用的數據一起被加密哈希。該哈希通過智能合約發布到以太坊區塊鏈上，創建一個不可變的、無信任的和公開可驗證的"真實性證明"。</li>
+            </ol>
+            
+            <h2>5. 結論</h2>
+            <p>Dynasty X AI驅動的來源協議通過<em>成為</em>預言機來解決高價值藝術的RWA預言機問題。通過構建一個完全集成的、自包含的AI堆棧，我們創建了一個自主的驗證引擎，它無偏見地運行，從其結果中學習，並以零邊際成本運行。該協議是新信任標準的基礎，能夠為世界上最珍貴的文化資產創建一個安全、透明和流動的市場。</p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-logo">
+            <img src="/logo.svg" alt="神堡 Logo" class="footer-logo-image">
+        </div>
+        <div class="footer-bottom">&copy; 2025 神堡 Shenbury. 版權所有.</div>
+    </footer>
+    
+    <script>
+        function changeLanguage() {
+            const language = document.getElementById('language-select').value;
+            if (language === 'en') {
+                window.location.href = 'ai-protocol.html';
+            }
+        }
+    </script>
+</body>
+</html>
