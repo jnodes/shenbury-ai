@@ -67,10 +67,11 @@ The global art market exceeds $60B with less than 5% digitization and verificati
 - **Trust**: On-chain provenance provides immutable verification records 信任：鏈上來源提供不可篡改的驗證記錄
 
 ### Revenue Projections 收入預測
-- **Year 1**: $10M 第1年：1000萬美元
-- **Year 2**: $30M 第2年：3000萬美元
-- **Year 3**: $100M 第3年：1億美元
-- **Year 5**: $500M+ 第5年：5億美元以上
+- **Year 1**: $50M 第1年：5000萬美元
+- **Year 2**: $150M 第2年：1.5億美元
+- **Year 3**: $300M 第3年：3億美元
+
+Based on partnerships with major auction houses and a target of $500M in relic sales over three years, these projections reflect a more achievable growth trajectory focused on quality verification services and premium relic sales. 基於與主要拍賣行的合作關係以及三年內5億美元文物銷售的目標，這些預測反映了專注於優質驗證服務和高端文物銷售的更可實現的增長軌跡。
 
 ## DAO Governance DAO治理
 
