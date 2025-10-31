@@ -1,8 +1,13 @@
-# 神堡：藝術鑑定的AI代理群
+# 神堡：AI鑑定的藝術品與資產代幣化
 
 ## 項目概述
 
-神堡引入了一個去中心化的自包含智能基礎設施，用於驗證和代幣化美術品和歷史文物。其核心是**AI代理群**，結合了本地向量推理、閉環學習和鏈上來源。每個代理都使用完全本地的堆棧獨立運行——數據庫、嵌入和學習層——不依賴外部API或雲系統。
+神堡有限公司是一家總部位於香港的資產代幣化公司。我們正在通過結合兩項獨特資產來釋放價值超過600億美元的非流動性藝術市場：
+
+1.  **資產：** 我們價值2.57億美元的博物館級中國帝制瓷器收藏。
+2.  **技術：** 我們專有的「Dynasty X」AI驅動來源協議，這是一個本地優先的AI群體，專門用於驗證高價值文物。
+
+我們不是一個理論平台；我們是一家資產支持的公司。我們的首項計劃是對我們擁有法律和實物保管權的收藏進行代幣化，首次向公眾投資者開放這一資產類別。
 
 **[English Version](README.md) | [中文版](README-zh.md)**
 
@@ -10,19 +15,33 @@
 
 ## 核心技術特性
 
+我們的「Dynasty X」AI協議是我們的核心技術，這是一個去中心化的自包含智能基礎設施。
+
 ### AI代理群
-- **本地執行**：所有AI處理都在本地運行，無需雲依賴
-- **自包含代理**：具有嵌入式知識庫的獨立操作
-- **專業角色**：專門處理成像、光譜學和文檔分析的代理
-- **閉環學習**：通過強化反饋持續改進
+- **本地執行**：所有AI處理都在本地運行，無需雲依賴。
+- **自包含代理**：具有嵌入式知識庫的獨立操作。
+- **專業角色**：專門處理成像、光譜學和文檔分析的代理。
+- **閉環學習**：通過強化反饋持續改進，由我們內部的藝術專家培訓。
 
 ### 技術架構
-- **AgentDB**：具有HNSW索引和4-32倍壓縮的本地向量數據庫
-- **ReasoningBank**：受DeepMind框架啟發的閉環學習系統
-- **本地嵌入**：使用Xenova/all-MiniLM-L6-v2模型的transformers.js（384維向量）
-- **無外部依賴**：無雲服務的完全自主操作
+- **AgentDB**：具有HNSW索引和4-32倍壓縮的本地向量數據庫。
+- **ReasoningBank**：受DeepMind框架啟發的閉環學習系統。
+- **本地嵌入**：使用Xenova/all-MiniLM-L6-v2模型的transformers.js（384維向量）。
+- **無外部依賴**：無雲服務的完全自主操作。
 
-## 快速開始
+## 收藏（初始資產）
+
+我們的啟動基於我們收藏中的六件基礎性世界級文物，合併估值超過**2.57億美元**。這些作品由神堡有限公司合法保管，構成SHBY代幣的基礎資產。
+
+在此查看完整收藏：[神堡收藏](public/index-zh.html#auctions)
+
+## 項目領導團隊
+
+神堡由一個公開團隊領導，以確保信任和問責制。
+- **技術與金融：** [Jesse Brown](https://linkedin.com/in/digitalassets)（項目負責人）
+- **來源與藝術：** *我們的來源負責人兼首席藝術史學家將在啟動前公佈。*
+
+## 快速開始（針對開發人員）
 
 ### 前提條件
 - Node.js (v14或更高版本)
@@ -44,46 +63,25 @@ npm install
 npm run dev
 ```
 
-訪問`http://localhost:3000`查看應用程序。
-
-## 項目結構
-```
-shenbury-main/
-├── public/                 # 靜態資源
-│   ├── assets/            # 圖像和媒體
-│   ├── js/                # JavaScript文件
-│   ├── index.html         # 主HTML文件
-│   ├── index-zh.html      # 主HTML文件中文版
-│   ├── whitepaper.html    # 白皮書HTML文件
-│   ├── whitepaper-zh.html # 白皮書HTML文件中文版
-│   └── favicon.svg        # 圖標
-├── README.md              # 項目文檔
-├── README-zh.md           # 項目文檔中文版
-├── SHENBURY-DAO-OPERATING-AGREEMENT.md # DAO營運協議
-└── SHENBURY-DAO-OPERATING-AGREEMENT-ZH.md # DAO營運協議中文版
-```
+訪問 http://localhost:3000 查看應用程序。
 
 ## 文檔
-
-- **[白皮書](public/whitepaper-zh.html)** - 技術文檔和系統架構
-- **[Whitepaper (English)](public/whitepaper.html)** - Technical documentation and system architecture
-- **[DAO營運協議](SHENBURY-DAO-OPERATING-AGREEMENT-ZH.md)** - 治理和運營框架
-- **[DAO Operating Agreement (English)](SHENBURY-DAO-OPERATING-AGREEMENT.md)** - Governance and operational framework
+- **[白皮書](public/whitepaper-zh.html)** - 商業模式、代幣經濟學和資產概述。
+- **[AI協議技術論文](public/ai-protocol-zh.html)** - 「Dynasty X」AI協議的深入技術架構。
+- **[營運協議](OPERATING-AGREEMENT-ZH.md)** - 神堡有限公司（香港）的法律框架和治理。
 
 ## 條款和條件
 
-通過訪問或使用神堡，您同意受本倉庫中規定的條款和條件約束。該項目"按原樣"提供，不提供任何形式的保證。
+通過訪問或使用神堡，您同意受本倉庫和營運協議中規定的條款和條件約束。
 
 ### 免責聲明
-神堡是一個實驗性項目，不應被視為投資建議。數字資產的價值高度波動，可能導致重大財務損失。
 
-### DAO治理協議
-購買者同意管轄項目的神堡DAO LLC營運協議。完整的營運協議可在[SHENBURY-DAO-OPERATING-AGREEMENT-ZH.md](SHENBURY-DAO-OPERATING-AGREEMENT-ZH.md)文件中找到。
+神堡是一個資產支持的代幣化項目。數字資產的價值是波動的。這不是投資建議。代幣的法律框架在營運協議中有詳細說明。
 
-## 許可證
+### 許可證
 
 該項目根據MIT許可證授權 - 請參閱[LICENSE](LICENSE)文件了解詳細信息。
 
 ---
 
-**© 2025 神堡. 版權所有.**
+**© 2025 神堡有限公司. 版權所有.**
