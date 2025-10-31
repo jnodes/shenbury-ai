@@ -4,7 +4,7 @@
 
 神堡引入了一個去中心化的自包含智能基礎設施，用於驗證和代幣化美術品和歷史文物。其核心是**AI代理群**，結合了本地向量推理、閉環學習和鏈上來源。每個代理都使用完全本地的堆棧獨立運行——數據庫、嵌入和學習層——不依賴外部API或雲系統。
 
-**[English Version](METADAO-LISTING.md) | [中文版](METADAO-LISTING-ZH.md)**
+[English Version](METADAO-LISTING.md) | [中文版](METADAO-LISTING-ZH.md)
 
 ## 核心功能
 

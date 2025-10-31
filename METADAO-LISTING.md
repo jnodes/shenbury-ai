@@ -1,132 +1,115 @@
-# Shenbury MetaDAO Listing 神堡MetaDAO上市
+# Shenbury MetaDAO Listing
 
-## Project Overview 項目概述
+## Project Overview
 
 Shenbury introduces a decentralized, self-contained intelligent infrastructure for authenticating and tokenizing fine art and historical artifacts. At its core is the **AI Agent Swarm**, combining local vector reasoning, closed-loop learning, and on-chain provenance. Each agent operates independently with a fully local stack—database, embeddings, and learning layer—without reliance on external APIs or cloud systems.
 
-神堡引入了一個去中心化的自包含智能基礎設施，用於驗證和代幣化美術品和歷史文物。其核心是**AI代理群**，結合了本地向量推理、閉環學習和鏈上來源。每個代理都使用完全本地的堆棧獨立運行——數據庫、嵌入和學習層——不依賴外部API或雲系統。
+[English Version](METADAO-LISTING.md) | [中文版](METADAO-LISTING-ZH.md)
 
-**[English Version](METADAO-LISTING.md) | [中文版](METADAO-LISTING-ZH.md)**
+## Key Features
 
-## Key Features 核心功能
+### AI Agent Swarm
+- **Local Execution**: All AI processing runs locally without cloud dependencies
+- **Self-Contained Agents**: Independent operation with embedded knowledge bases
+- **Specialized Roles**: Dedicated agents for imaging, spectroscopy, and documentation analysis
+- **Closed-Loop Learning**: Continuous improvement through reinforcement feedback
 
-### AI Agent Swarm AI代理群
-- **Local Execution**: All AI processing runs locally without cloud dependencies 本地執行：所有AI處理都在本地運行，無需雲依賴
-- **Self-Contained Agents**: Independent operation with embedded knowledge bases 自包含代理：具有嵌入式知識庫的獨立操作
-- **Specialized Roles**: Dedicated agents for imaging, spectroscopy, and documentation analysis 專業角色：專門處理成像、光譜學和文檔分析的代理
-- **Closed-Loop Learning**: Continuous improvement through reinforcement feedback 閉環學習：通過強化反饋持續改進
+### Technical Architecture
+- **AgentDB**: High-performance local vector database with HNSW indexing and 4-32x compression
+- **ReasoningBank**: Closed-loop learning system inspired by DeepMind's framework
+- **Local Embeddings**: transformers.js with Xenova/all-MiniLM-L6-v2 model (384-dimensional vectors)
+- **No External Dependencies**: Fully autonomous operation without cloud services
 
-### Technical Architecture 技術架構
-- **AgentDB**: Local vector database with HNSW indexing and 4-32x compression AgentDB：具有HNSW索引和4-32倍壓縮的本地向量數據庫
-- **ReasoningBank**: Closed-loop learning system inspired by DeepMind's framework ReasoningBank：受DeepMind框架啟發的閉環學習系統
-- **Local Embeddings**: transformers.js with Xenova/all-MiniLM-L6-v2 model (384-dimensional vectors) 本地嵌入：使用Xenova/all-MiniLM-L6-v2模型的transformers.js（384維向量）
-- **No External Dependencies**: Fully autonomous operation without cloud services 無外部依賴：無雲服務的完全自主操作
+## Tokenomics
 
-## Tokenomics 代幣經濟學
-
-### Token Information 代幣信息
+### Token Information
 - **Name**: Shenbury Provenance Token
-  名稱：神堡來源代幣
 - **Symbol**: SHBY
-  符號：SHBY
 - **Standard**: To be determined by MetaDAO
-  標準：由MetaDAO確定
 - **Total Supply**: 25,800,000 SHBY
-  總供應量：25,800,000 SHBY
 - **Conversion Rate**: 10,000 SHBY = 1 NFT
-  轉換率：10,000 SHBY = 1 NFT
 - **Minting**: Tokens minted and managed by MetaDAO
-  鑄造：代幣由MetaDAO鑄造和管理
 
-### Token Distribution 代幣分配
+### Token Distribution
 - **No Presale**: Tokens will be minted by MetaDAO with no presale
-  無預售：代幣將由MetaDAO鑄造，無預售
 - **Liquidity**: Provided through MetaDAO's launch mechanism
-  流動性：通過MetaDAO的啟動機制提供
 - **Ecosystem**: Reserved for platform development and community growth
-  生態系統：為平台發展和社區增長保留
 
-## Business Model 商業模式
+## Business Model
 
 Shenbury's business model focuses on becoming a go-to-market service for verified high-value art assets. By providing trusted authentication and provenance verification, Shenbury enables collectors to confidently bring verified pieces to auction.
 
-神堡的商業模式專注於成為經過驗證的高價值藝術資產的上市服務。通過提供可信的鑑定和來源驗證，神堡使收藏家能夠自信地將經過驗證的作品帶到拍賣會上。
-
-### Revenue Model 收入模式
+### Revenue Model
 Shenbury charges a 10% commission on the winning bid for any verified artifact sold at auction. This simple, performance-based model aligns our incentives with successful sales outcomes.
 
-神堡對拍賣會上售出的任何經過驗證的文物的成交價收取10%的佣金。這種簡單的、基於績效的模式使我們的利益與成功的銷售結果保持一致。
+### Market Opportunity
+The global art market exceeds $60B with less than 5% digitization and verification services penetration. Shenbury targets the high-end market, focusing on artifacts valued over $1M.
 
-### Market Opportunity 市場機會
-The global art market exceeds $60B with less than 5% digitization and verification services penetration. Shenbury targets the high-end market, focusing on artifacts valued over $1M. 全球藝術市場規模超過600億美元，數字化和驗證服務滲透率低於5%。神堡定位於高端市場，專注於價值超過100萬美元的文物。
+### Competitive Advantages
+- **Technology Leadership**: Local AI agent swarms provide unparalleled performance and privacy
+- **Cost Efficiency**: Autonomous operation reduces verification costs by over 90%
+- **Scalability**: No cloud dependencies enable infinite scaling
+- **Trust**: On-chain provenance provides immutable verification records
 
-### Competitive Advantages 競爭優勢
-- **Technology Leadership**: Local AI agent swarms provide unparalleled performance and privacy 技術領先：本地AI代理群提供無與倫比的性能和隱私
-- **Cost Efficiency**: Autonomous operation reduces verification costs by over 90% 成本效益：自主運行將驗證成本降低90%以上
-- **Scalability**: No cloud dependencies enable infinite scaling 可擴展性：無雲依賴實現無限擴展
-- **Trust**: On-chain provenance provides immutable verification records 信任：鏈上來源提供不可篡改的驗證記錄
+### Revenue Projections
+- **Year 1**: $50M
+- **Year 2**: $150M
+- **Year 3**: $300M
 
-### Revenue Projections 收入預測
-- **Year 1**: $50M 第1年：5000萬美元
-- **Year 2**: $150M 第2年：1.5億美元
-- **Year 3**: $300M 第3年：3億美元
+Based on partnerships with major auction houses and a target of $500M in relic sales over three years, these projections reflect a more achievable growth trajectory focused on quality verification services and premium relic sales.
 
-Based on partnerships with major auction houses and a target of $500M in relic sales over three years, these projections reflect a more achievable growth trajectory focused on quality verification services and premium relic sales. 基於與主要拍賣行的合作關係以及三年內5億美元文物銷售的目標，這些預測反映了專注於優質驗證服務和高端文物銷售的更可實現的增長軌跡。
-
-## DAO Governance DAO治理
+## DAO Governance
 
 Shenbury operates as a decentralized autonomous organization (DAO) governed by smart contracts and community consensus. The DAO does not own any physical assets, including works of art. All art collections and physical assets remain the property of their respective owners.
 
-神堡作為一個由智能合約和社區共識治理的去中心化自治組織(DAO)運營。DAO不擁有任何實物資產，包括藝術品。所有藝術收藏和實物資產仍為其各自所有者擁有。
-
-### DAO Governance Agreement DAO治理協議
-Purchasers agree to the Shenbury DAO LLC's operating agreement governing the project. The complete operating agreement is available in the [SHENBURY-DAO-OPERATING-AGREEMENT.md](SHENBURY-DAO-OPERATING-AGREEMENT.md) file. 購買者同意管轄項目的神堡DAO LLC營運協議。完整的營運協議可在[SHENBURY-DAO-OPERATING-AGREEMENT.md](SHENBURY-DAO-OPERATING-AGREEMENT.md)文件中找到。
+### DAO Governance Agreement
+Purchasers agree to the Shenbury DAO LLC's operating agreement governing the project. The complete operating agreement is available in the [SHENBURY-DAO-OPERATING-AGREEMENT.md](SHENBURY-DAO-OPERATING-AGREEMENT.md) file.
 
 [中文版協議](SHENBURY-DAO-OPERATING-AGREEMENT-ZH.md)
 
-## Technical Documentation 技術文檔
+## Technical Documentation
 
-### Whitepaper 白皮書
-For detailed technical information about the Shenbury AI Agent Swarm architecture, please refer to our whitepaper: 有關神堡AI代理群架構的詳細技術信息，請參閱我們的白皮書：
+### Whitepaper
+For detailed technical information about the Shenbury AI Agent Swarm architecture, please refer to our whitepaper:
 
 - **[English Whitepaper](public/whitepaper.html)**
 - **[中文白皮書](public/whitepaper-zh.html)**
 
-### Key Technical Components 主要技術組件
-1. **AgentDB**: High-performance local vector database with sub-millisecond query times AgentDB：具有亞毫秒查詢時間的高性能本地向量數據庫
-2. **ReasoningBank**: Closed-loop reinforcement learning system for continuous agent improvement ReasoningBank：用於持續代理改進的閉環強化學習系統
-3. **Local Embeddings**: Transformer-based semantic embeddings without cloud dependencies 本地嵌入：基於變換器的語義嵌入，無雲依賴
-4. **Swarm Coordination**: Multi-agent task allocation and consensus mechanisms 群體協調：多代理任務分配和共識機制
+### Key Technical Components
+1. **AgentDB**: High-performance local vector database with sub-millisecond query times
+2. **ReasoningBank**: Closed-loop reinforcement learning system for continuous agent improvement
+3. **Local Embeddings**: Transformer-based semantic embeddings without cloud dependencies
+4. **Swarm Coordination**: Multi-agent task allocation and consensus mechanisms
 
-## Project Resources 項目資源
+## Project Resources
 
-### Website 網站
+### Website
 - **[English Website](public/index.html)**
 - **[中文網站](public/index-zh.html)**
 
-### GitHub Repository GitHub倉庫
+### GitHub Repository
 - **[Project Repository](https://github.com/jnodes/shenbury-ai)**
 
-### Documentation 文檔
+### Documentation
 - **[README (English)](README.md)**
 - **[README (中文)](README-zh.md)**
 - **[DAO Operating Agreement (English)](SHENBURY-DAO-OPERATING-AGREEMENT.md)**
 - **[DAO Operating Agreement (中文)](SHENBURY-DAO-OPERATING-AGREEMENT-ZH.md)**
 
-## Terms & Conditions 條款和條件
+## Terms & Conditions
 
-By accessing or using Shenbury, you agree to be bound by the terms and conditions set forth in this repository. The project is provided "as is" without warranty of any kind. 通過訪問或使用神堡，您同意受本倉庫中規定的條款和條件約束。該項目"按原樣"提供，不提供任何形式的保證。
+By accessing or using Shenbury, you agree to be bound by the terms and conditions set forth in this repository. The project is provided "as is" without warranty of any kind.
 
-### Disclaimer 免責聲明
-Shenbury is an experimental project and should not be considered investment advice. The value of digital assets is highly volatile and may result in significant financial losses. 神堡是一個實驗性項目，不應被視為投資建議。數字資產的價值高度波動，可能導致重大財務損失。
+### Disclaimer
+Shenbury is an experimental project and should not be considered investment advice. The value of digital assets is highly volatile and may result in significant financial losses.
 
-### DAO Governance Agreement DAO治理協議
-Purchasers agree to the Shenbury DAO LLC's operating agreement governing the project. The complete operating agreement is available in the [SHENBURY-DAO-OPERATING-AGREEMENT.md](SHENBURY-DAO-OPERATING-AGREEMENT.md) file. 購買者同意管轄項目的神堡DAO LLC營運協議。完整的營運協議可在[SHENBURY-DAO-OPERATING-AGREEMENT.md](SHENBURY-DAO-OPERATING-AGREEMENT.md)文件中找到。
+### DAO Governance Agreement
+Purchasers agree to the Shenbury DAO LLC's operating agreement governing the project. The complete operating agreement is available in the [SHENBURY-DAO-OPERATING-AGREEMENT.md](SHENBURY-DAO-OPERATING-AGREEMENT.md) file.
 
-## Contact 聯繫方式
+## Contact
 
-For more information about Shenbury, please visit our website or contact the development team through GitHub. 有關神堡的更多信息，請訪問我們的網站或通過GitHub聯繫開發團隊。
+For more information about Shenbury, please visit our website or contact the development team through GitHub.
 
 ---
 
-**© 2025 Shenbury 神堡. All rights reserved.** 版權所有.
+**© 2025 Shenbury. All rights reserved.**
