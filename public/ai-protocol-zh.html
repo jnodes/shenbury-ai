@@ -57,6 +57,7 @@
             height: 80px;
             max-width: 1400px;
             margin: 0 auto;
+            position: relative;
         }
         
         .logo a {
@@ -82,6 +83,7 @@
         .nav-links {
             display: flex;
             gap: 2rem;
+            margin-left: 1rem;
         }
         
         .nav-links a {
@@ -90,10 +92,8 @@
         }
         
         .language-selector {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            z-index: 1001;
+            margin-left: auto;
+            margin-right: 20px;
         }
         
         .language-selector select {
@@ -237,35 +237,40 @@
         
         @media (max-width: 768px) {
             .nav-links {
-                display: none;
+                gap: 1rem;
             }
             
             .whitepaper-container {
                 padding: 0 1rem;
             }
+            
+            .language-selector { top: 10px; right: 10px; }
+        }
+        
+        @media (max-width: 480px) { 
+            .language-selector { top: 5px; right: 5px; }
+            .language-selector select { padding: 0.25rem; font-size: 0.8rem; }
         }
     </style>
 </head>
 <body>
-    <div class="language-selector">
-        <select id="language-select" onchange="changeLanguage()">
-            <option value="en">English</option>
-            <option value="zh" selected>中文 (繁體)</option>
-        </select>
-    </div>
-    
     <header>
         <nav>
             <div class="logo">
                 <a href="/">
                     <img src="/logo.svg" alt="神堡 Logo" class="logo-image">
-                    <span class="logo-chinese">神堡</span> Shenbury
                 </a>
             </div>
             <div class="nav-links">
                 <a href="index-zh.html">首頁</a>
                 <a href="whitepaper-zh.html">白皮書</a>
                 <a href="ai-protocol-zh.html">AI協議</a>
+            </div>
+            <div class="language-selector">
+                <select id="language-select" onchange="changeLanguage()">
+                    <option value="en" selected>English</option>
+                    <option value="zh">中文 (繁體)</option>
+                </select>
             </div>
         </nav>
     </header>
@@ -369,6 +374,8 @@
             const language = document.getElementById('language-select').value;
             if (language === 'en') {
                 window.location.href = 'ai-protocol.html';
+            } else {
+                window.location.href = 'ai-protocol-zh.html';
             }
         }
     </script>
