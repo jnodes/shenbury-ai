@@ -89,6 +89,12 @@
         .nav-links a {
             text-decoration: none;
             color: var(--text-secondary);
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
         }
         
         .language-selector {
@@ -107,6 +113,9 @@
             max-width: 800px;
             margin: 2rem auto;
             padding: 0 2rem;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            background: white;
+            border-radius: 8px;
         }
         
         .whitepaper-header {
@@ -128,6 +137,49 @@
         
         .whitepaper-content {
             font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .whitepaper-content h1, .whitepaper-content h2, .whitepaper-content h3, .whitepaper-content h4 {
+            color: #333;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .whitepaper-content h2 {
+            font-size: 1.75rem;
+            border-bottom: 1px solid var(--gray-medium);
+            padding-bottom: 0.5rem;
+        }
+        
+        .whitepaper-content h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+        
+        .whitepaper-content h4 {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .whitepaper-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        
+        .whitepaper-content ul, .whitepaper-content ol {
+            list-style-position: outside;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .whitepaper-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .whitepaper-content strong {
+            font-weight: 500;
         }
         
         .whitepaper-content h2 {
@@ -175,11 +227,14 @@
         }
         
         .whitepaper-content pre {
-            background: var(--gray-light);
+            background: #f5f5f5;
             padding: 1rem;
             border-radius: 4px;
             overflow-x: auto;
             margin-bottom: 1rem;
+            border: 1px solid #e0e0e0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
         }
         
         .whitepaper-content img {
@@ -205,6 +260,20 @@
         
         .whitepaper-content th {
             background: var(--gray-light);
+        }
+        
+        .whitepaper-content blockquote {
+            border-left: 4px solid var(--accent);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            background: var(--gray-light);
+            font-style: italic;
+        }
+        
+        .whitepaper-content .section-divider {
+            height: 1px;
+            background: var(--gray-medium);
+            margin: 2rem 0;
         }
         
         .whitepaper-content blockquote {

@@ -292,7 +292,7 @@ This Agreement may be executed in counterparts, including electronic counterpart
 **INITIAL CONTRIBUTORS**
 
 ________________________________________
-Shenbury Labs
+Shenbury Collection
 
 ________________________________________
 Shenbury Contributors

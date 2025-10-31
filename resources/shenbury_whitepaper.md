@@ -1,6 +1,6 @@
 # Shenbury Whitepaper v1.1 — Research Edition
 
-**Author:** Shenbury Labs  
+**Author:** Shenbury Collection  
 **Contact:** shenbury.com  
 **Version:** v1.1 (Research Edition)  
 **Date:** 2025
@@ -205,6 +205,6 @@ Shenbury establishes a new computational paradigm: self-contained AI agents that
 
 ---
 
-**Author:** Shenbury Labs  
-© 2025 Shenbury Labs — shenbury.com
+**Author:** Shenbury Collection  
+© 2025 Shenbury Collection — shenbury.com
 

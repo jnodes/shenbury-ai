@@ -8,7 +8,9 @@ Shenbury introduces a decentralized, self-contained intelligent infrastructure f
 
 **[English Version](README.md) | [中文版](README-zh.md)**
 
-## Key Features 核心功能
+For detailed technical documentation, business model, and tokenomics, please refer to our [Whitepaper](public/whitepaper.html). 如需詳細的技術文檔、商業模式和代幣經濟學，請參閱我們的[白皮書](public/whitepaper-zh.html)。
+
+## Key Technical Features 核心技術特性
 
 ### AI Agent Swarm AI代理群
 - **Local Execution**: All AI processing runs locally without cloud dependencies 本地執行：所有AI處理都在本地運行，無需雲依賴
@@ -21,49 +23,6 @@ Shenbury introduces a decentralized, self-contained intelligent infrastructure f
 - **ReasoningBank**: Closed-loop learning system inspired by DeepMind's framework ReasoningBank：受DeepMind框架啟發的閉環學習系統
 - **Local Embeddings**: transformers.js with Xenova/all-MiniLM-L6-v2 model (384-dimensional vectors) 本地嵌入：使用Xenova/all-MiniLM-L6-v2模型的transformers.js（384維向量）
 - **No External Dependencies**: Fully autonomous operation without cloud services 無外部依賴：無雲服務的完全自主操作
-
-### Tokenomics 代幣經濟學
-- **Token**: SHBY (Shenbury Provenance Token) 代幣：SHBY（神堡來源代幣）
-- **Total Supply**: 25,800,000 SHBY 總供應量：25,800,000 SHBY
-- **No Presale**: Tokens minted and managed by MetaDAO 無預售：代幣由MetaDAO鑄造和管理
-- **Utility**: Governance, verification discounts, and ecosystem access 效用：治理、驗證折扣和生態系統訪問
-
-## Business Model 商業模式
-
-Shenbury's sustainable business model is designed to capture value from the $60B+ global art market while building a comprehensive verification ecosystem. The revenue model is diversified across multiple streams to ensure long-term viability and growth.
-
-神堡的可持續商業模式旨在從600億美元以上的全球藝術市場中獲取價值，同時建立全面的驗證生態系統。收入模式多元化，以確保長期可行性和增長。
-
-### Revenue Model 收入模式
-Shenbury charges a 10% commission on the winning bid for any verified artifact sold at auction. This simple, performance-based model aligns our incentives with successful sales outcomes.
-
-神堡對拍賣會上售出的任何經過驗證的文物的成交價收取10%的佣金。這種簡單的、基於績效的模式使我們的利益與成功的銷售結果保持一致。
-
-### Market Opportunity 市場機會
-The global art market exceeds $60B with less than 5% digitization and verification services penetration. Shenbury targets the high-end market, focusing on artifacts valued over $1M. 全球藝術市場規模超過600億美元，數字化和驗證服務滲透率低於5%。神堡定位於高端市場，專注於價值超過100萬美元的文物。
-
-### Competitive Advantages 競爭優勢
-- **Technology Leadership**: Local AI agent swarms provide unparalleled performance and privacy 技術領先：本地AI代理群提供無與倫比的性能和隱私
-- **Cost Efficiency**: Autonomous operation reduces verification costs by over 90% 成本效益：自主運行將驗證成本降低90%以上
-- **Scalability**: No cloud dependencies enable infinite scaling 可擴展性：無雲依賴實現無限擴展
-- **Trust**: On-chain provenance provides immutable verification records 信任：鏈上來源提供不可篡改的驗證記錄
-
-### Revenue Projections 收入預測
-- **Year 1**: $10M 第1年：1000萬美元
-- **Year 2**: $30M 第2年：3000萬美元
-- **Year 3**: $100M 第3年：1億美元
-- **Year 5**: $500M+ 第5年：5億美元以上
-
-## DAO Governance DAO治理
-
-Shenbury operates as a decentralized autonomous organization (DAO) governed by smart contracts and community consensus. The DAO does not own any physical assets, including works of art. All art collections and physical assets remain the property of their respective owners.
-
-神堡作為一個由智能合約和社區共識治理的去中心化自治組織(DAO)運營。DAO不擁有任何實物資產，包括藝術品。所有藝術收藏和實物資產仍為其各自所有者擁有。
-
-### DAO Governance Agreement DAO治理協議
-Purchasers agree to the Shenbury DAO LLC's operating agreement governing the project. The complete operating agreement is available in the [SHENBURY-DAO-OPERATING-AGREEMENT.md](SHENBURY-DAO-OPERATING-AGREEMENT.md) file. 購買者同意管轄項目的神堡DAO LLC營運協議。完整的營運協議可在[SHENBURY-DAO-OPERATING-AGREEMENT.md](SHENBURY-DAO-OPERATING-AGREEMENT.md)文件中找到。
-
-[中文版協議](SHENBURY-DAO-OPERATING-AGREEMENT-ZH.md)
 
 ## Quick Start 快速開始
 
