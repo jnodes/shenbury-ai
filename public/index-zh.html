@@ -104,20 +104,20 @@
     </header>
     <section class="hero">
         <div class="hero-content">
-            <div class="jin-badge"><img src="/favicon.svg" alt="AI代理 Logo"><span>由AI代理驗證</span></div>
-            <h1>神堡有限公司收藏</h1>
-            <p>神堡有限公司是一家總部位於香港的資產代幣化公司，正在釋放價值超過600億美元的非流動性藝術市場。我們正在對我們擁有價值2.57億美元以上的博物館級中國帝制瓷器收藏進行代幣化，首次向公眾投資者開放這一資產類別。</p>
+            <div class="jin-badge"><img src="/favicon.svg" alt="AI代理 Logo"><span>中國帝制瓷器</span></div>
+            <h1>神堡有限公司歷史收藏</h1>
+            <p>神堡有限公司是一家總部位於香港的公司，管理著世界上最珍貴的中國帝制瓷器私人收藏之一。我們的收藏包括六件基礎性的世界級文物，合併估值超過2.57億美元，代表了世界上一些最稀有的作品。</p>
             <div class="hero-buttons">
-                <a href="whitepaper-zh.html" class="hero-cta primary">閱讀白皮書</a>
+                <a href="whitepaper-zh.html" class="hero-cta primary">探索收藏</a>
             </div>
         </div>
     </section>
     <div class="auction-header" id="auctions">
-        <h2>收藏</h2>
-        <p>我們的啟動基於我們收藏中的六件基礎性世界級文物，合併估值超過<strong>2.57億美元</strong>。這些作品由神堡有限公司合法保管，構成SHBY代幣的基礎資產。</p>
+        <h2>歷史收藏</h2>
+        <p>我們的收藏代表了世界上最稀有和最具歷史意義的中國帝制瓷器。在全球已知的真品汝窯不到100件的情況下，我們的收藏包括多件這些皇室珍寶，每件都具有無可挑剔的來源和非凡的文化意義。</p>
         <div class="auction-stats">
-            <div class="stat-item"><span class="stat-value" id="total-lots">0</span><span>總拍品數</span></div>
-            <div class="stat-item"><span class="stat-value" id="total-value">$0</span><span>總價值 (美元)</span></div>
+            <div class="stat-item"><span class="stat-value" id="total-lots">6</span><span>皇室珍寶</span></div>
+            <div class="stat-item"><span class="stat-value" id="total-value">$2.57億+</span><span>收藏價值</span></div>
         </div>
     </div>
     <div class="artifacts-grid" id="artifacts-grid"></div>
@@ -204,8 +204,8 @@
                 if (e.target.classList.contains('modal')) modal.style.display = 'none';
             });
             renderGrid();
-            document.getElementById('total-lots').textContent = artifacts.length;
-            document.getElementById('total-value').textContent = currencyFormatter.format(artifacts.reduce((s, a) => s + a.currentBid, 0));
+            document.querySelector('.stat-item .stat-value:first-child').textContent = artifacts.length;
+            document.querySelector('.stat-item .stat-value:last-child').textContent = currencyFormatter.format(artifacts.reduce((s, a) => s + a.currentBid, 0));
         });
     </script>
 </body>
