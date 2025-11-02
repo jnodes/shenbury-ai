@@ -1,7 +1,7 @@
 {
   "name": "shenbury",
   "version": "1.0.0",
-  "description": "Shenbury - AI Agent Swarm Technologies for Art Authentication | Local Vector Database & Memory Systems",
+  "description": "Shenbury - AI Agent Swarm Technologies for Asset Verification | Local Vector Database & Memory Systems",
   "main": "public/index.html",
   "scripts": {
     "start": "npx serve public",
@@ -14,8 +14,8 @@
     "web3",
     "erc-404",
     "nft",
-    "art",
-    "provenance"
+    "ai",
+    "verification"
   ],
   "author": "Shenbury Team",
   "license": "MIT",

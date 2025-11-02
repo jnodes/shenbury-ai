@@ -1,13 +1,13 @@
-# Shenbury: AI-Verified Art & Asset Tokenization 神堡：AI鑑定的藝術品與資產代幣化
+# Shenbury: AI-Verified Asset Tokenization 神堡：AI鑑定的資產代幣化
 
 ## Project Overview 項目概述
 
-Shenbury Ltd. is a Hong Kong-based asset tokenization company. We are unlocking the $60B+ illiquid art market by combining two unique assets:
+Shenbury Ltd. is a Hong Kong-based technology company focused on developing innovative solutions for asset verification and tokenization. Our core innovation centers on proprietary technology that solves critical challenges in the digital asset space.
 
-1.  **The Assets:** Our $257M+ portfolio of museum-grade Chinese imperial ceramics.
-2.  **The Technology:** Our proprietary "Dynasty X" AI-Powered Provenance Protocol, a local-first AI swarm built to verify high-value artifacts.
+Our core innovation is:
+**The Technology:** Our proprietary "Dynasty X" AI-Powered Provenance Protocol, a local-first AI swarm built to verify assets and solve the "oracle problem" for RWA tokenization.
 
-We are not a theoretical platform; we are an asset-backed company. Our first initiative is the tokenization of our own legal-and-physical-custody collection, giving public investors access to this asset class for the first time.
+We're preparing for our MetaDAO ICO launch with a minimum raise amount of $750,000 and a team monthly budget of $125,000 (1/6th of raise), supporting our $600-700M client pipeline.
 
 **[English Version](README.md) | [中文版](README-zh.md)**
 
@@ -21,7 +21,7 @@ Our "Dynasty X" AI Protocol is our core technology, a decentralized, self-contai
 - **Local Execution**: All AI processing runs locally without cloud dependencies.
 - **Self-Contained Agents**: Independent operation with embedded knowledge bases.
 - **Specialized Roles**: Dedicated agents for imaging, spectroscopy, and documentation analysis.
-- **Closed-Loop Learning**: Continuous improvement through reinforcement feedback, trained by our in-house art experts.
+- **Closed-Loop Learning**: Continuous improvement through reinforcement feedback, trained by our in-house technology experts.
 
 ### Technical Architecture 技術架構
 - **AgentDB**: Local vector database with HNSW indexing and 4-32x compression.
@@ -29,17 +29,17 @@ Our "Dynasty X" AI Protocol is our core technology, a decentralized, self-contai
 - **Local Embeddings**: transformers.js with Xenova/all-MiniLM-L6-v2 model (384-dimensional vectors).
 - **No External Dependencies**: Fully autonomous operation without cloud services.
 
-## The Collection (Initial Assets)
+## Technology Platform
 
-Our launch is built on six foundational, world-class artifacts from our collection, with a combined valuation over **$257,000,000 USD**. These pieces are held in legal custody by Shenbury Ltd. and form the underlying assets for the SHBY token.
+Our launch is built on our proprietary technology stack, including the "Dynasty X" AI Agent Swarm, AgentDB vector database, and ReasoningBank closed-loop learning system. This technology represents years of research and development in autonomous AI systems for asset verification.
 
-View the full collection here: [Shenbury Collection](public/index.html#auctions)
+Learn more about our technology platform: [Shenbury Technology](public/index.html#technology)
 
 ## Project Leadership
 
 Shenbury is led by a public team to ensure trust and accountability.
 - **Technology & Finance:** [Jesse Brown](https://linkedin.com/in/digitalassets) (Project Lead)
-- **Provenance & Art:** *Our Head of Provenance & Chief Art Historian will be announced prior to launch.*
+- **Additional leadership:** *Additional team members will be announced prior to launch.*
 
 ## Quick Start (For Developers) 快速開始
 
@@ -66,7 +66,7 @@ npm run dev
 Visit http://localhost:3000 to view the application.
 
 ## Documentation 文檔
-- **[Whitepaper](public/whitepaper.html)** - Business model, tokenomics, and asset overview.
+- **[Whitepaper](public/whitepaper.html)** - Business model, tokenomics, and technology platform overview.
 - **[AI Protocol Technical Paper](public/ai-protocol.html)** - In-depth technical architecture of the "Dynasty X" AI Protocol.
 - **[Operating Agreement](OPERATING-AGREEMENT.md)** - Legal framework and governance for Shenbury Ltd. (Hong Kong).
 
@@ -76,7 +76,7 @@ By accessing or using Shenbury, you agree to be bound by the terms and condition
 
 ### Disclaimer 免責聲明
 
-Shenbury is an asset-backed tokenization project. The value of digital assets is volatile. This is not investment advice. The legal framework governing the tokens is detailed in the Operating Agreement.
+Shenbury is a technology-focused tokenization project. The value of digital assets is volatile. This is not investment advice. The legal framework governing the tokens is detailed in the Operating Agreement.
 
 ### License 許可證
 

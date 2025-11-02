@@ -1,0 +1,22 @@
+# Getting Listed
+
+> What founders need to do to raise on MetaDAO
+
+## What we need
+
+To get listed, founders need to provide us with the following:
+
+* **Project name and description:** what the project is called and why someone should want to participate in its upside, both a 1-2 sentence version and a longer version - [here's an example of the longer version](https://metadao.fi/launchpad/projects/DHW6DToYjhwknzVCDvZ6r7hSv7ZpGw9adEN8NvZuUpVh).
+* **Token name and ticker:** for example, “Omnipair” and “OMFG.” We recommend using memorable and unique tickers.
+* **Project image and (if different) token image:** what people will see on the MetaDAO site and on trading venues like Jupiter.
+* **Minimum raise amount:** how much your project needs for you to go this path. If the project raises less than this amount the sale will be refunded. We recommend adding buffer for unexpected expenses and the 20% liquidity provision.
+* **Monthly team budget:** how much the team needs every month from the treasury to operate normally. Spends that are larger than this need to be approved by governance. You can also configure this number later with governance. It can be no larger than 1/6th of the minimum raise amount.
+* **Performance package configuration:** after the ICO, 10M tokens go to sale participants and 2.9M tokens go to liquidity. But you can also choose for up to 12.9M tokens to be pre-allocated to a performance package. This package is split up into 5 equal tranches, each of which unlock at 2x, 4x, 8x, 16x, and 32x the ICO price respectively. There’s also a minimum time at which insiders can start unlocking, which must be at least 18 months from ICO date but can be longer if you wish. The price is taken over a 3-month TWAP, which extends the true date at which an insider can receive tokens for 3 months beyond the minimum date they can start unlocking.
+  * **Example:** Alice pre-allocates 10M tokens to her project’s performance package with a minimum unlock time of 24 months out. The project raises \$1m, setting an ICO price of \$0.1 (1 million dollars divided by 10 million tokens). 24 months out, the token is trading 10x above the ICO price at \$1. Alice initiates the TWAP and the price stays at \$1 over 3 months. She then unlocks the first three tranches, equating to 6 million tokens. A year later the price is sitting at \$2 and she unlocks another 2 million tokens.
+* **Intellectual property:** the list of intellectual properties that the founder(s) will give up to the project’s entity. This includes but is not limited to domain names, software, and social media accounts.
+
+## The process
+
+Today, you need to reach out to MetaDAO co-founder [Kollan House](https://t.me/kollan_house) to get listed. [We’re working on automating this process right now](https://metadao.fi/metadao/trade-v5/7XMU3qTYrXe3yccr4qCLEPvmENGmC22MyMKMX9zJAi9x).
+
+Once we've put you in our system, you'll show up on the site. You can then start the ICO whenever you want.

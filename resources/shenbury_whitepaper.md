@@ -9,15 +9,15 @@
 
 ## Abstract
 
-**Shenbury** introduces a decentralized, self-contained intelligence infrastructure for verifying and tokenizing fine art and historical artifacts. At its core, Shenbury’s **AI Agent Swarm** combines local vector reasoning, closed-loop learning, and on-chain provenance. Each agent operates independently using a fully local stack — database, embedding, and learning layers — with no reliance on external APIs or cloud systems.
+**Shenbury** introduces a decentralized, self-contained intelligence infrastructure for verifying and tokenizing real-world assets. At its core, Shenbury's **AI Agent Swarm** combines local vector reasoning, closed-loop learning, and on-chain provenance. Each agent operates independently using a fully local stack — database, embedding, and learning layers — with no reliance on external APIs or cloud systems.
 
-This document formalizes Shenbury’s mathematical foundations, learning dynamics, and provenance chain integration.
+This document formalizes Shenbury's mathematical foundations, learning dynamics, and provenance chain integration.
 
 ---
 
 ## 1. Problem Statement
 
-The global art market exceeds $60 billion annually but remains structurally illiquid and opaque. Provenance — the verified history of ownership and authenticity — dictates value but is hindered by centralized trust models and subjective expertise.
+The global market for real-world assets (RWAs) exceeds $60 trillion but remains structurally illiquid and opaque. Provenance — the verified history of ownership and authenticity — dictates value but is hindered by centralized trust models and subjective expertise.
 
 Let:
 \[
@@ -29,7 +29,7 @@ where:
 - \(A_a\) authentication confidence,
 - \(R_a\) reputation of verification authority.
 
-For art assets, \(P_a\) and \(A_a\) are highly uncertain, resulting in suppressed liquidity and inflated risk premiums. Shenbury increases \(P_a\) and \(A_a\) via decentralized, self-learning AI agents operating under verifiable cryptographic consensus.
+For RWAs, \(P_a\) and \(A_a\) are highly uncertain, resulting in suppressed liquidity and inflated risk premiums. Shenbury increases \(P_a\) and \(A_a\) via decentralized, self-learning AI agents operating under verifiable cryptographic consensus.
 
 ---
 
@@ -41,7 +41,7 @@ The Shenbury stack integrates five primary layers:
 2. **ReasoningBank** — Closed-loop reinforcement and knowledge synthesis  
 3. **Agentic-Flow** — Multi-agent orchestration and adaptive task allocation  
 4. **Claude-Flow** — Distributed memory and swarm synchronization  
-5. **Shenbury Provenance Chain** — Blockchain registry of authenticated artifacts
+5. **Shenbury Provenance Chain** — Blockchain registry of authenticated assets
 
 Data flows from raw inputs (imaging, spectroscopy, documentation) through the agent stack into authenticated on-chain records.
 
@@ -139,7 +139,7 @@ Every authenticated verification produces a cryptographic commitment recorded on
 \[
 h_t = H(A_t, D_t, C_t)
 \]
-- \(A_t\): artifact identifier and metadata  
+- \(A_t\): asset identifier and metadata  
 - \(D_t\): diagnostic dataset (images, spectra, analytics)  
 - \(C_t\): consensus confidence from the agent swarm
 
@@ -166,7 +166,7 @@ AgentDB’s HNSW index coupled with vector quantization provides sub-millisecond
 - **Governance:** protocol changes, parameter tuning (\\(\\lambda\\) weights, decay constants), and roadmap decisions  
 - **Access:** paid access to authenticated provenance records and enriched datasets  
 - **Staking & Rewards:** staking for computational verification nodes and reward distribution to agents (or operators) contributing high-confidence verifications  
-- **Incentives:** submission bounties for authenticated artifacts and economic alignment with auction house partners
+- **Incentives:** submission bounties for authenticated assets and economic alignment with verification partners
 
 Token economics follow the previously defined performance package schedule; governance can adjust parameters via DAO voting. Tokens are minted and managed by MetaDAO with no presale.
 
@@ -177,7 +177,7 @@ Token economics follow the previously defined performance package schedule; gove
 - **Local-First Sovereignty:** by design, no external APIs are required for embeddings or primary reasoning, reducing attack surface and data leakage risk.  
 - **Auditability:** agent logs, diagnostic data, and consensus weights are auditable by governance and third-party experts.  
 - **Human-in-the-Loop for Edge Cases:** agents flag low-confidence or conflicting results for expert review before on-chain anchoring.  
-- **Insurance & Custody:** Shenbury will adopt custodial best practices and partner with auction houses and insurers for high-value asset transfers.
+- **Insurance & Custody:** Shenbury will adopt custodial best practices and partner with insurers for high-value asset transfers.
 
 ---
 
@@ -185,23 +185,23 @@ Token economics follow the previously defined performance package schedule; gove
 
 | Phase | Milestone | Timeline |
 |------:|:---------|:--------:|
-| Q4 2025 | DAO formation, token deployment, initial art onboarding | In progress |
+| Q4 2025 | DAO formation, token deployment, initial technology onboarding | In progress |
 | Q1 2026 | AgentDB + ReasoningBank open beta release | Planned |
 | Q2 2026 | Full AI Swarm ↔ Provenance Chain integration | Planned |
-| Q3 2026 | Auction house partnerships and marketplace launch | Planned |
-| Q4 2026 | RWA category expansion (paintings, sculpture, manuscripts) | Future scope |
+| Q3 2026 | Enterprise partnerships and marketplace launch | Planned |
+| Q4 2026 | RWA category expansion | Future scope |
 
 ---
 
 ## 13. Legal Summary
 
-$SHBY tokens are non-securitized governance assets and do not convey ownership claims to physical artifacts. Tokens are minted and managed by MetaDAO with no presale. Authentication outputs are informational and recommended to be validated by institutional partners as part of standard due diligence.
+$SHBY tokens are non-securitized governance assets and do not convey ownership claims to technology or intellectual property. Tokens are minted and managed by MetaDAO with no presale. Authentication outputs are informational and recommended to be validated by institutional partners as part of standard due diligence.
 
 ---
 
 ## 14. Conclusion
 
-Shenbury establishes a new computational paradigm: self-contained AI agents that learn, reason, and preserve institutional memory without external dependencies. By bringing cryptographically verifiable provenance to high-value cultural assets, Shenbury unlocks latent liquidity in the art market and enables secure, on-chain participation in Real World Assets.
+Shenbury establishes a new computational paradigm: self-contained AI agents that learn, reason, and preserve institutional memory without external dependencies. By bringing cryptographically verifiable provenance to asset verification, Shenbury enables secure, on-chain participation in Real World Assets through innovative technology solutions.
 
 ---
 

@@ -17,20 +17,20 @@ Shenbury Ltd. ("The Company") is a company limited by shares, duly incorporated 
 ### 1.2 Purpose
 
 The primary purpose of The Company is to:
-(a) Hold, manage, and custody a collection of high-value physical assets, beginning with six (6) specified Chinese imperial artifacts ("The Collection").
-(b) Develop and utilize the "Dynasty X" AI-Powered Provenance Protocol for the verification of The Collection and future assets.
-(c) Issue, manage, and support the "Shenbury Provenance Token" (SHBY) on the Ethereum blockchain.
-(d) Facilitate the tokenization, sale, and liquidation of The Collection to fund Company operations and deliver value to stakeholders.
+(a) Develop and utilize the "Dynasty X" AI-Powered Provenance Protocol for the verification of assets.
+(b) Issue, manage, and support the "Shenbury Provenance Token" (SHBY) on the Ethereum blockchain.
+(c) License the "Dynasty X" technology platform to third parties.
+(d) Fund Company operations and deliver value to stakeholders through technology licensing and platform services.
 
-## ARTICLE II: THE ASSETS
+## ARTICLE II: THE TECHNOLOGY PLATFORM
 
-### 2.1 Legal Title
+### 2.1 Intellectual Property
 
-The Company (Shenbury Ltd.) holds full, unencumbered legal title and is the sole custodian of the assets listed in The Collection [see: public/js/relics.js]. These assets serve as the foundational backing for the Company's launch and tokenization activities.
+The Company (Shenbury Ltd.) is the sole owner of the proprietary "Dynasty X" AI-Powered Provenance Protocol technology platform. This technology serves as the foundational asset for the Company's operations and tokenization activities.
 
-### 2.2 Verification
+### 2.2 Technology Development
 
-All assets in The Collection have been verified by both traditional expert art historians and the Company's proprietary "Dynasty X" AI Protocol.
+The "Dynasty X" AI Protocol has been developed by the Company's engineering team and verified through rigorous testing and validation processes.
 
 ## ARTICLE III: THE TOKEN (SHBY)
 
@@ -44,12 +44,12 @@ All assets in The Collection have been verified by both traditional expert art h
 ### 3.2 Token Utility
 
 The SHBY token provides holders with:
-(a) **Governance:** Rights to vote on matters related to the DAO Treasury, protocol upgrades, and the framework for adding future assets.
-(b) **Access:** Token-gated access to high-resolution AI verification data, private sales, and special exhibitions.
+(a) **Governance:** Rights to vote on matters related to the DAO Treasury, protocol upgrades, and the framework for expanding the technology platform.
+(b) **Access:** Token-gated access to high-resolution AI verification data and private platform services.
 (c) **Staking:** Potential to stake SHBY to participate in network validation and earn rewards from future platform fees.
 
 ### 3.3 Token is Not a Security
-The SHBY token is a utility and governance token. It does **not** represent a direct equity share in Shenbury Ltd. nor a direct, fractional, legal-title claim on any specific artifact in The Collection. Its value is derived from its utility within the Shenbury ecosystem.
+The SHBY token is a utility and governance token. It does **not** represent a direct equity share in Shenbury Ltd. nor a direct, fractional, legal-title claim on any specific technology or intellectual property. Its value is derived from its utility within the Shenbury ecosystem.
 
 ## ARTICLE IV: GOVERNANCE
 
@@ -64,7 +64,7 @@ Shenbury Ltd. is managed by its Directors, including:
 The decentralized autonomous organization (DAO) is governed by SHBY token holders and oversees:
 (a) Treasury management and allocation
 (b) Protocol upgrades and technical decisions
-(c) Framework for adding new assets to the ecosystem
+(c) Framework for expanding the technology platform
 (d) Community initiatives and partnerships
 
 ### 4.3 Decision Making
@@ -76,9 +76,18 @@ Major decisions require a simple majority (50% + 1) of votes cast by SHBY token 
 ### 5.1 Initial Distribution
 
 The total supply of 25,800,000 SHBY tokens will be distributed as follows:
-- **Public Launch**: 10,000,000 SHBY
-- **Liquidity**: 2,900,000 SHBY
-- **Ecosystem & Treasury**: 12,900,000 SHBY (Vested)
+- **Sale Participants**: 10,000,000 SHBY
+- **Liquidity Pools**: 2,900,000 SHBY
+- **Performance Package & Ecosystem**: 12,900,000 SHBY (Vested)
+
+The Performance Package is structured as follows:
+- 2,580,000 SHBY unlock at 2x ICO price
+- 2,580,000 SHBY unlock at 4x ICO price
+- 2,580,000 SHBY unlock at 8x ICO price
+- 2,580,000 SHBY unlock at 16x ICO price
+- 2,580,000 SHBY unlock at 32x ICO price
+
+Minimum unlock time: 24 months from ICO date.
 
 ### 5.2 No Presale
 
