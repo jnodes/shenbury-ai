@@ -5,7 +5,7 @@
 - **Project Name:** Shenbury Ltd.
 - **Token Name:** Shenbury Provenance Token
 - **Token Ticker:** SHBY
-- **Description:** Shenbury is building the "Dynasty X" AI-Powered Provenance Protocol, an autonomous AI swarm that verifies high-value assets, solving the "oracle problem" for RWA tokenization.
+- **Description:** Shenbury is building an AI-Powered Provenance Protocol, an autonomous AI swarm that verifies high-value assets, solving the "oracle problem" for RWA tokenization.
 
 ## Tokenomics
 
@@ -37,7 +37,7 @@ Minimum unlock time: 18 months from ICO date.
 
 The founder(s) will transfer the following intellectual properties to the project's entity:
 - Domain names: shenbury.com, shenbury.ai, shenbury.org
-- Software: Dynasty X AI Protocol, AgentDB, ReasoningBank
+- Software: Shenbury AI Protocol, AgentDB, ReasoningBank
 - Social media accounts: @shenbury on Twitter, Facebook, LinkedIn
 - All future developments and improvements to the core technology
 
@@ -47,7 +47,7 @@ Our launch is built on six foundational, world-class artifacts from our collecti
 
 ## Technology Platform
 
-The launch is backed by our proprietary AI technology stack, including the "Dynasty X" AI Agent Swarm, AgentDB vector database, and ReasoningBank closed-loop learning system. This technology represents years of research and development in autonomous AI systems for asset verification.
+The launch is backed by our proprietary AI technology stack, including the Shenbury AI Agent Swarm, AgentDB vector database, and ReasoningBank closed-loop learning system. This technology represents years of research and development in autonomous AI systems for asset verification.
 
 ## Team
 

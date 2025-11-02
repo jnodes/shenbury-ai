@@ -1,13 +1,13 @@
 ### **AI Protocol Technical Paper**
 
-### **The Dynasty X AI-Powered Provenance Protocol**
+### **The Shenbury AI-Powered Provenance Protocol**
 
-Date: October 27, 2025 Author: Dynasty X Core Development Team  
+Date: October 27, 2025 Author: Shenbury Core Development Team  
 Status: DRAFT v1.0
 
 ### **Abstract**
 
-The Dynasty X AI-Powered Provenance Protocol introduces a decentralized, multi-agent AI system for the cryptographic-grade object verification of high-value cultural artifacts. The primary challenge in the multi-billion dollar art market is information asymmetry and the opacity of provenance, which constrains liquidity and trust. Our protocol solves this by fusing a resilient, self-contained AI stack with an immutable on-chain ledger.
+The Shenbury AI-Powered Provenance Protocol introduces a decentralized, multi-agent AI system for the cryptographic-grade object verification of high-value cultural artifacts. The primary challenge in the multi-billion dollar art market is information asymmetry and the opacity of provenance, which constrains liquidity and trust. Our protocol solves this by fusing a resilient, self-contained AI stack with an immutable on-chain ledger.
 
 This system is built on a "zero-cost" framework that runs locally with no external dependencies, eliminating API fees and ensuring data privacy. It leverages a stack of proprietary NPX libraries—including AgentDB for high-speed vector storage, ReasoningBank for autonomous closed-loop learning, and claude-flow for swarm coordination—to create self-contained, learning agents. These agents autonomously analyze, verify, and reach a consensus on an artifact's authenticity, with the final verification hash logged immutably on the Ethereum blockchain.
 
@@ -15,7 +15,7 @@ This system is built on a "zero-cost" framework that runs locally with no extern
 
 The tokenization of Real World Assets (RWAs) has been hampered by a single point of failure: the "oracle problem." An on-chain token is only as reliable as the off-chain data it represents. In the high-value art market, this problem is amplified. Verification is a manual, centralized, and often subjective process, making it impossible to guarantee authenticity in a trustless manner.
 
-The Dynasty X AI Protocol is designed to solve this problem at its root. Instead of relying on human oracles, we have built an autonomous AI swarm that functions as an unbiased, data-driven verification engine. This paper details its architecture, from its core philosophy to its specific technical implementation.
+The Shenbury AI Protocol is designed to solve this problem at its root. Instead of relying on human oracles, we have built an autonomous AI swarm that functions as an unbiased, data-driven verification engine. This paper details its architecture, from its core philosophy to its specific technical implementation.
 
 ### **2\. The Agentic Manifesto (Core Philosophy)**
 
@@ -26,9 +26,9 @@ Our architecture is guided by the "Agentic Manifesto," which prioritizes resilie
 * **Zero-Trust Security & Immutable Ledgers:** Security is zero-trust. All inter-agent communication is authenticated. The final verification "attestation" is cryptographically hashed and logged to the Ethereum blockchain, creating a permanent, immutable record of provenance.  
 * **Humans as Stewards, Not Operators:** Human experts (academics, historians) are used to *train* the AI swarm and provide initial ground-truth data. However, they are removed from the critical path of active operations, ensuring unbiased, data-driven verification.
 
-### **3\. System Architecture: The Dynasty X Stack**
+### **3\. System Architecture: The Shenbury Stack**
 
-The key innovation of the Dynasty X stack is its combination of speed, autonomy, and zero recurring cost. The entire system—database, learning model, and embeddings—runs locally, allowing agents to become self-contained learning entities that retain institutional memory without external dependencies.
+The key innovation of the Shenbury stack is its combination of speed, autonomy, and zero recurring cost. The entire system—database, learning model, and embeddings—runs locally, allowing agents to become self-contained learning entities that retain institutional memory without external dependencies.
 
 #### **3.1 Orchestration Layer: agentic-flow**
 
@@ -76,4 +76,4 @@ All data (images, chemical analysis reports, provenance documents) is vectorized
 
 ### **5\. Conclusion**
 
-The Dynasty X AI-Powered Provenance Protocol solves the RWA oracle problem for high-value art by *becoming* the oracle. By building a fully integrated, self-contained AI stack, we have created an autonomous verification engine that operates without bias, learns from its outcomes, and functions at zero marginal cost. This protocol is the foundation for a new standard of trust, enabling the creation of a secure, transparent, and liquid marketplace for the world's most valuable cultural assets.
+The Shenbury AI-Powered Provenance Protocol solves the RWA oracle problem for high-value art by *becoming* the oracle. By building a fully integrated, self-contained AI stack, we have created an autonomous verification engine that operates without bias, learns from its outcomes, and functions at zero marginal cost. This protocol is the foundation for a new standard of trust, enabling the creation of a secure, transparent, and liquid marketplace for the world's most valuable cultural assets.

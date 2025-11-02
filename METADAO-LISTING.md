@@ -5,7 +5,7 @@
 Shenbury Ltd. is a Hong Kong-based technology company focused on developing innovative solutions for asset verification and tokenization. Our core innovation centers on proprietary technology that solves critical challenges in the digital asset space.
 
 Our core innovation is:
-**The Technology:** We built the "Dynasty X" AI-Powered Provenance Protocol, an autonomous AI swarm that verifies assets, solving the "oracle problem" for RWA tokenization.
+**The Technology:** We built the Shenbury AI-Powered Provenance Protocol, an autonomous AI swarm that verifies assets, solving the "oracle problem" for RWA tokenization.
 
 [English Version](METADAO-LISTING.md) | [中文版](METADAO-LISTING-ZH.md)
 
@@ -15,10 +15,10 @@ Our core innovation is:
 **Token Name:** Shenbury Provenance Token (SHBY)
 
 **Short Description:** 
-Shenbury is building the "Dynasty X" AI-Powered Provenance Protocol, an autonomous AI swarm that verifies high-value assets, solving the "oracle problem" for RWA tokenization.
+Shenbury Ltd. is building an AI-Powered Provenance Protocol, an autonomous AI swarm that verifies high-value assets, solving the "oracle problem" for RWA tokenization.
 
 **Long Description:**
-Shenbury Ltd. is a Hong Kong-based technology company developing the "Dynasty X" AI-Powered Provenance Protocol. Our autonomous AI swarm verifies high-value assets, solving the "oracle problem" for RWA tokenization. We're unlocking the $60B+ illiquid art market by working with a private collector client pipeline of $600-700M+ portfolio of museum-grade Chinese imperial ceramics with cutting-edge AI verification technology. The SHBY token represents a stake in the ecosystem built around our innovative technology platform.
+Shenbury Ltd. is a Hong Kong-based technology company developing an AI-Powered Provenance Protocol. Our autonomous AI swarm verifies high-value assets, solving the "oracle problem" for RWA tokenization. We're unlocking the $60B+ illiquid art market by working with a private collector client pipeline of $600-700M+ portfolio of museum-grade Chinese imperial ceramics with cutting-edge AI verification technology. The SHBY token represents a stake in the ecosystem built around our innovative technology platform.
 
 ## Token Information
 
@@ -52,13 +52,13 @@ Minimum unlock time: 18 months from ICO date.
 
 The founder(s) will transfer the following intellectual properties to the project's entity:
 - Domain names: shenbury.com, shenbury.ai, shenbury.org
-- Software: Dynasty X AI Protocol, AgentDB, ReasoningBank
+- Software: Shenbury AI Protocol, AgentDB, ReasoningBank
 - Social media accounts: @shenbury on Twitter, Facebook, LinkedIn
 - All future developments and improvements to the core technology
 
 ## Key Features
 
-### AI Agent Swarm (The "Dynasty X" Protocol)
+### AI Agent Swarm (The Shenbury Protocol)
 - **Local Execution**: All AI processing runs locally without cloud dependencies.
 - **Self-Contained Agents**: Independent operation with embedded knowledge bases.
 - **Closed-Loop Learning**: Continuous improvement through reinforcement feedback.
@@ -87,10 +87,10 @@ The founder(s) will transfer the following intellectual properties to the projec
 
 ## Business Model & Technology Licensing
 
-Our business model is built on licensing our proprietary "Dynasty X" AI-Powered Provenance Protocol technology. The SHBY token represents a stake in the ecosystem built around this innovative technology platform.
+Our business model is built on licensing our proprietary Shenbury AI-Powered Provenance Protocol technology. The SHBY token represents a stake in the ecosystem built around this innovative technology platform.
 
 ### Technology Platform
-The launch is backed by our proprietary AI technology stack, including the "Dynasty X" AI Agent Swarm, AgentDB vector database, and ReasoningBank closed-loop learning system. This technology represents years of research and development in autonomous AI systems for asset verification.
+The launch is backed by our proprietary AI technology stack, including the Shenbury AI Agent Swarm, AgentDB vector database, and ReasoningBank closed-loop learning system. This technology represents years of research and development in autonomous AI systems for asset verification.
 
 ### Revenue Projections (Projections)
 Our revenue projections are based on a simplified fee structure for bringing high-value pieces to auction:

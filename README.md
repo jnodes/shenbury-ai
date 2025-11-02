@@ -5,7 +5,7 @@
 Shenbury Ltd. is a Hong Kong-based technology company focused on developing innovative solutions for asset verification and tokenization. Our core innovation centers on proprietary technology that solves critical challenges in the digital asset space.
 
 Our core innovation is:
-**The Technology:** Our proprietary "Dynasty X" AI-Powered Provenance Protocol, a local-first AI swarm built to verify assets and solve the "oracle problem" for RWA tokenization.
+**The Technology:** Our proprietary Shenbury AI-Powered Provenance Protocol, a local-first AI swarm built to verify assets and solve the "oracle problem" for RWA tokenization.
 
 We're preparing for our MetaDAO ICO launch with a minimum raise amount of $750,000 and a team monthly budget of $125,000 (1/6th of raise), supporting our $600-700M client pipeline.
 
@@ -15,7 +15,7 @@ For detailed technical documentation, our business model, and tokenomics, please
 
 ## Key Technical Features 核心技術特性
 
-Our "Dynasty X" AI Protocol is our core technology, a decentralized, self-contained intelligent infrastructure.
+Our Shenbury AI Protocol is our core technology, a decentralized, self-contained intelligent infrastructure.
 
 ### AI Agent Swarm AI代理群
 - **Local Execution**: All AI processing runs locally without cloud dependencies.
@@ -31,7 +31,7 @@ Our "Dynasty X" AI Protocol is our core technology, a decentralized, self-contai
 
 ## Technology Platform
 
-Our launch is built on our proprietary technology stack, including the "Dynasty X" AI Agent Swarm, AgentDB vector database, and ReasoningBank closed-loop learning system. This technology represents years of research and development in autonomous AI systems for asset verification.
+Our launch is built on our proprietary technology stack, including the Shenbury AI Agent Swarm, AgentDB vector database, and ReasoningBank closed-loop learning system. This technology represents years of research and development in autonomous AI systems for asset verification.
 
 Learn more about our technology platform: [Shenbury Technology](public/index.html#technology)
 
@@ -67,7 +67,7 @@ Visit http://localhost:3000 to view the application.
 
 ## Documentation 文檔
 - **[Whitepaper](public/whitepaper.html)** - Business model, tokenomics, and technology platform overview.
-- **[AI Protocol Technical Paper](public/ai-protocol.html)** - In-depth technical architecture of the "Dynasty X" AI Protocol.
+- **[AI Protocol Technical Paper](public/ai-protocol.html)** - In-depth technical architecture of the Shenbury AI Protocol.
 - **[Operating Agreement](OPERATING-AGREEMENT.md)** - Legal framework and governance for Shenbury Ltd. (Hong Kong).
 
 ## Terms & Conditions 條款和條件

@@ -17,20 +17,20 @@ Shenbury Ltd. ("The Company") is a company limited by shares, duly incorporated 
 ### 1.2 Purpose
 
 The primary purpose of The Company is to:
-(a) Develop and utilize the "Dynasty X" AI-Powered Provenance Protocol for the verification of assets.
+(a) Develop and utilize the Shenbury AI-Powered Provenance Protocol for the verification of assets.
 (b) Issue, manage, and support the "Shenbury Provenance Token" (SHBY) on the Ethereum blockchain.
-(c) License the "Dynasty X" technology platform to third parties.
+(c) License the Shenbury technology platform to third parties.
 (d) Fund Company operations and deliver value to stakeholders through technology licensing and platform services.
 
 ## ARTICLE II: THE TECHNOLOGY PLATFORM
 
 ### 2.1 Intellectual Property
 
-The Company (Shenbury Ltd.) is the sole owner of the proprietary "Dynasty X" AI-Powered Provenance Protocol technology platform. This technology serves as the foundational asset for the Company's operations and tokenization activities.
+The Company (Shenbury Ltd.) is the sole owner of the proprietary Shenbury AI-Powered Provenance Protocol technology platform. This technology serves as the foundational asset for the Company's operations and tokenization activities.
 
 ### 2.2 Technology Development
 
-The "Dynasty X" AI Protocol has been developed by the Company's engineering team and verified through rigorous testing and validation processes.
+The Shenbury AI Protocol has been developed by the Company's engineering team and verified through rigorous testing and validation processes.
 
 ## ARTICLE III: THE TOKEN (SHBY)
 
@@ -97,7 +97,7 @@ There will be no presale of SHBY tokens. All tokens will be distributed through 
 
 ### 6.1 Company IP
 
-All intellectual property developed by The Company, including but not limited to the "Dynasty X" AI Protocol, remains the property of Shenbury Ltd.
+All intellectual property developed by The Company, including but not limited to the Shenbury AI Protocol, remains the property of Shenbury Ltd.
 
 ### 6.2 Open Source Components
 
