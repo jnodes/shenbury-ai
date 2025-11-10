@@ -1,6 +1,6 @@
 # Shenbury DAO Operating Agreement
 
-**Effective Date**: November 1, 2025
+**Effective Date**: December 31, 2025
 
 ## ARTICLE I: DEFINITIONS
 
@@ -263,7 +263,7 @@ This Agreement may be amended only by a Governance Proposal approved by Members 
 
 ### 16.2 Governing Law
 
-This Agreement shall be governed by and construed in accordance with the laws of Singapore, without regard to its conflict of law principles.
+This Agreement shall be governed by and construed in accordance with the laws of the British Virgin Islands, without regard to its conflict of law principles.
 
 ### 16.3 Dispute Resolution
 
@@ -294,4 +294,4 @@ This Agreement may be executed in counterparts, including electronic counterpart
 ________________________________________
 Shenbury Labs
 
-**Date**: November 1, 2025
+**Date**: December 31, 2025
