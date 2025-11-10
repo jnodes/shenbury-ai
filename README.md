@@ -2,12 +2,12 @@
 
 ## Project Overview 項目概述
 
-Shenbury Ltd. is a Hong Kong-based technology company focused on developing innovative solutions for asset verification and tokenization. Our core innovation centers on proprietary technology that solves critical challenges in the digital asset space.
+Shenbury labs is focused on developing innovative solutions for asset verification and tokenization. Our core innovation centers on proprietary technology that solves critical challenges in the digital asset space.
 
 Our core innovation is:
-**The Technology:** Our proprietary Shenbury AI-Powered Provenance Protocol, a local-first AI swarm built to verify assets and solve the "oracle problem" for RWA tokenization.
+**The Technology:** Our proprietary Shenbury AI-Powered Protocol, a local-first AI swarm built to verify assets and solve the "oracle problem" for RWA tokenization.
 
-We're preparing for our MetaDAO ICO launch with a minimum raise amount of $750,000 and a team monthly budget of $125,000 (1/6th of raise), supporting our $600-700M client pipeline.
+We're preparing for our MetaDAO ICO launch with a minimum raise amount of $300,000 and a team monthly budget of $50,000, supporting our $600-700M collectable pipeline.
 
 **[English Version](README.md) | [中文版](README-zh.md)**
 
@@ -68,7 +68,7 @@ Visit http://localhost:3000 to view the application.
 ## Documentation 文檔
 - **[Whitepaper](public/whitepaper.html)** - Business model, tokenomics, and technology platform overview.
 - **[AI Protocol Technical Paper](public/ai-protocol.html)** - In-depth technical architecture of the Shenbury AI Protocol.
-- **[Operating Agreement](OPERATING-AGREEMENT.md)** - Legal framework and governance for Shenbury Ltd. (Hong Kong).
+- **[Operating Agreement](OPERATING-AGREEMENT.md)** - Legal framework and governance for Shenbury labs.
 
 ## Terms & Conditions 條款和條件
 
@@ -84,4 +84,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**© 2025 Shenbury Ltd. 神堡. All rights reserved.**
+**© 2025 Shenbury Labs. 神堡. All rights reserved.**
