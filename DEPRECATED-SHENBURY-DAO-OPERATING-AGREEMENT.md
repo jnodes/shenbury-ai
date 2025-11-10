@@ -12,7 +12,7 @@ For purposes of this Agreement, the following terms shall have the meanings set 
 
 **"Agreement"** means this Shenbury DAO Operating Agreement, as it may be amended from time to time.
 
-**"Blockchain"** means the Tron blockchain or any other blockchain network on which the SHBY Tokens are deployed.
+**"Blockchain"** means the Ethereum blockchain or any other blockchain network on which the SHBY Tokens are deployed.
 
 **"DAO"** means the decentralized autonomous organization formed and operated in accordance with this Agreement through smart contracts and community consensus.
 
@@ -230,7 +230,7 @@ SHBY Tokens serve the following functions:
 
 ### 14.2 Token Distribution
 
-The total supply of SHBY Tokens shall be 1,000,000,000 tokens, distributed as follows:
+The total supply of SHBY Tokens shall be 25,800,000 tokens, distributed as follows:
 
 1. **MetaDAO Minted Tokens**: Tokens minted and managed by MetaDAO with no presale
 2. **Team and Advisors**: 15% for core team and advisors with 4-year vesting schedules
@@ -267,7 +267,7 @@ This Agreement shall be governed by and construed in accordance with the laws of
 
 ### 16.3 Dispute Resolution
 
-Any disputes arising under this Agreement shall be resolved through binding arbitration in accordance with the rules of the Singapore International Arbitration Centre (SIAC).
+Any disputes arising under this Agreement shall be resolved through community consensus.
 
 ### 16.4 Severability
 
@@ -292,9 +292,6 @@ This Agreement may be executed in counterparts, including electronic counterpart
 **INITIAL CONTRIBUTORS**
 
 ________________________________________
-Shenbury Collection
-
-________________________________________
-Shenbury Contributors
+Shenbury Labs
 
 **Date**: November 1, 2025
